@@ -1,0 +1,654 @@
+[
+ {
+  "ajuste_oficial": 83,
+  "corrida": "v26",
+  "calles": 0.766,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.538,
+  "criterios_originales": 4,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "v30",
+  "calles": 0.762,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.527,
+  "criterios_originales": 4,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "v32",
+  "calles": 0.772,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.511,
+  "criterios_originales": 4,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "z32",
+  "calles": 0.774,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.514,
+  "criterios_originales": 4,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "f35",
+  "calles": 0.727,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.533,
+  "criterios_originales": 4,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "m36",
+  "calles": 0.777,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.483,
+  "criterios_originales": 3,
+  "dist_PH_m": 6
+ },
+ {
+  "ajuste_oficial": 82,
+  "corrida": "f35b",
+  "calles": 0.726,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.545,
+  "criterios_originales": 4,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 81,
+  "corrida": "d39",
+  "calles": 0.766,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.47,
+  "criterios_originales": 3,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 81,
+  "corrida": "p34",
+  "calles": 0.768,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.476,
+  "criterios_originales": 3,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 81,
+  "corrida": "p34b",
+  "calles": 0.767,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.484,
+  "criterios_originales": 3,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 80,
+  "corrida": "f38",
+  "calles": 0.704,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.487,
+  "criterios_originales": 3,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 80,
+  "corrida": "f38b",
+  "calles": 0.703,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.497,
+  "criterios_originales": 3,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 79,
+  "corrida": "v27",
+  "calles": 0.783,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.388,
+  "criterios_originales": 3,
+  "dist_PH_m": 8
+ },
+ {
+  "ajuste_oficial": 79,
+  "corrida": "v33",
+  "calles": 0.761,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.411,
+  "criterios_originales": 3,
+  "dist_PH_m": 1
+ },
+ {
+  "ajuste_oficial": 79,
+  "corrida": "arc",
+  "calles": 0.75,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.404,
+  "criterios_originales": 3,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 78,
+  "ajuste_previo": 80,
+  "corrida": "v20",
+  "calles": 0.771,
+  "sitios": 1.0,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.333,
+  "perimetro_previo": 0.433
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "v25",
+  "calles": 0.774,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.346,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "v29",
+  "calles": 0.769,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.349,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "v28",
+  "calles": 0.77,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.345,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "q3",
+  "calles": 0.768,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.336,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "q4",
+  "calles": 0.769,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.356,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "z29",
+  "calles": 0.77,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.351,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "v31",
+  "calles": 0.72,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.399,
+  "criterios_originales": 3,
+  "dist_PH_m": 191
+ },
+ {
+  "ajuste_oficial": 78,
+  "corrida": "art",
+  "calles": 0.735,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.387,
+  "criterios_originales": 3,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 77,
+  "corrida": "q2",
+  "calles": 0.766,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.324,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 77,
+  "corrida": "q1",
+  "calles": 0.762,
+  "sitios": 1.0,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.316,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 76,
+  "corrida": "z26",
+  "calles": 0.761,
+  "sitios": 0.75,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.541,
+  "criterios_originales": 4,
+  "dist_PH_m": 5
+ },
+ {
+  "ajuste_oficial": 73,
+  "corrida": "q5",
+  "calles": 0.775,
+  "sitios": 0.75,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.381,
+  "criterios_originales": 3,
+  "dist_PH_m": 34
+ },
+ {
+  "ajuste_oficial": 72,
+  "ajuste_previo": 74,
+  "corrida": "z02",
+  "calles": 0.77,
+  "sitios": 0.75,
+  "alcance": 1.0,
+  "perimetro_oficial_urbano": 0.344,
+  "perimetro_previo": 0.443,
+  "criterios_originales": 3,
+  "dist_PH_m": 15
+ },
+ {
+  "ajuste_oficial": 72,
+  "ajuste_previo": 74,
+  "corrida": "v02",
+  "calles": 0.77,
+  "sitios": 0.75,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.343,
+  "perimetro_previo": 0.444
+ },
+ {
+  "ajuste_oficial": 71,
+  "ajuste_previo": 74,
+  "corrida": "v19",
+  "calles": 0.771,
+  "sitios": 0.75,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.336,
+  "perimetro_previo": 0.432
+ },
+ {
+  "ajuste_oficial": 71,
+  "ajuste_previo": 74,
+  "corrida": "v14",
+  "calles": 0.766,
+  "sitios": 0.75,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.344,
+  "perimetro_previo": 0.449
+ },
+ {
+  "ajuste_oficial": 71,
+  "ajuste_previo": 74,
+  "corrida": "f03",
+  "calles": 0.726,
+  "sitios": 0.75,
+  "alcance": 0.975,
+  "perimetro_oficial_urbano": 0.392,
+  "perimetro_previo": 0.52
+ },
+ {
+  "ajuste_oficial": 70,
+  "ajuste_previo": 74,
+  "corrida": "v09",
+  "calles": 0.774,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.52,
+  "perimetro_previo": 0.684
+ },
+ {
+  "ajuste_oficial": 69,
+  "ajuste_previo": 74,
+  "corrida": "v06",
+  "calles": 0.744,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.53,
+  "perimetro_previo": 0.7
+ },
+ {
+  "ajuste_oficial": 69,
+  "ajuste_previo": 74,
+  "corrida": "v05",
+  "calles": 0.744,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.53,
+  "perimetro_previo": 0.7
+ },
+ {
+  "ajuste_oficial": 69,
+  "ajuste_previo": 73,
+  "corrida": "v17",
+  "calles": 0.759,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.498,
+  "perimetro_previo": 0.664
+ },
+ {
+  "ajuste_oficial": 69,
+  "ajuste_previo": 73,
+  "corrida": "v03",
+  "calles": 0.766,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.498,
+  "perimetro_previo": 0.663
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 73,
+  "corrida": "f01",
+  "calles": 0.708,
+  "sitios": 0.5,
+  "alcance": 0.862,
+  "perimetro_oficial_urbano": 0.634,
+  "perimetro_previo": 0.842
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "z01",
+  "calles": 0.769,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.463,
+  "perimetro_previo": 0.621
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "v18",
+  "calles": 0.69,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.52,
+  "perimetro_previo": 0.695
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "v15",
+  "calles": 0.766,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.454,
+  "perimetro_previo": 0.612
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "v11",
+  "calles": 0.694,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.522,
+  "perimetro_previo": 0.695
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "v10",
+  "calles": 0.694,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.523,
+  "perimetro_previo": 0.696
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "v01",
+  "calles": 0.77,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.461,
+  "perimetro_previo": 0.619
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 72,
+  "corrida": "e04",
+  "calles": 0.752,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.459,
+  "perimetro_previo": 0.637
+ },
+ {
+  "ajuste_oficial": 68,
+  "ajuste_previo": 71,
+  "corrida": "v21",
+  "calles": 0.77,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.448,
+  "perimetro_previo": 0.565
+ },
+ {
+  "ajuste_oficial": 67,
+  "ajuste_previo": 73,
+  "corrida": "k03",
+  "calles": 0.696,
+  "sitios": 0.5,
+  "alcance": 0.862,
+  "perimetro_oficial_urbano": 0.639,
+  "perimetro_previo": 0.847
+ },
+ {
+  "ajuste_oficial": 67,
+  "ajuste_previo": 71,
+  "corrida": "v08",
+  "calles": 0.739,
+  "sitios": 0.5,
+  "alcance": 0.804,
+  "perimetro_oficial_urbano": 0.632,
+  "perimetro_previo": 0.779
+ },
+ {
+  "ajuste_oficial": 67,
+  "ajuste_previo": 71,
+  "corrida": "v07",
+  "calles": 0.724,
+  "sitios": 0.5,
+  "alcance": 0.852,
+  "perimetro_oficial_urbano": 0.624,
+  "perimetro_previo": 0.768
+ },
+ {
+  "ajuste_oficial": 66,
+  "ajuste_previo": 71,
+  "corrida": "k02",
+  "calles": 0.648,
+  "sitios": 0.5,
+  "alcance": 0.862,
+  "perimetro_oficial_urbano": 0.629,
+  "perimetro_previo": 0.841
+ },
+ {
+  "ajuste_oficial": 66,
+  "ajuste_previo": 71,
+  "corrida": "k01",
+  "calles": 0.648,
+  "sitios": 0.5,
+  "alcance": 0.862,
+  "perimetro_oficial_urbano": 0.629,
+  "perimetro_previo": 0.841
+ },
+ {
+  "ajuste_oficial": 65,
+  "ajuste_previo": 69,
+  "corrida": "d02",
+  "calles": 0.684,
+  "sitios": 0.5,
+  "alcance": 1,
+  "perimetro_oficial_urbano": 0.41,
+  "perimetro_previo": 0.57
+ },
+ {
+  "ajuste_oficial": 63,
+  "ajuste_previo": 68,
+  "corrida": "d04",
+  "calles": 0.63,
+  "sitios": 0.5,
+  "alcance": 0.834,
+  "perimetro_oficial_urbano": 0.552,
+  "perimetro_previo": 0.762
+ },
+ {
+  "ajuste_oficial": 58,
+  "ajuste_previo": 63,
+  "corrida": "d01",
+  "calles": 0.597,
+  "sitios": 0.5,
+  "alcance": 0.684,
+  "perimetro_oficial_urbano": 0.546,
+  "perimetro_previo": 0.721
+ },
+ {
+  "ajuste_oficial": 55,
+  "ajuste_previo": 59,
+  "corrida": "g01",
+  "calles": 0.58,
+  "sitios": 0.5,
+  "alcance": 0.608,
+  "perimetro_oficial_urbano": 0.508,
+  "perimetro_previo": 0.671
+ },
+ {
+  "ajuste_oficial": 50,
+  "ajuste_previo": 54,
+  "corrida": "g03",
+  "calles": 0.605,
+  "sitios": 0.5,
+  "alcance": 0.384,
+  "perimetro_oficial_urbano": 0.528,
+  "perimetro_previo": 0.683
+ },
+ {
+  "ajuste_oficial": 49,
+  "ajuste_previo": 51,
+  "corrida": "f02",
+  "calles": 0.561,
+  "sitios": 0.75,
+  "alcance": 0.195,
+  "perimetro_oficial_urbano": 0.462,
+  "perimetro_previo": 0.55
+ },
+ {
+  "ajuste_oficial": 47,
+  "ajuste_previo": 51,
+  "corrida": "g02",
+  "calles": 0.608,
+  "sitios": 0.5,
+  "alcance": 0.253,
+  "perimetro_oficial_urbano": 0.514,
+  "perimetro_previo": 0.661
+ },
+ {
+  "ajuste_oficial": 44,
+  "ajuste_previo": 46,
+  "corrida": "e06",
+  "calles": 0.47,
+  "sitios": 0.5,
+  "alcance": 0,
+  "perimetro_oficial_urbano": 0.801,
+  "perimetro_previo": 0.863
+ },
+ {
+  "ajuste_oficial": 43,
+  "ajuste_previo": 46,
+  "corrida": "e01",
+  "calles": 0.565,
+  "sitios": 0.5,
+  "alcance": 0.193,
+  "perimetro_oficial_urbano": 0.462,
+  "perimetro_previo": 0.564
+ },
+ {
+  "ajuste_oficial": 43,
+  "ajuste_previo": 46,
+  "corrida": "d03",
+  "calles": 0.503,
+  "sitios": 0.5,
+  "alcance": 0.04,
+  "perimetro_oficial_urbano": 0.677,
+  "perimetro_previo": 0.806
+ },
+ {
+  "ajuste_oficial": 42,
+  "ajuste_previo": 43,
+  "corrida": "e02",
+  "calles": 0.517,
+  "sitios": 0.5,
+  "alcance": 0.218,
+  "perimetro_oficial_urbano": 0.431,
+  "perimetro_previo": 0.504
+ },
+ {
+  "ajuste_oficial": 40,
+  "ajuste_previo": 44,
+  "corrida": "s01",
+  "calles": 0.496,
+  "sitios": 0.5,
+  "alcance": 0.012,
+  "perimetro_oficial_urbano": 0.598,
+  "perimetro_previo": 0.737
+ },
+ {
+  "ajuste_oficial": 16,
+  "ajuste_previo": 17,
+  "corrida": "e03",
+  "calles": 0.077,
+  "sitios": 0.0,
+  "alcance": 0.344,
+  "perimetro_oficial_urbano": 0.203,
+  "perimetro_previo": 0.25
+ }
+]

@@ -1,0 +1,592 @@
+{
+ "zona_ha": 288.5,
+ "n_predios": 2266,
+ "n_ejes": 368,
+ "corridas": {
+  "v25": {
+   "predios_con_barro": 684,
+   "frac_predios": 0.302,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 172.7,
+   "frac_area_en_zona": 0.335,
+   "cobertura_zona": 0.201
+  },
+  "v20": {
+   "predios_con_barro": 684,
+   "frac_predios": 0.302,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 176.2,
+   "frac_area_en_zona": 0.327,
+   "cobertura_zona": 0.2
+  },
+  "z02": {
+   "predios_con_barro": 717,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 171.9,
+   "frac_area_en_zona": 0.339,
+   "cobertura_zona": 0.202
+  },
+  "v02": {
+   "predios_con_barro": 717,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 172.0,
+   "frac_area_en_zona": 0.338,
+   "cobertura_zona": 0.202
+  },
+  "v19": {
+   "predios_con_barro": 685,
+   "frac_predios": 0.302,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 176.1,
+   "frac_area_en_zona": 0.328,
+   "cobertura_zona": 0.2
+  },
+  "v14": {
+   "predios_con_barro": 717,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 170.0,
+   "frac_area_en_zona": 0.342,
+   "cobertura_zona": 0.201
+  },
+  "f03": {
+   "predios_con_barro": 728,
+   "frac_predios": 0.321,
+   "ejes_con_barro": 174,
+   "frac_ejes": 0.473,
+   "area_mojada_ha": 192.8,
+   "frac_area_en_zona": 0.371,
+   "cobertura_zona": 0.248
+  },
+  "v09": {
+   "predios_con_barro": 698,
+   "frac_predios": 0.308,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 109.5,
+   "frac_area_en_zona": 0.541,
+   "cobertura_zona": 0.205
+  },
+  "v06": {
+   "predios_con_barro": 662,
+   "frac_predios": 0.292,
+   "ejes_con_barro": 194,
+   "frac_ejes": 0.527,
+   "area_mojada_ha": 97.4,
+   "frac_area_en_zona": 0.545,
+   "cobertura_zona": 0.184
+  },
+  "v05": {
+   "predios_con_barro": 662,
+   "frac_predios": 0.292,
+   "ejes_con_barro": 194,
+   "frac_ejes": 0.527,
+   "area_mojada_ha": 97.4,
+   "frac_area_en_zona": 0.545,
+   "cobertura_zona": 0.184
+  },
+  "v17": {
+   "predios_con_barro": 677,
+   "frac_predios": 0.299,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 109.5,
+   "frac_area_en_zona": 0.521,
+   "cobertura_zona": 0.198
+  },
+  "v03": {
+   "predios_con_barro": 677,
+   "frac_predios": 0.299,
+   "ejes_con_barro": 198,
+   "frac_ejes": 0.538,
+   "area_mojada_ha": 109.5,
+   "frac_area_en_zona": 0.519,
+   "cobertura_zona": 0.197
+  },
+  "f01": {
+   "predios_con_barro": 726,
+   "frac_predios": 0.32,
+   "ejes_con_barro": 174,
+   "frac_ejes": 0.473,
+   "area_mojada_ha": 117.5,
+   "frac_area_en_zona": 0.625,
+   "cobertura_zona": 0.255
+  },
+  "z01": {
+   "predios_con_barro": 709,
+   "frac_predios": 0.313,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 120.2,
+   "frac_area_en_zona": 0.488,
+   "cobertura_zona": 0.203
+  },
+  "v18": {
+   "predios_con_barro": 630,
+   "frac_predios": 0.278,
+   "ejes_con_barro": 184,
+   "frac_ejes": 0.5,
+   "area_mojada_ha": 95.7,
+   "frac_area_en_zona": 0.538,
+   "cobertura_zona": 0.179
+  },
+  "v15": {
+   "predios_con_barro": 683,
+   "frac_predios": 0.301,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 121.0,
+   "frac_area_en_zona": 0.48,
+   "cobertura_zona": 0.201
+  },
+  "v11": {
+   "predios_con_barro": 629,
+   "frac_predios": 0.278,
+   "ejes_con_barro": 183,
+   "frac_ejes": 0.497,
+   "area_mojada_ha": 95.7,
+   "frac_area_en_zona": 0.539,
+   "cobertura_zona": 0.179
+  },
+  "v10": {
+   "predios_con_barro": 629,
+   "frac_predios": 0.278,
+   "ejes_con_barro": 183,
+   "frac_ejes": 0.497,
+   "area_mojada_ha": 95.7,
+   "frac_area_en_zona": 0.539,
+   "cobertura_zona": 0.179
+  },
+  "v01": {
+   "predios_con_barro": 709,
+   "frac_predios": 0.313,
+   "ejes_con_barro": 199,
+   "frac_ejes": 0.541,
+   "area_mojada_ha": 120.3,
+   "frac_area_en_zona": 0.486,
+   "cobertura_zona": 0.203
+  },
+  "e04": {
+   "predios_con_barro": 916,
+   "frac_predios": 0.404,
+   "ejes_con_barro": 215,
+   "frac_ejes": 0.584,
+   "area_mojada_ha": 193.2,
+   "frac_area_en_zona": 0.473,
+   "cobertura_zona": 0.317
+  },
+  "v21": {
+   "predios_con_barro": 676,
+   "frac_predios": 0.298,
+   "ejes_con_barro": 199,
+   "frac_ejes": 0.541,
+   "area_mojada_ha": 129.4,
+   "frac_area_en_zona": 0.444,
+   "cobertura_zona": 0.199
+  },
+  "k03": {
+   "predios_con_barro": 712,
+   "frac_predios": 0.314,
+   "ejes_con_barro": 172,
+   "frac_ejes": 0.467,
+   "area_mojada_ha": 111.3,
+   "frac_area_en_zona": 0.627,
+   "cobertura_zona": 0.242
+  },
+  "v08": {
+   "predios_con_barro": 637,
+   "frac_predios": 0.281,
+   "ejes_con_barro": 175,
+   "frac_ejes": 0.476,
+   "area_mojada_ha": 89.2,
+   "frac_area_en_zona": 0.618,
+   "cobertura_zona": 0.191
+  },
+  "v07": {
+   "predios_con_barro": 610,
+   "frac_predios": 0.269,
+   "ejes_con_barro": 173,
+   "frac_ejes": 0.47,
+   "area_mojada_ha": 79.1,
+   "frac_area_en_zona": 0.619,
+   "cobertura_zona": 0.17
+  },
+  "k02": {
+   "predios_con_barro": 682,
+   "frac_predios": 0.301,
+   "ejes_con_barro": 164,
+   "frac_ejes": 0.446,
+   "area_mojada_ha": 107.0,
+   "frac_area_en_zona": 0.617,
+   "cobertura_zona": 0.229
+  },
+  "k01": {
+   "predios_con_barro": 682,
+   "frac_predios": 0.301,
+   "ejes_con_barro": 164,
+   "frac_ejes": 0.446,
+   "area_mojada_ha": 107.0,
+   "frac_area_en_zona": 0.617,
+   "cobertura_zona": 0.229
+  },
+  "d02": {
+   "predios_con_barro": 850,
+   "frac_predios": 0.375,
+   "ejes_con_barro": 188,
+   "frac_ejes": 0.511,
+   "area_mojada_ha": 193.3,
+   "frac_area_en_zona": 0.412,
+   "cobertura_zona": 0.276
+  },
+  "d04": {
+   "predios_con_barro": 651,
+   "frac_predios": 0.287,
+   "ejes_con_barro": 148,
+   "frac_ejes": 0.402,
+   "area_mojada_ha": 117.6,
+   "frac_area_en_zona": 0.547,
+   "cobertura_zona": 0.223
+  },
+  "d01": {
+   "predios_con_barro": 615,
+   "frac_predios": 0.271,
+   "ejes_con_barro": 139,
+   "frac_ejes": 0.378,
+   "area_mojada_ha": 119.2,
+   "frac_area_en_zona": 0.52,
+   "cobertura_zona": 0.215
+  },
+  "g01": {
+   "predios_con_barro": 606,
+   "frac_predios": 0.267,
+   "ejes_con_barro": 135,
+   "frac_ejes": 0.367,
+   "area_mojada_ha": 126.2,
+   "frac_area_en_zona": 0.485,
+   "cobertura_zona": 0.212
+  },
+  "g03": {
+   "predios_con_barro": 649,
+   "frac_predios": 0.286,
+   "ejes_con_barro": 137,
+   "frac_ejes": 0.372,
+   "area_mojada_ha": 133.2,
+   "frac_area_en_zona": 0.505,
+   "cobertura_zona": 0.233
+  },
+  "f02": {
+   "predios_con_barro": 592,
+   "frac_predios": 0.261,
+   "ejes_con_barro": 123,
+   "frac_ejes": 0.334,
+   "area_mojada_ha": 140.7,
+   "frac_area_en_zona": 0.442,
+   "cobertura_zona": 0.216
+  },
+  "g02": {
+   "predios_con_barro": 636,
+   "frac_predios": 0.281,
+   "ejes_con_barro": 134,
+   "frac_ejes": 0.364,
+   "area_mojada_ha": 136.0,
+   "frac_area_en_zona": 0.495,
+   "cobertura_zona": 0.234
+  },
+  "e06": {
+   "predios_con_barro": 524,
+   "frac_predios": 0.231,
+   "ejes_con_barro": 131,
+   "frac_ejes": 0.356,
+   "area_mojada_ha": 74.6,
+   "frac_area_en_zona": 0.751,
+   "cobertura_zona": 0.194
+  },
+  "e01": {
+   "predios_con_barro": 589,
+   "frac_predios": 0.26,
+   "ejes_con_barro": 124,
+   "frac_ejes": 0.337,
+   "area_mojada_ha": 138.2,
+   "frac_area_en_zona": 0.451,
+   "cobertura_zona": 0.216
+  },
+  "d03": {
+   "predios_con_barro": 514,
+   "frac_predios": 0.227,
+   "ejes_con_barro": 112,
+   "frac_ejes": 0.304,
+   "area_mojada_ha": 79.8,
+   "frac_area_en_zona": 0.632,
+   "cobertura_zona": 0.175
+  },
+  "e02": {
+   "predios_con_barro": 522,
+   "frac_predios": 0.23,
+   "ejes_con_barro": 119,
+   "frac_ejes": 0.323,
+   "area_mojada_ha": 131.1,
+   "frac_area_en_zona": 0.424,
+   "cobertura_zona": 0.193
+  },
+  "s01": {
+   "predios_con_barro": 535,
+   "frac_predios": 0.236,
+   "ejes_con_barro": 132,
+   "frac_ejes": 0.359,
+   "area_mojada_ha": 62.6,
+   "frac_area_en_zona": 0.606,
+   "cobertura_zona": 0.132
+  },
+  "e03": {
+   "predios_con_barro": 84,
+   "frac_predios": 0.037,
+   "ejes_con_barro": 18,
+   "frac_ejes": 0.049,
+   "area_mojada_ha": 67.3,
+   "frac_area_en_zona": 0.212,
+   "cobertura_zona": 0.049
+  },
+  "v29": {
+   "predios_con_barro": 684,
+   "frac_predios": 0.302,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 166.3,
+   "frac_area_en_zona": 0.348,
+   "cobertura_zona": 0.201
+  },
+  "v27": {
+   "predios_con_barro": 697,
+   "frac_predios": 0.308,
+   "ejes_con_barro": 206,
+   "frac_ejes": 0.56,
+   "area_mojada_ha": 164.3,
+   "frac_area_en_zona": 0.363,
+   "cobertura_zona": 0.207
+  },
+  "v28": {
+   "predios_con_barro": 716,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 168.4,
+   "frac_area_en_zona": 0.345,
+   "cobertura_zona": 0.201
+  },
+  "v26": {
+   "predios_con_barro": 905,
+   "frac_predios": 0.399,
+   "ejes_con_barro": 217,
+   "frac_ejes": 0.59,
+   "area_mojada_ha": 206.2,
+   "frac_area_en_zona": 0.502,
+   "cobertura_zona": 0.359
+  },
+  "q3": {
+   "predios_con_barro": 714,
+   "frac_predios": 0.315,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 171.4,
+   "frac_area_en_zona": 0.338,
+   "cobertura_zona": 0.201
+  },
+  "q4": {
+   "predios_con_barro": 716,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 165.2,
+   "frac_area_en_zona": 0.352,
+   "cobertura_zona": 0.202
+  },
+  "q2": {
+   "predios_con_barro": 715,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 174.7,
+   "frac_area_en_zona": 0.329,
+   "cobertura_zona": 0.199
+  },
+  "q5": {
+   "predios_con_barro": 714,
+   "frac_predios": 0.315,
+   "ejes_con_barro": 202,
+   "frac_ejes": 0.549,
+   "area_mojada_ha": 158.5,
+   "frac_area_en_zona": 0.37,
+   "cobertura_zona": 0.203
+  },
+  "q1": {
+   "predios_con_barro": 716,
+   "frac_predios": 0.316,
+   "ejes_con_barro": 200,
+   "frac_ejes": 0.543,
+   "area_mojada_ha": 177.3,
+   "frac_area_en_zona": 0.323,
+   "cobertura_zona": 0.198
+  },
+  "z29": {
+   "predios_con_barro": 684,
+   "frac_predios": 0.302,
+   "ejes_con_barro": 201,
+   "frac_ejes": 0.546,
+   "area_mojada_ha": 166.0,
+   "frac_area_en_zona": 0.35,
+   "cobertura_zona": 0.201
+  },
+  "v30": {
+   "predios_con_barro": 902,
+   "frac_predios": 0.398,
+   "ejes_con_barro": 215,
+   "frac_ejes": 0.584,
+   "area_mojada_ha": 208.8,
+   "frac_area_en_zona": 0.495,
+   "cobertura_zona": 0.358
+  },
+  "v31": {
+   "predios_con_barro": 907,
+   "frac_predios": 0.4,
+   "ejes_con_barro": 224,
+   "frac_ejes": 0.609,
+   "area_mojada_ha": 242.2,
+   "frac_area_en_zona": 0.373,
+   "cobertura_zona": 0.314
+  },
+  "v32": {
+   "predios_con_barro": 906,
+   "frac_predios": 0.4,
+   "ejes_con_barro": 218,
+   "frac_ejes": 0.592,
+   "area_mojada_ha": 213.9,
+   "frac_area_en_zona": 0.487,
+   "cobertura_zona": 0.361
+  },
+  "z26": {
+   "predios_con_barro": 905,
+   "frac_predios": 0.399,
+   "ejes_con_barro": 216,
+   "frac_ejes": 0.587,
+   "area_mojada_ha": 206.0,
+   "frac_area_en_zona": 0.503,
+   "cobertura_zona": 0.359
+  },
+  "z32": {
+   "predios_con_barro": 910,
+   "frac_predios": 0.402,
+   "ejes_con_barro": 217,
+   "frac_ejes": 0.59,
+   "area_mojada_ha": 213.4,
+   "frac_area_en_zona": 0.488,
+   "cobertura_zona": 0.361
+  },
+  "v33": {
+   "predios_con_barro": 928,
+   "frac_predios": 0.41,
+   "ejes_con_barro": 218,
+   "frac_ejes": 0.592,
+   "area_mojada_ha": 254.5,
+   "frac_area_en_zona": 0.41,
+   "cobertura_zona": 0.362
+  },
+  "d39": {
+   "predios_con_barro": 926,
+   "frac_predios": 0.409,
+   "ejes_con_barro": 217,
+   "frac_ejes": 0.59,
+   "area_mojada_ha": 232.1,
+   "frac_area_en_zona": 0.453,
+   "cobertura_zona": 0.364
+  },
+  "f35": {
+   "predios_con_barro": 833,
+   "frac_predios": 0.368,
+   "ejes_con_barro": 206,
+   "frac_ejes": 0.56,
+   "area_mojada_ha": 186.2,
+   "frac_area_en_zona": 0.503,
+   "cobertura_zona": 0.325
+  },
+  "p34": {
+   "predios_con_barro": 919,
+   "frac_predios": 0.406,
+   "ejes_con_barro": 219,
+   "frac_ejes": 0.595,
+   "area_mojada_ha": 228.9,
+   "frac_area_en_zona": 0.457,
+   "cobertura_zona": 0.363
+  },
+  "f38": {
+   "predios_con_barro": 843,
+   "frac_predios": 0.372,
+   "ejes_con_barro": 208,
+   "frac_ejes": 0.565,
+   "area_mojada_ha": 199.7,
+   "frac_area_en_zona": 0.469,
+   "cobertura_zona": 0.325
+  },
+  "art": {
+   "predios_con_barro": 919,
+   "frac_predios": 0.406,
+   "ejes_con_barro": 230,
+   "frac_ejes": 0.625,
+   "area_mojada_ha": 269.5,
+   "frac_area_en_zona": 0.366,
+   "cobertura_zona": 0.342
+  },
+  "arc": {
+   "predios_con_barro": 963,
+   "frac_predios": 0.425,
+   "ejes_con_barro": 229,
+   "frac_ejes": 0.622,
+   "area_mojada_ha": 263.3,
+   "frac_area_en_zona": 0.385,
+   "cobertura_zona": 0.352
+  },
+  "m36": {
+   "predios_con_barro": 903,
+   "frac_predios": 0.398,
+   "ejes_con_barro": 213,
+   "frac_ejes": 0.579,
+   "area_mojada_ha": 219.6,
+   "frac_area_en_zona": 0.47,
+   "cobertura_zona": 0.358
+  },
+  "f35b": {
+   "predios_con_barro": 835,
+   "frac_predios": 0.368,
+   "ejes_con_barro": 205,
+   "frac_ejes": 0.557,
+   "area_mojada_ha": 179.2,
+   "frac_area_en_zona": 0.522,
+   "cobertura_zona": 0.325
+  },
+  "f38b": {
+   "predios_con_barro": 846,
+   "frac_predios": 0.373,
+   "ejes_con_barro": 208,
+   "frac_ejes": 0.565,
+   "area_mojada_ha": 192.6,
+   "frac_area_en_zona": 0.486,
+   "cobertura_zona": 0.324
+  },
+  "p34b": {
+   "predios_con_barro": 918,
+   "frac_predios": 0.405,
+   "ejes_con_barro": 218,
+   "frac_ejes": 0.592,
+   "area_mojada_ha": 222.1,
+   "frac_area_en_zona": 0.471,
+   "cobertura_zona": 0.363
+  }
+ }
+}
