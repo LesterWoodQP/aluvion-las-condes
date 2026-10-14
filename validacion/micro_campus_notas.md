@@ -1,0 +1,160 @@
+# Microsimulaciones del campus U. de los Andes: notas de resultado (solo agregar)
+
+- **m20 (11-oct 08:54, quadrab):** desborde de 20 m³/s durante 600 s (12.000 m³) en la parte alta de Álvaro del Portillo, barro de Cv 0,40, malla de 8 m², CFL 0,5. Resultado calculado:
+  - 4,8 ha con más de 5 cm de barro, h máx 1,51 m, V máx 4,8 m/s;
+  - **sin barro en el anillo de 20 m alrededor de la Biblioteca ni en su cuenca local**;
+  - residuo de balance −0,000 %.
+  - Con ese barro y caudal, el desborde no alcanza la Biblioteca. Sigue a ml20/ml40 (fluido más líquido) y mr27/mrs27 (lluvia sobre la cuenca local).
+- **mk20 (11-oct ~10:15, quadrab):** mismo desborde que m20 (20 m³/s, 12.000 m³), con barro más líquido: Cv 0,30, 1.495 kg/m³, τy 1,2 Pa. Resultado calculado: 4,6 ha con más de 5 cm, h máx 1,52 m, V máx 5,0 m/s; salen por los bordes 10.612 m³; **sin barro junto a la Biblioteca ni en su cuenca local**; residuo de balance −0,000 %.
+- **ml20 (11-oct ~10:15, quadrab):** igual, con Cv 0,25, 1.412 kg/m³, τy 0,5 Pa. Resultado calculado: 4,5 ha, h máx 1,50 m, V máx 5,1 m/s; salen 10.770 m³; **sin barro junto a la Biblioteca**; residuo −0,000 %.
+- **Lectura provisional:** con Cv entre 0,25 y 0,40 (m20, mk20, ml20), un desborde de 20 m³/s en la parte alta de Álvaro del Portillo sigue la avenida y sale del dominio sin alcanzar la Biblioteca. Bajo estos supuestos y con el relieve disponible, el fluido más líquido no basta para explicar el barro en el Aula Magna. Quedan ml40 (40 m³/s) y la lluvia sobre la cuenca local de la Biblioteca (mr27, mrs27).
+- **ml40 (11-oct ~10:35, quadrab):** desborde de 40 m³/s durante 600 s (24.000 m³), con Cv 0,25. Resultado calculado: 5,5 ha con más de 5 cm, h máx 1,88 m, V máx 6,6 m/s; salen por los bordes 22.637 m³; **sin barro junto a la Biblioteca ni en su cuenca local**; residuo −0,000 %.
+- **Explicación geométrica de los cuatro resultados negativos:** el punto de desborde ensayado (parte alta de Álvaro del Portillo) queda **fuera de la cuenca local de la Biblioteca, a unos 220 m de su límite**, que se calculó con D8 sobre el terreno de 30 m. Con este relieve, el flujo de ese punto drena hacia otro lado; ni duplicar el caudal ni bajar la concentración lo hace cruzar la divisoria.
+- **Hipótesis que siguen abiertas:**
+  - (a) lluvia o escorrentía generada dentro de la propia cuenca local (mr27, mrs27);
+  - (b) un aporte que entre a esa cuenca por un camino que el terreno de 30 m no resuelve, como senderos, accesos, taludes o un desborde en otro punto más alto dentro de ella;
+  - (c) una divisoria mal representada por la resolución del terreno.
+  - La (b) y la (c) no se pueden distinguir con los datos actuales: requieren relieve de mayor resolución o una observación en terreno.
+- **mr27 (11-oct ~14:20, quadrab):** lluvia de 35 mm/h durante 1 h sobre todo el dominio local (1,254 km², 43.899 m³), sin desborde. Fluido líquido: Cv 0,27, τy 0,7 Pa.
+  - **Resultado calculado:**
+    - **barro junto a la Biblioteca: máximo 0,43 m en el anillo de 20 m, con más de 5 cm en el 7 % del anillo;**
+    - 12,9 ha con más de 5 cm en todo el dominio;
+    - salen por los bordes 18.977 m³;
+    - residuo de balance +0,76 % (ANUGA agregó ~664 m³ por celdas negativas al empezar la lluvia; queda bajo el 1 %).
+  - **Lectura provisional:** es la primera configuración que pone agua y barro junto a la Biblioteca. Es compatible con un aporte por escorrentía local de las laderas cercanas y redistribución hacia la depresión junto al edificio, no con el desborde de Álvaro del Portillo.
+  - **Condiciones:**
+    - depende de la intensidad supuesta: 35 mm/h durante una hora es la hipótesis del estudio para la ladera quemada, mientras Río Molina registró 42,8 mm en el día;
+    - se usa un fluido de baja concentración;
+    - se usa el terreno de 30 m, donde la depresión puede estar exagerada;
+    - el área con barro cae fuera de la cuenca local calculada con D8 (la Biblioteca queda a 37 m de ella), así que esa cuenca no captura bien el drenaje del edificio.
+  - Pendientes: mrs27 (lluvia más un desborde de 20 m³/s) y una sensibilidad a la intensidad.
+- **mrs27 (11-oct ~16:40, quadrab):** la misma lluvia que mr27 (35 mm/h durante 1 h sobre el dominio local), más un desborde de 20 m³/s en la parte alta de Álvaro del Portillo. Cv 0,27; 55.899 m³ aplicados.
+  - **Resultado calculado:** junto a la Biblioteca, máximo 0,434 m y 7 % del anillo con más de 5 cm, prácticamente igual a mr27 (0,43 m). En todo el dominio, 15,1 ha con más de 5 cm. Residuo +0,000 %.
+  - **Lectura:** sumar el desborde no cambia lo que llega a la Biblioteca. En estas microsimulaciones, el barro junto al edificio proviene de la escorrentía local y no del desborde de la avenida. Falta mr15 (intensidad menor) para saber cuánto depende del supuesto de 35 mm/h.
+- **mr15 (11-oct ~17:50, oficina):** igual que mr27, pero con 15 mm/h durante 1 h (18.814 m³).
+  - **Resultado calculado:** junto a la Biblioteca, máximo 0,385 m y 5 % del anillo con más de 5 cm. En todo el dominio, 4,9 ha con más de 5 cm.
+  - **Balance:** residuo +2,2 %; ANUGA agregó unos 832 m³ por celdas negativas (4,4 % de lo aplicado). Supera el 1 %, así que este resultado se toma con cautela.
+  - **Lectura:** con menos de la mitad de la intensidad, el espesor junto a la Biblioteca baja solo de 0,43 a 0,39 m. Esa baja sensibilidad indica que el agua se acumula en una depresión del terreno junto al edificio, que recibe la escorrentía local con lluvias moderadas. Que el mecanismo funcione depende entonces de que esa depresión sea real (accesos o niveles bajo la rasante del Aula Magna) y no un efecto del relieve de 30 m remuestreado. Para resolverlo hace falta un relieve de mayor resolución u observación en terreno.
+- **Patio del video (11-oct, noche).**
+  - **Ubicación, según Lester en Google Earth:** el patio está en −33,4033606, −70,5061556, a unos 40 m al norte-noreste de la Biblioteca. La calle de arriba está en −33,4032749, −70,5051069, en un claro entre los árboles, a 98 m del patio.
+  - **Cotas:**
+    - Google Earth: 937 m en la calle y 927–928 m en el patio, es decir, unos 10 % de pendiente;
+    - modelo: 934,4 m en la calle y 927,1 m en el patio.
+    - Las cotas del patio coinciden.
+  - **Camino del agua:** en el modelo, la máxima pendiente desde la calle no llega al patio. Un lomo de unos 0,3 m en el relieve, a 60–70 % del trayecto, lo desvía a un punto bajo a 58 m del patio. Ese lomo es menor que la precisión vertical del relieve de 30 m, que es de 1–2 m.
+  - **Lo que da cada configuración en el patio (15 m):**
+    - lluvia local (mr27, mrs27): 0,15 m;
+    - lluvia local con 15 mm/h (mr15): 0,11 m;
+    - desbordes de la avenida: 0 m;
+    - video: ≈0,15–0,35 m.
+  - **Prueba nueva, mrt10:** se talló el paso del claro al patio (4 m de ancho y 0,5 m de profundidad, siguiendo la alineación que observó Lester) y se repite la lluvia local con agua turbia (Cv 0,10). Es un supuesto de representación del terreno, igual que el tallado de los cauces.
+- **Av. La Plaza Sur (11-oct, noche; aporte de Lester con Street View de dic-2024 y Google Earth).**
+  - **Lo observado:**
+    - la avenida tiene dos calzadas a distinto nivel (~1,5 m; 939 y 937 m), separadas por un talud con pasto;
+    - la reja de la universidad corre junto a la calzada baja;
+    - según Lester, en la calle hay una depresión justo donde el terreno cae hacia la universidad, en el claro entre los árboles.
+  - **En el modelo:**
+    - **corte transversal:** un plano continuo que baja hacia el oeste, ~1 m cada 8 m, sin calzadas, talud central ni soleras; las celdas de calle casi no aparecen;
+    - **perfil longitudinal:** la avenida sube hacia el sur (929 m en Álvaro del Portillo, ~964 m hacia la clínica), así que el agua corre hacia el norte. Hay un bajo local de ~1 m cerca del claro, compatible con la depresión que describe Lester.
+  - **Hipótesis:** las calzadas a distinto nivel encauzan hacia el norte el agua de la calle, de la ladera de arriba y de las quebradas cortas del brazo S2. En la depresión frente al claro se acumula un volumen que desborda hacia la universidad, entra por el claro y llena el patio hundido.
+  - **Prueba mrp10:**
+    - se tallaron como canal la calzada baja de La Plaza Sur (7 m × 0,6 m, desde ~−33,4053, −70,5022 hasta el claro, 472 m; fondo descendente, con profundidad máxima de 1,63 m donde el relieve tenía un lomo) y el paso del claro al patio;
+    - lluvia local de 35 mm/h, agua turbia (Cv 0,10);
+    - dominio ampliado al sur (−33,4095).
+    - El tallado es un representante grueso de la calzada encajonada, no una medición.
+- **Camino recto del cerro (KML de Lester, 11-oct).**
+  - **Contraste de cotas:** 55 puntos con cota de Google Earth. La diferencia Google Earth − modelo es de +1,1 m en promedio, con desvío de 1,8 m (entre −2,7 y +5,8 m): en esos puntos el relieve de 30 m coincide con Google Earth, así que el problema está en los rasgos pequeños (calzadas, soleras, caminos) y no en la forma general del terreno.
+  - **El camino:** 898 m, de 1.050,6 a 948,4 m (pendiente de 11,4 %). Termina a 22 m de la calzada baja tallada de La Plaza Sur, a 191 m del claro del campus y a 281 m de la Clínica U. de los Andes.
+  - **Cadena propuesta:** camino del cerro → La Plaza Sur (hacia el norte) → depresión frente al claro → claro → patio hundido.
+  - **Prueba mrc10:** se suma el camino tallado (5 m × 0,4 m) a la calzada de La Plaza Sur y al paso del patio; lluvia local de 35 mm/h, agua turbia (Cv 0,10).
+- **Línea de árboles (KML de Lester, 11-oct ~23:05).**
+  - **Geometría:** 14 puntos de oeste a este, ~720 m, de 1.051 a 993 m de cota, más un grupo de 6 puntos (el «tapón»). Diferencia Google Earth − modelo: +1,4 ± 3,5 m.
+  - **Ubicación clave:** el tapón queda **187 m aguas arriba de la inyección del hidrograma H1** (la salida del cauce principal al abanico) y a 572 m de Claro Arena.
+  - **Implicancia:** en el modelo, el reparto de la lluvia entre el cauce principal (H1, ~80 %) y el brazo sur (S1, ~19 %) es fijo y proporcional al área de cada cuenca, y H1 entra aguas abajo del tapón. Si los árboles y los detritos taparon esa salida, parte del caudal de H1 pudo desviarse hacia el sur (Álvaro del Portillo, campus, La Plaza Sur).
+  - v22 (38 % al brazo sur) y v23 (55 %) probaban justamente eso, pero se detuvieron antes de terminar.
+  - **Para v31:** inyectar H1 aguas arriba del tapón y representar la franja de árboles con alta resistencia, o volver a ensayar fracciones mayores hacia S1.
+- **mwq20 (12-oct ~00:20, oficina):** desborde de 20 m³/s en la parte alta de Álvaro del Portillo con agua turbia (Cv 0,10, τy ≈ 0), sin lluvia.
+  - **Resultado calculado:** 0 m en el patio del video y 0 m junto a la Biblioteca. Salen por los bordes 11.607 de los 12.000 m³. 4,2 ha con más de 5 cm. Residuo −0,000 %.
+  - **Lectura:** ni siquiera el agua turbia, la más fluida que se ensayó, lleva el desborde de la avenida al campus con este relieve. Queda descartado como fuente del patio; la fuente es la que viene desde La Plaza Sur por el claro.
+- **mw10 (12-oct ~01:00, oficina):** igual que mr27 (lluvia local de 35 mm/h), con agua turbia (Cv 0,10) y sin tallados.
+  - **Resultado calculado:** patio del video 0,147 m; Biblioteca 0,42 m. Salen por los bordes 23.370 m³. Residuo +0,75 %; ANUGA agregó 661 m³ por celdas negativas al iniciar la lluvia.
+  - **Lectura:** prácticamente igual que mr27 (Cv 0,27: 0,15 m y 0,43 m). En el patio, la concentración del fluido casi no cambia el nivel; lo que manda es el camino del agua, que en el terreno sin tallar se desvía por el lomo. Las pruebas con tallados (mrt10, mrp10, mrc10) son las que pueden subirlo.
+- **mrt10 (12-oct ~02:20, quadrab):** igual que mw10 (lluvia local de 35 mm/h, agua turbia Cv 0,10), con el **paso del claro al patio tallado** (4 m × 0,5 m).
+  - **Resultado calculado:** **patio del video 0,30 m** (sin tallar: 0,15 m); junto a la Biblioteca 0,415 m. A lo largo del paso: claro 0,05 m, mitad 0,05 m, patio 0,30 m. Residuo +0,75 %, el mismo de mw10.
+  - **Lectura:** al abrir el camino que el relieve de 30 m bloqueaba con un lomo de 0,3 m, el nivel del patio se duplica y queda **dentro del rango que muestra el video (≈0,15–0,35 m)**. Es el primer resultado compatible con la profundidad observada en el patio.
+  - Por ahora el agua viene casi solo de la lluvia sobre el propio campus: en la calle frente al claro hay apenas 5 cm. mrp10 (La Plaza Sur tallada) y mrc10/mrd10 (con el camino del cerro) dirán cuánto agrega el aporte de la avenida.
+  - Es un ajuste guiado por observaciones (video y Google Earth), no una prueba independiente.
+- **Fondo de la quebrada principal aguas arriba de su salida (12-oct ~03:30):** acumulación de flujo (D8) sobre el relieve del modelo, dentro del dominio.
+  - El cauce que llega a la salida del cauce principal viene del **este-sureste** (−33,4014 → −33,4022; −70,4967 → −70,4933), no por la línea de árboles (≈ −33,3996). El tapón queda a ~106 m de ese fondo.
+  - Dentro del dominio, la acumulación en la salida es solo 0,23 km², porque la mayor parte de la cuenca del cauce principal queda al este, fuera del terreno 2D y entra como hidrograma.
+  - Con ese relieve no se puede afirmar que la línea de árboles siga el cauce principal: podría ser una quebrada lateral del lado norte.
+  - Antes de volver a probar el tapón hay que precisar con Lester por dónde baja realmente el cauce y dónde están los árboles respecto de él.
+- **mrd10 (12-oct ~03:40, oficina): todos los rasgos del campus juntos.**
+  - **Configuración:** camino del cerro con 17 vértices, calzada baja de La Plaza Sur, entrada principal de 7 puntos y entrada al estacionamiento; agua turbia (Cv 0,10); lluvia local de 35 mm/h; dominio ampliado al sur. Se aplicaron 61.985 m³ y salen por los bordes 34.167 m³.
+  - **Residuo +1,15 %:** supera levemente el 1 %, aunque las celdas negativas agregaron solo 6 m³. Se toma con cautela.
+  - **Resultado calculado (máximo a 15 m o menos):**
+    - final del camino en La Plaza Sur: 0,24 m;
+    - claro: 0,16 m;
+    - patio del video: 0,17 m;
+    - estacionamiento: 0,08 m;
+    - junto a la Biblioteca: 0,66 m;
+    - **La Plaza Sur: más de 5 cm en el 87 % de sus puntos (máximo 0,24 m)**, frente al 12 % de mrt10 y al 15–20 % de las corridas de la ciudad.
+  - **Lectura:** con el camino y la calzada encajonada, el agua del cerro llega a La Plaza Sur y corre por toda la avenida, compatible con que Senapred la nombrara entre las calles más afectadas. Entra a la universidad por el claro, en un orden de magnitud compatible con el video, y en menor medida al estacionamiento.
+  - **Comparación con mrt10:** el patio queda en 0,17 m, menos que en mrt10 (0,30 m, con el paso recto de 2 puntos). La diferencia viene del trazado de la entrada; ambos quedan dentro del rango del video (≈0,15–0,35 m).
+  - **Alcance del resultado:** es un ajuste guiado por observaciones aportadas (video, Street View, Google Earth), no una prueba independiente.
+- **mrp10 (12-oct ~03:50, quadrab):** La Plaza Sur tallada y el paso recto al patio, **sin el camino del cerro**; lluvia local de 35 mm/h, agua turbia, dominio ampliado. Residuo +1,15 %.
+  - **Resultado calculado:** La Plaza Sur con más de 5 cm en el 81 % (máximo 0,21 m); final del camino 0,14 m; claro 0,10 m; patio 0,18 m; junto a la Biblioteca 0,67 m.
+  - **Lectura, comparando con mrd10, que sí tiene el camino:** **el encauzamiento por la calzada de La Plaza Sur explica la mayor parte de la mejora** (del 12 % al 81 % de la avenida con agua). El camino del cerro agrega algo de agua en el punto donde llega a la avenida (0,14 → 0,24 m) y en el claro (0,10 → 0,16 m).
+- **mrc10 (12-oct ~04:20, quadrab):** igual que mrd10 pero con el paso recto al patio (2 puntos) y sin el estacionamiento. Residuo +1,15 %.
+  - **Resultado calculado:** La Plaza Sur con más de 5 cm en el 87 % (máximo 0,24 m); final del camino 0,24 m; claro 0,10 m; patio 0,18 m; Biblioteca 0,66 m.
+  - **Lectura:** prácticamente igual que mrd10. Los resultados de La Plaza Sur y del patio son robustos al detalle del trazado de la entrada (2 o 7 puntos) y a incluir o no el estacionamiento.
+- **Síntesis de las microsimulaciones del campus (12-oct, madrugada):**
+  - el desborde de Álvaro del Portillo no llega al patio con ningún fluido;
+  - la lluvia local sobre el terreno sin tallar deja ~0,15 m en el patio y casi nada en La Plaza Sur;
+  - tallar el paso del claro al patio lleva el patio a 0,17–0,30 m, dentro del rango del video;
+  - tallar la calzada encajonada de La Plaza Sur moja el 81–87 % de la avenida (antes, 12–20 %);
+  - el camino del cerro agrega agua donde llega a la avenida.
+  - **Mecanismo más compatible con las observaciones:** escorrentía local de agua turbia desde el cerro y la ladera (camino, bike park, superficie quemada), encauzada hacia el norte por La Plaza Sur, que entra a la universidad por el claro y llena el patio hundido; en menor medida entra al estacionamiento.
+  - **Sigue siendo una hipótesis de ajuste:** depende de tallados guiados por Google Earth, Street View y el video, y de una lluvia de 35 mm/h durante una hora.
+- **mrd15 (12-oct ~10:50, quadrab):** igual que mrd10 (todos los rasgos del campus, agua turbia), con **15 mm/h** en vez de 35 (26.565 m³).
+  - **Resultado calculado:** La Plaza Sur con más de 5 cm en el **41 %** (máximo 0,22 m), frente al 87 % con 35 mm/h; claro 0,11 m; patio 0,12 m; estacionamiento 0,06 m; Biblioteca 0,59 m.
+  - **Balance:** residuo **+3,2 %**. Supera el 1 %, porque las celdas negativas pesan más con menos agua aplicada, así que se toma con cautela.
+  - **Lectura:** con menos de la mitad de la intensidad, el agua sigue entrando por el claro y el patio queda cerca del borde inferior del rango del video (~0,12 frente a 0,15–0,35 m). La extensión mojada de La Plaza Sur sí depende de la intensidad (41 % frente a 87 %). El mecanismo se mantiene, pero su magnitud depende del supuesto de lluvia; mrd25 y v33 (lluvia medida) completan el rango.
+- **mrd25 (12-oct ~11:20, quadrab):** igual que mrd10, con **25 mm/h**. Residuo +1,76 %.
+  - **Resultado calculado:** La Plaza Sur con más de 5 cm en el 69 % (máximo 0,23 m); claro 0,14 m; patio 0,15 m; estacionamiento 0,07 m.
+  - **Sensibilidad a la intensidad, terreno con todos los rasgos del campus y agua turbia:**
+
+| Intensidad | La Plaza Sur con más de 5 cm | Claro | Patio | Estacionamiento |
+|---|---|---|---|---|
+| 15 mm/h | 41 % | 0,11 m | 0,12 m | 0,06 m |
+| 25 mm/h | 69 % | 0,14 m | 0,15 m | 0,07 m |
+| 35 mm/h | 87 % | 0,16 m | 0,17 m | 0,08 m |
+
+  - **Lectura:** el mecanismo (La Plaza Sur → claro → patio) aparece con las tres intensidades. Los niveles en el claro y el patio cambian poco (±25 %). La extensión mojada de La Plaza Sur crece casi linealmente con la intensidad. Con una intensidad cercana a la medida (≈ 22 mm/h en 30 min, CR2), el patio queda en ~0,15 m, el borde inferior del rango del video.
+- **mrdn (12-oct ~11:40, quadrab):** igual que mrd10 (35 mm/h), con la lluvia **solo fuera de las cuencas aportantes**, como en las corridas de ciudad. Residuo +1,15 %.
+  - **Resultado calculado:** prácticamente idéntico a mrd10 (La Plaza Sur 87 %; claro 0,15 m; patio 0,17 m; estacionamiento 0,08 m).
+  - **Lectura:** **excluir la lluvia de las cuencas aportantes no explica** que v32/z32 den menos agua en el campus que las microsimulaciones (La Plaza Sur 46–49 % frente a 87 %; patio 0,07 frente a 0,17 m).
+  - **Diferencia restante más probable: la resolución de la malla.** En la ciudad, los triángulos del sector son de hasta 30 m² (≈ 8 m de lado); en las microsimulaciones, de 8 m² (≈ 4 m). Los canales tallados de 4 a 7 m de ancho quedan mal resueltos en la malla de ciudad y encauzan menos.
+  - Por eso los valores de la ciudad en el campus y en La Plaza Sur son conservadores, y la escala de detalle es la referencia para esos rasgos.
+- **mrds2 (12-oct ~11:50, quadrab):** igual que mrd10, más el aporte de las quebradas cortas del sur (S2: 5.100 m³, 4,25 m³/s) en su entrada a La Plaza Sur. Residuo +0,03 %.
+  - **Resultado calculado:** en la entrada de S2 el espesor sube de 0,17 a 0,26 m. Final del camino, claro y patio no cambian (0,24, 0,16 y 0,17 m). La Plaza Sur queda con más de 5 cm en el 81 %.
+  - **Lectura:** el aporte de S2 queda en el tramo sur, cerca de la Clínica U. de los Andes, y **no alimenta** el tramo de La Plaza Sur que llega al campus. Lo que llega al claro proviene de la lluvia local y del camino del cerro.
+- **Cierre de la serie de sensibilidad del campus (12-oct, mediodía):**
+  - el mecanismo La Plaza Sur → claro → patio aparece con 15, 25 y 35 mm/h;
+  - no depende de excluir las cuencas aportantes;
+  - no depende del aporte de S2;
+  - su magnitud en la avenida crece con la intensidad;
+  - la escala de ciudad lo subestima por la resolución de la malla.
+- **Bike park (12-oct, mediodía).**
+  - **Hasta aquí no se había aislado su efecto.** De los 39 puntos que Lester marcó en el bike park (1.066–1.281 m), solo 18 quedaban dentro del dominio de las microsimulaciones (que llegaba hasta −70,4925). Ninguno está en una cuenca aportante: en la ciudad su lluvia cae sobre la malla, pero sus pistas y terrazas no están representadas.
+  - **Prueba en curso:**
+    - **mrbc (control):** dominio ampliado al este (−70,4880) y al sur (−33,4130), terreno con los rasgos del campus.
+    - **mrbt:** lo mismo, más la pista principal del bike park tallada hasta el inicio del camino (571 m, de 1.148 a 1.051 m; 4 m × 0,4 m; trazo con los puntos de Lester).
+    - Ambas con 25 mm/h y agua turbia.
+  - **Alcance:** el modelo no representa la erosión ni el aporte de sedimento. Lo que se prueba es si las pistas encauzan más agua hacia el camino, La Plaza Sur y el campus.
+- **Bike park: mrbc (control) y mrbt (pista tallada) (12-oct ~16:30, quadrab).** Dominio ampliado al este (−70,4880) y al sur (−33,4130); 25 mm/h; agua turbia. Residuo +1,45 % en ambas.
+  - **Resultado calculado:** **prácticamente idénticos.** En los dos: La Plaza Sur con más de 5 cm en el 78 % (máximo 0,26 m); final del camino 0,26 m; claro 0,14 m; patio 0,11 m; estacionamiento 0,08–0,09 m. Las diferencias se concentran en 0,1 ha junto a la propia pista.
+  - **Lectura:**
+    1. **Tallar la pista principal del bike park no cambia** lo que llega al camino, a La Plaza Sur ni al campus: con este relieve, el agua del bike park ya drena hacia el camino.
+    2. **Incluir el área completa del bike park y la ladera alta en la lluvia sí suma agua:** frente a mrd25 (mismo terreno, dominio menor), La Plaza Sur pasa del 69 % al 78 %. El patio baja de 0,15 a 0,11 m porque el dominio y la malla cambian; queda dentro de la variabilidad.
+    3. **El efecto del bike park como fuente de sedimento** (tierra suelta en las pistas, que vuelve turbia el agua) **no se puede evaluar con este modelo**, que no simula erosión. Queda como hipótesis cualitativa, apoyada en el balance de superficies desnudas.
