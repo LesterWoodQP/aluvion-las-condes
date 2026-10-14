@@ -1,0 +1,27 @@
+\paragraph{Debris Flows and Mudflows.} A debris flow is a mixture of water and sediment whose behavior depends on the total volumetric solids concentration $\Cvt$. With $\Cvt$ between $0.20$ and $0.55$, the mixture has a yield stress $\tau_y$: it stops when the driving stress does not exceed it. Its density is $\rho_m=\rho_w+\Cvt(\rho_s-\rho_w)$, where $\rho_m$, $\rho_w$ and $\rho_s$ are the densities of the mixture, water and solids, respectively (\si{kg.m^{-3}}); $\rho_m$ ranges from \SI{1300}{kg.m^{-3}} to \SI{1900}{kg.m^{-3}}. In contrast, the rheological relationships involve the fine-matrix concentration $\Cvf$ (Section~\ref{sec:modelo}).
+
+\paragraph{Concentration and Density Ranges in the Literature.} Mud floods and hyperconcentrated flows contain between \SI{20}{\percent} and \SI{45}{\percent} sediment by volume, with averages of \SIrange{20}{35}{\percent} and peaks near \SI{45}{\percent} in mudflows \citep{obrien1988,flo2d2021}; their density ranges from about \SI{1330}{kg.m^{-3}} to \SI{1740}{kg.m^{-3}}. Above \SI{50}{\percent} by volume, the term debris flow is used \citep{costa1984,zanuttigh2007}, with solids concentrations of \SIrange{50}{80}{\percent} and densities of \SIrange{1400}{2400}{kg.m^{-3}} measured in experimental channels and natural samples \citep{iverson1997}; about \SI{2000}{kg.m^{-3}} has been estimated for dense surges observed in the field \citep{zanuttigh2007}. Table~\ref{tab:densidades} places the mud mixtures tested in this study within that context.
+
+\begin{table}[htbp]\centering\small
+\caption{Volumetric sediment concentration ($C_v$) and mixture density according to the literature, and mud mixtures tested in this study. The densities for the debris-flow threshold and the tested mud mixtures are calculated with $\rho_s=\SI{2650}{kg.m^{-3}}$; $\tau_y$ and $\eta$ are the fine-matrix yield stress and viscosity according to \citet{obrien1988}.}\label{tab:densidades}
+\begin{adjustbox}{max width=\textwidth}\begin{tabular}{lll}\toprule
+Flow or mud type & $C_v$ & $\rho_m$ (\si{kg.m^{-3}})\\\midrule
+Mud flood and hyperconcentrated flow \citep{obrien1988,flo2d2021} & 0.20--0.45 & \numrange{1330}{1740}\\
+Mudflow, typical values \citep{flo2d2021} & 0.20--0.35 (peaks of 0.45) & \numrange{1330}{1740}\\
+Debris-flow threshold \citep{costa1984,zanuttigh2007} & $\geq0.50$ & $\geq\num{1825}$\\
+Debris flow \citep{iverson1997} & 0.50--0.80 & \numrange{1400}{2400}\\\midrule
+This study: Glenwood~2b ($\tau_y=\SI{6.6}{Pa}$, $\eta=\SI{0.77}{Pa.s}$) & 0.40 & \num{1660}\\
+This study: Glenwood~2b with $C_v=0.43$ ($\tau_y\approx\SI{11}{Pa}$) & 0.43 & \num{1710}\\
+This study: Glenwood~1 ($\tau_y=\SI{29}{Pa}$, $\eta=\SI{8.8}{Pa.s}$) & 0.45 & \num{1742}\\
+\bottomrule\end{tabular}\end{adjustbox}
+\end{table}
+
+\paragraph{Choice of Mud Mixture and Rationale.} Three pieces of evidence guide the choice. According to BioBioChile, Sernageomin classified the event as a flash flood that carried a large quantity of sediment \citep{biobio2026origen}; the images from the day that were consulted are interpreted as showing a fine matrix with stones, logs and entrained vehicles, without visible boulder fronts; and reproducing the reach to Av.\ Padre Hurtado reported by La Tercera \citep{latercera2026} requires, in the model, an assumed mud mixture capable of traveling several kilometers along streets with low gradients. The model adopts a range between the upper end of mudflows and the debris-flow threshold. The reference mud mixture (Glenwood~2b, $C_v=0.40$) is within that range; in the simulations, a thicker one (Glenwood~1, $C_v=0.45$) stops before Padre Hurtado, whereas the reference mixture extends beyond the official affected area. Because yield stress increases exponentially with concentration \citep{obrien1988}, a small change---from 0.40 to 0.43---nearly doubles $\tau_y$; this is why that intermediate value was tested, also representing the additional resistance of the coarse load (stones, logs and debris) not included in the fine-matrix rheology.
+
+\paragraph{Shallow Water with Rheology.} When flow thickness is small relative to its extent, the depth-integrated Navier--Stokes equations reduce to the two-dimensional Saint-Venant equations. The mixture rheology enters as a friction slope $S_f$, defined in Equation~\eqref{eq:friccion}. The quadratic closure of \citet{obrien1988} and \citet{obrien1993}, used by FLO-2D \citep{flo2d2021}, sums three terms: yield stress, viscosity, and turbulence plus grain collisions.
+
+\paragraph{Urban Representation.} In urban areas, flow is channeled along streets and diverted by buildings. These can be represented as raised blocks, impermeable holes or through porosity; the choice affects predictive capability \citep{schubert2012}.
+
+\paragraph{Mobilizable Volume.} Debris-flow volume can be estimated from a rainfall--runoff balance. For recently burned catchments, empirical models also relate it to \SI{15}{min} rainfall intensity, burned area and relief \citep{gartner2014}. Peak discharge is empirically related to volume \citep{mizuyama1992}.
+
+\paragraph{Calibration with Qualitative Observations.} When only the extent of the affected area is known, different combinations of volume, discharge and resistance produce similar footprints, i.e., equifinality occurs. The generalized likelihood uncertainty estimation approach (GLUE; \citealp{beven1992}) retains all simulations that meet the acceptance criteria and reporting the envelope of their predictions instead of a single best fit.

@@ -1,0 +1,191 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,siunitx,xcolor,caption,array,microtype}
+\usepackage{xurl}
+\usepackage{adjustbox}
+\usepackage[colorlinks,linkcolor=teal,citecolor=teal,urlcolor=teal,pdftitle={Dwellings and population exposed to the San Carlos de Apoquindo debris flow},pdfauthor={Lester Wood},pdflang={en}]{hyperref}
+\usepackage[natbibapa]{apacite}
+\renewcommand{\doiprefix}{https://doi.org/\ignorespaces}
+\AtBeginDocument{\renewcommand{\BRetrievedFrom}{}}
+\sisetup{output-decimal-marker={.},group-separator={,},group-minimum-digits=4,group-digits=integer}
+\captionsetup{font=small,labelfont=bf}
+\graphicspath{{figs/}}
+
+\title{Dwellings and population exposed to the San Carlos de Apoquindo debris flow\\(Las Condes, 8 October 2026): estimation from\\simulated propagation, census data and vulnerability curves}
+\author{Lester Wood\thanks{Independent study; document derived from \citet{wood2026}. Content licensed under CC BY-NC-SA 4.0. Terms and conditions: \url{https://aluvion.hirely.cl/terminos.html}.}}
+\date{Preliminary version of 11 October 2026 (full city; corrected method)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent\textbf{Scope.} Independent sub-study, not official, based exclusively on public data. Its results are calculated under assumptions and require independent scientific validation. It does not evaluate real works or attribute responsibility. This version replaces that of 9 October, which used the first model generation (1,103 buildings).\par\medskip
+\noindent Exposure of buildings, dwellings and the census population to the simulated propagation of the San Carlos de Apoquindo debris flow was calculated, together with the expected relative loss in buildings. For this purpose, the propagation footprints from the main study, with all 42,018 buildings represented, were spatially overlaid with building footprints and the 1,210 census units from the 2017 Census. The method incorporates corrections from an automated review: dissolved census units, exact areal weighting, actual distance to the footprint, curves used only within their domains, and aggregate loss instead of ``destroyed buildings.''
+
+In the selected hypothesis, 3,950 buildings lie within 8~m of the area with more than \SI{5}{cm} of simulated mud. Dwellings allocated to it number 2,221 by areal weighting and 5,827 by dasymetric allocation, with a range of 1,900 to 6,551 in the sensitivity analysis. Senapred reported 2,361 affected dwellings in its preliminary assessment and 2,056 in the later one. With vulnerability curves and maximum simulated thickness as intensity, between 366 and 593 dwellings are allocated to buildings with an expected loss of at least 0.2, several times the 75 with major damage in the preliminary assessment and the 96 destroyed or with major damage in the later one.
+
+Two limitations condition these figures. Propagation did not pass the test using held-out observations in the main study: it leaves substantial parts of the official affected area without mud and extends beyond it. Furthermore, with buildings represented as blocks, mud concentrates in streets at high thicknesses that the curves translate into damage, although it did not necessarily enter the dwellings. The figures are therefore orders of magnitude conditional on the model, not an estimate of the damage that occurred.
+\end{abstract}
+{\small\noindent English translation of the Spanish original (11 October 2026); in case of discrepancy, the Spanish version prevails. Figures keep their Spanish labels.\par}
+
+\section{Introduction and problem statement}
+The numerical reconstruction of the 8 October 2026 debris flow \citep{wood2026} estimates where the mud traveled and at what thickness and velocity. For response and recovery, the operational question is different: how many dwellings and people may have been exposed, at what intensity, and how many dwellings may have suffered substantial damage. The public figures are field assessments \citep{senapred2026latribuna,cnn2026balance,latercera2026senapred}, without a published spatial distribution by dwelling. The official emergency viewer publishes the affected area and 2,266 affected properties \citep{bbnn2026visor}. This work proposes a reproducible estimate from public data, quantifies its sensitivity to assumptions and compares it descriptively with those figures.
+
+\section{Theoretical framework}
+\paragraph{Hazard, exposure and vulnerability.} In United Nations terminology \citep{undrr2016}, \emph{exposure} is the situation of people, infrastructure and assets located in hazard-prone areas, and \emph{vulnerability} is the susceptibility of those elements to damage. Risk results from combining hazard (here, mudflow intensity), exposure and vulnerability. This work quantifies the latter two based on the simulated hazard.
+\paragraph{Spatial allocation of population.} Censuses provide population by administrative unit---here, blocks---rather than by building. \emph{Areal weighting} distributes each unit's population in proportion to the intersected area, assuming uniform density within it. \emph{Dasymetric} methods use auxiliary information, such as land cover or building footprints, to concentrate population where it is actually located; they reduce areal-weighting error when the unit contains uninhabited areas \citep{eicher2001,mennis2003}.
+\paragraph{Physical vulnerability to debris flows.} Vulnerability curves relate a measure of process intensity to the degree of loss $V\in[0,1]$, i.e., repair cost divided by building value. For debris flows, the most commonly used intensity is deposit height next to the building. \citet{fuchs2007} fitted a second-degree polynomial using data from the 16 August 1997 event in Wartschenbach (Austria), for masonry and concrete buildings:
+\begin{equation}
+V_F(h)=0.11\,h^2-0.02\,h,\qquad h<\SI{2.5}{m},\qquad R^2=0.86. \label{eq:fuchs}
+\end{equation}
+\citet{papathoma2012} proposed a Weibull function using 51 buildings damaged in the 1987 event in South Tyrol (Italy):
+\begin{equation}
+V_P(h)=1-\exp\!\left[-0.270\left(\frac{h+1.287}{1.287}-1\right)^{2.974}\right],\qquad R^2=0.835. \label{eq:pk}
+\end{equation}
+Both curves have small values for thicknesses below \SI{0.5}{m} and increase rapidly above \SI{1}{m}, when mud overtops openings and enters buildings.
+
+\section{Questions and objectives}
+The previous version proposed two hypotheses of agreement with official assessments. Those hypotheses were formulated with knowledge of the assessments, and a factor of two chosen in that way does not constitute a test. They are therefore replaced by two exploratory questions:
+\begin{description}
+\item[P1] What is the order of magnitude of dwellings allocated to the area with simulated mud relative to reported affected dwellings, and how much does that order depend on the allocation method?
+\item[P2] What is the order of magnitude of dwellings with an expected loss of at least 0.2 relative to those reported as having major damage or being destroyed, and which assumptions explain the difference?
+\end{description}
+\noindent\textbf{Objectives:}
+\begin{enumerate}
+\item count exposed buildings by thickness class;
+\item estimate exposed dwellings and population using two allocation methods;
+\item estimate expected relative loss using two vulnerability curves;
+\item quantify sensitivity to assumptions;
+\item compare descriptively with official figures.
+\end{enumerate}
+
+\section{Methodology}
+\subsection{Data}
+\begin{table}[htbp]\centering\small
+\caption{Data used.}\label{tab:datos}
+\begin{tabular}{p{.2\textwidth}p{.42\textwidth}p{.3\textwidth}}\toprule
+Data & Source & Use\\\midrule
+Simulated propagation & Maximum thickness per cell in seven scenarios from the main study \citep{wood2026}, six with all 42,018 buildings represented & Intensity $h$ next to each building\\
+Building footprints & Overture Maps \citep{overture2026}: 42,018 footprints (OSM, Microsoft and Google) & Physical exposure and dasymetric allocation\\
+2017 Census & INE \citep{ine2017manzanas}: 1,221 records corresponding to 1,210 census units, with 62,695 dwellings and 178,470 people & Dwellings and people per unit\\
+Official figures & Senapred and Municipalidad de Las Condes \citep{senapred2026latribuna,cnn2026balance,latercera2026senapred}; emergency viewer \citep{bbnn2026visor} & Descriptive comparison (not used for calibration)\\
+Tool & Hirely Broker territorial analysis procedure \citep{hirelybroker2026} & Source selection and spatial overlay\\
+\bottomrule\end{tabular}\end{table}
+
+\paragraph{Declaration of interest.} Hirely Broker is the author's own product. Its data were obtained from the same public source used by the tool. No owner information or property tax identifiers were used: the analysis is exclusively aggregated.
+
+\paragraph{Scenarios.} Seven scenarios are used:
+\begin{itemize}
+\item the selected hypothesis (z02: main channel, southern branches and hillside rainfall, \SI{300000}{m^3});
+\item the same hypothesis with greater roughness outside streets (v27);
+\item the main channel only, with \num{300000} and \SI{150000}{m^3} (v01 and v07);
+\item two hypothetical scenarios with Bulnes Correa culvert capacity set to 30 and \SI{100}{m^3/s} (v17 and v10), which do not describe the real structure;
+\item for reference, the scenario selected in the first model generation (e04).
+\end{itemize}
+
+\subsection{Census units}
+Some census units consist of several geometries with the same total dwellings and people, particularly the ``901'' groupings. They were dissolved by identifier so that the total is counted only once, and their complete parts were retrieved from the INE service. That query was recorded in the evidence log. Nine units lie only partly within the simulation domain; their portions outside it are treated as having no mud, which may slightly underestimate their exposure.
+
+\subsection{Intensity next to each building}
+For each building $b$, intensity is taken as the maximum simulated thickness in cells at a distance $r$ or less from its footprint:
+\begin{equation}
+h_b=\max_{\,i:\ d(\mathbf x_i,\,\text{footprint}_b)\le r} h_{\max,i},
+\end{equation}
+with $r=\SI{8}{m}$ in the base case, and 4 and \SI{16}{m} in the sensitivity analysis. Maximum flow thickness in the adjacent street is an upper bound on deposit thickness next to the building, which is the intensity used by the vulnerability curves.
+
+\subsection{Exposed dwellings and people}
+\paragraph{(A) Exact areal weighting.} The fraction $f_j(h^*)$ of each unit $j$ with thickness above the threshold is calculated on a \SI{4}{m} grid, with thickness linearly interpolated from the mesh:
+\begin{equation}
+V^{A}(h^*)=\sum_j f_j(h^*)\,V_j,\qquad P^{A}(h^*)=\sum_j f_j(h^*)\,P_j .
+\end{equation}
+\paragraph{(B) Dasymetric allocation.} Each unit's dwellings are distributed among footprints of 30 to \SI{2000}{m^2}, in proportion to the footprint area falling within the unit:
+\begin{equation}
+v_b=\sum_j V_j\frac{|A_b\cap j|}{\sum_{b'}|A_{b'}\cap j|},\qquad V^{B}(h^*)=\sum_b v_b\,\mathbf 1[h_b>h^*],
+\end{equation}
+and analogously for people. The 18 units without eligible footprints (1,610 dwellings) are allocated by areal weighting; this alternative is explicitly declared.
+
+\subsection{Expected relative loss}
+For each building, $V_F(h_b)$ and $V_P(h_b)$ are evaluated (Equations~\ref{eq:fuchs} and~\ref{eq:pk}). The Fuchs curve is used only within its domain ($h<\SI{2.5}{m}$), clipped to zero where the polynomial is negative ($h<\SI{0.18}{m}$), and buildings with $h\geq\SI{2.5}{m}$ are counted separately. The following are reported:
+\begin{itemize}
+\item aggregate relative loss $\Sigma V$, which is not a count of destroyed buildings;
+\item the number of buildings with $V\geq0.2$;
+\item dwellings allocated to those buildings.
+\end{itemize}
+
+\subsection{Sensitivity and comparison}
+Sensitivity is evaluated by varying the threshold ($h^*$ = 2, 5, 10 and \SI{30}{cm}), distance ($r$ = 4, 8 and \SI{16}{m}), method (A or B) and scenario. Comparison with official figures is descriptive. ``Exposed'' means within the area with simulated mud; ``affected'' is the administrative category in the cited assessment. The two categories are not assumed to be equivalent.
+
+\subsection{Methodology review}
+The method underwent an automated review using a second language model (gpt-6-astra, Codex), documented by the author. This does not constitute an independent scientific review. This version incorporates its corrections; the report is published alongside the document.
+
+\section{Results}
+\input{tabla_exposicion}
+\paragraph{Exposure by scenario.} In the selected hypothesis (z02), 3,950 buildings have more than \SI{5}{cm} of simulated mud within \SI{8}{m} of their footprints. Allocated dwellings number 2,221 by areal weighting and 5,827 by dasymetric allocation, and people number 7,052 and 17,883 (Table~\ref{tab:exposicion}). With the main channel alone, the figure falls to 1,589--3,813 dwellings, and with \SI{150000}{m^3}, to 669--1,429. In the hypothetical culvert scenarios, exposure decreases as assumed capacity increases. With the full city, the two methods diverge more than in the first model generation: method B allocates 2.6 times as many dwellings as A, compared with about 1.3 times in the first model generation. Because buildings are blocks in the model, mud stays in the streets, which lie largely outside the census polygons. Areal weighting therefore sees a small wetted fraction of each unit, while footprint-based allocation counts entire buildings along adjacent frontages.
+
+\input{tabla_sensibilidad}
+\paragraph{Sensitivity.} With thresholds of 5 and \SI{10}{cm}, dwellings in the selected hypothesis range from 1,900 to 6,551 depending on method and distance (Table~\ref{tab:sensibilidad}). Method has more influence than distance or threshold. With \SI{30}{cm}, between 1,045 and 5,011 remain.
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{vulnerabilidad}
+\caption{Left: vulnerability curves from \citet{fuchs2007} (only within its domain) and \citet{papathoma2012}. Right: maximum simulated thickness next to exposed buildings, for the selected hypothesis with the full city (z02) and the first model generation (e04), on a logarithmic scale.}\label{fig:vulnerabilidad}
+\end{figure}
+
+\input{tabla_danio}
+\paragraph{Expected loss.} With the full city, thicknesses next to buildings are much greater than in the first model generation: 599 buildings have more than \SI{1}{m}, compared with 96 previously (Figure~\ref{fig:vulnerabilidad}). In the selected hypothesis:
+\begin{itemize}
+\item aggregate relative loss is 187 with the Fuchs curve and 276 with the Papathoma-Köhle curve;
+\item between 271 and 425 buildings have $V\geq0.2$, with 366 to 593 dwellings allocated;
+\item 15 buildings fall outside the Fuchs domain (Table~\ref{tab:danio}).
+\end{itemize}
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\textwidth]{manzanas}
+\caption{Exposed dwellings by census unit (2017 Census, areal weighting) with more than \SI{5}{cm} of simulated mud, and official affected area \citep{bbnn2026visor} as a dashed red line. (a) Selected hypothesis. (b) Hypothetical scenario with Bulnes Correa culvert capacity set to \SI{30}{m^3/s}.}\label{fig:manzanas}
+\end{figure}
+
+\paragraph{Descriptive comparison with official figures.}
+\begin{table}[htbp]\centering\small
+\caption{Descriptive comparison with official assessments (selected hypothesis, z02). Calculated and administrative categories are not equivalent.}\label{tab:contraste}
+\begin{tabular}{p{.22\textwidth}p{.34\textwidth}p{.34\textwidth}}\toprule
+Indicator & Official figure & This study (calculated)\\\midrule
+Affected dwellings & Senapred, preliminary assessment: 2,361 (75 with major damage and 2,286 with minor damage); later assessment: 56 destroyed, 40 with major damage and 1,960 with minor damage; municipality: 1,960--2,015 & 2,221 (A) and 5,827 (B) above \SI{5}{cm}; sensitivity: 1,900--6,551\\
+Severe damage & Senapred: 75 with major damage (preliminary); 56 destroyed and 40 with major damage (later); municipality: 55 uninhabitable & 366--593 dwellings in buildings with $V\geq0.2$; 271--425 buildings with $V\geq0.2$\\
+Affected properties & Emergency viewer: 2,266 affected properties (91~\% within the affected area) & The main study wets 717 of them (32~\%)\\
+Streets & Municipality: \SI{15}{km} of damaged avenues & \SI{19.5}{km} of streets with mud, \SI{16.5}{km} of primary to tertiary roads\\
+People & Senapred: 384 directly affected and more than 1,200 rescued (later) & 7,052--17,883 census residents allocated to the area (different concept: exposure)\\
+\bottomrule\end{tabular}\end{table}
+\noindent Regarding question P1, areal weighting yields the same order of magnitude as reported affected dwellings, while dasymetric allocation is more than twice as high. Neither method is validated so as to allow a choice between them. Regarding question P2, dwellings with substantial expected loss exceed those reported with major damage or destroyed by several times.
+
+\section{Discussion}
+\paragraph{Why expected loss is high.} The curves are applied to maximum flow thickness in the adjacent street, not to the deposit next to each dwelling. With buildings represented as impermeable blocks, mud does not enter lots and concentrates in streets at 1 to \SI{2}{m}; in reality, some mud entered front gardens and ground floors, and some stopped at gates and walls. Furthermore, the curves come from Alpine events with different velocities and building types, and do not consider velocity or pressure. Damage figures therefore serve as an upper bound conditional on the model, not as an estimate of the damage that occurred.
+\paragraph{Propagation inherits a spatial error.} In the main study, the test using held-out observations had an unfavorable outcome: the selected hypothesis places mud next to 19 of 49 officially affected facilities. The model wets about 20~\% of the official area's surface and 32~\% of its affected properties, and extends beyond it. Calculated exposure therefore combines dwellings outside the official area that the model wets and dwellings inside it that it does not wet. Areal weighting being close to the official total does not mean that it identifies the same dwellings.
+\paragraph{What changed relative to the previous version.} The first model generation, with 1,103 buildings, spread mud in thin layers over a wide area. Its exposure figures were therefore close to the assessments through a coincidence of orders of magnitude. The full city channels the flow, increases depths in the streets and separates the two allocation methods. The descriptive agreement of the previous version does not hold and should not be cited as evidence.
+\paragraph{Assumptions and biases.}
+\begin{itemize}
+\item The 2017 Census does not reflect subsequent growth.
+\item Automatically detected footprints may merge or split buildings, and dasymetric allocation does not distinguish residential from nonresidential uses.
+\item The 18 units without eligible footprints are allocated by area.
+\item Damage to contents, vehicles and public infrastructure is not estimated.
+\end{itemize}
+
+\section{Conclusions}
+\begin{enumerate}
+\item With the full city and the selected hypothesis, between 1,900 and 6,551 census dwellings are allocated to the area with simulated mud, depending on method and assumptions. The allocation method is the largest source of variation.
+\item Expected loss calculated using vulnerability curves exceeds dwellings reported with major damage or destroyed by several times. This is attributed mainly to using street flow thickness as intensity and representing buildings as blocks. It should be read as an upper bound conditional on the model.
+\item Propagation does not reproduce the spatial distribution of official impacts (unfavorable held-out test). These figures therefore neither identify affected dwellings nor serve to allocate aid.
+\item The method is reproducible with public data. The next steps are an intensity measure next to the dwelling (deposit or entry into the lot), a building representation allowing mud entry, and comparison with an independent inventory of damage by dwelling.
+\end{enumerate}
+
+\section*{Data and code availability}
+The programs and aggregate results are on the study's data page (\url{https://aluvion.hirely.cl/datos.html}):
+\begin{itemize}
+\item \texttt{exposicion3.py} and \texttt{figura\_exposicion3.py};
+\item \texttt{res/exposicion3\_20261011.json}.
+\end{itemize}
+Only aggregates are published. The previous version, based on the first model generation, is preserved at \url{https://aluvion.hirely.cl/paper/versiones/}.
+
+\bibliographystyle{apacite}
+\bibliography{referencias}
+\end{document}

@@ -1,0 +1,9 @@
+\paragraph{Stopping.} On a plane with slope $S_0=0.05$, with $\tau_y=\SI{100}{Pa}$ and $\rho_m=\SI{1700}{kg.m^{-3}}$, depth-integrated Bingham-fluid theory predicts a static thickness $h_c=\tau_y/(\rho_m gS_0)=\SI{0.1200}{m}$. A block of mixture is released and the simulated deposit thickness is compared with the theoretical static thickness; it is also verified that momentum falls to zero.
+
+\paragraph{Restart.} Mixture is added upstream of the stopped deposit, and it is verified that the deposit restarts, stops again and conserves volume.
+
+\paragraph{Temporal Convergence.} The stopping test is repeated with Courant--Friedrichs--Lewy (CFL) numbers of 1, 0.5, 0.25, 0.1 and 0.05 using the DE1 scheme, and with the DE0 scheme for comparison; the final front reach is compared and the order of convergence relative to the extrapolated limit is estimated.
+
+\paragraph{Volume Balance.} In each simulation, the cumulative volume supplied by the hydrograph is compared with the volume present in the mesh.
+
+The results of these tests are presented in Section~\ref{sec:res-verif}.

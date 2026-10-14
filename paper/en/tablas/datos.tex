@@ -1,0 +1,11 @@
+\begin{table}[htbp]\centering\small
+\caption{Inputs to the first model generation; the current version adds Overture Maps building footprints, the official hydrographic network (Geoportal de Chile), the CR2 analysis, Open-Meteo, Sentinel-2 and the official affected area from IDE Chile.}\label{tab:datos}
+\begin{tabular}{p{.16\textwidth}p{.28\textwidth}p{.21\textwidth}p{.21\textwidth}}\toprule
+Data & Source & Resolution & Use\\\midrule
+Bare-earth terrain & FABDEM V1-2 \citep{fabdem2023} & 1 arc second ($\approx$\SI{30}{m}), resampled to \SI{4}{m} & Ground elevations and catchments\\
+Surface & Copernicus GLO-30 \citep{copernicus_glo30} & \SI{30}{m} & Height of large buildings\\
+Alternative terrain & SPOT 2014 photogrammetry \citep{hussain2021} & 0.07 points/m$^2$ ($\approx$\SI{8}{}--\SI{10}{m}) & Sensitivity test\\
+Buildings, streets, channels & OpenStreetMap \citep{osm2026} & vector & 1,103 blocks, streets, channel alignment\\
+Rainfall & DMC, station 330019 \citep{dmc2026} & hourly and synoptic & Prior volume estimate\\
+Observations & Press, municipality, Senapred, Sernageomin & point-based & Evaluation (not a model input)\\
+\bottomrule\end{tabular}\end{table}

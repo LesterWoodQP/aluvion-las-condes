@@ -1,0 +1,29 @@
+Every consultation of an external source was archived in an evidence log: UTC date and time, source, extracted data, page capture and SHA-256 hash. This records what information was available at the time of modeling and allows the prediction to be compared with subsequent observations. Observations were classified according to their physical nature, as recommended in the technical review (see the closing statement on the use of AI tools):
+\begin{itemize}
+\item \textbf{Reported presence:} streets along which the press reports that the flow ``descended'': Camino El Alba, General Blanche and Quebrada Honda \citep{latercera2026}; also Av.\ La Plaza, where T13 broadcast recordings of vehicles being swept away \citep{t13_2026vehiculos}.
+\item \textbf{Municipal closures:} Mons.\ Álvaro del Portillo and Av.\ San Carlos de Apoquindo \citep{eldinamo2026}. These may reflect precautionary measures or cleanup.
+\item \textbf{Municipal operational perimeter:} Camino El Alba to the north, La Plaza to the east, Quebrada Honda to the south and Padre Hurtado to the west \citep{latercera2026}. It may include dry areas.
+\item \textbf{Reach:} to the Pueblito Los Dominicos area and Av.\ Padre Hurtado \citep{latercera2026}.
+\item \textbf{Sites with reported flow presence:} the emergency department of Clínica UC Christus, with about \SI{1}{m} of mud \citep{cadena3_2026}; Clínica Universidad de los Andes, at its entrances and outside according to the clinic itself \citep{radiolasenal2026}; the Duoc UC campus \citep{biobio2026duoc}; and the Universidad de los Andes campus, whose community was stranded \citep{cooperativa2026}. Servicio Nacional de Prevención y Respuesta ante Desastres (Senapred) includes Av.\ La Plaza Sur among the affected areas \citep{eldinamo2026}.
+\item \textbf{Low-reliability evidence, used only to formulate hypotheses:} an image circulated on social media marking several flow sources consistent with the mapped channels.
+\end{itemize}
+Rainfall data come from automatic station 330019 (Eulogio Sánchez, Tobalaba) of Dirección Meteorológica de Chile \citeyearpar{dmc2026}: \SI{34.8}{mm} on 8 October, \SI{13.8}{mm} between 15:00 and 21:00 local time, and, between 6 and 7 October, \SI{6}{h} reports totaling \SI{131.2}{mm}, with a maximum of \SI{49.2}{mm} in \SI{6}{h} (an earlier version of this text incorrectly attributed those \SI{49.2}{mm} to the two days). Press-search results recorded in the evidence log quoted figures of \SIrange{16}{20}{mm} in about one hour, with no station identified; these are unverified reported figures.
+
+\paragraph{Hydrometeorological Information Obtained After Screening.} The mayor reported \SI{144}{mm} of accumulated rainfall in the area, \SI{20}{mm} of it on the day of the event, with saturated soil \citep{interferencia2026}. The analysis by Centro de Ciencia del Clima y la Resiliencia \citep{cr2_2026} records \SI{42.8}{mm} at Río Molina station on 8 October, \SI{31.6}{mm} between 15:00 and 19:00 and a maximum of \SI{10.9}{mm} in \SI{30}{min}, with the \SI{0}{\celsius} isotherm near \SI{2800}{m} according to the Cerro Tres Puntas observatory. The same analysis delineates the catchment between \SI{929}{m} and \SI{2355}{m} (about \SI{10.6}{km^2}) and estimates burn severity using the Sentinel-2 differenced normalized burn ratio (dNBR). The Open-Meteo historical hourly forecast \citep{openmeteo2023} places the isotherm between \SI{2700}{m} and \SI{2770}{m} between 14:00 and 17:00 on 8 October, and gives an accumulated total of about \SI{150}{mm} over the catchment between 2 and 8 October. This study’s interpretation of Sentinel-2 images \citep{drusch2012} from 21 September detected no snow in the catchment (calculated normalized difference snow index below 0.4 throughout the cloud-free portion; the white areas were interpreted as thin clouds), and this study’s analysis of those from 9 October estimates \SI{0.09}{km^2} of fresh snow, all above \SI{2000}{m}. The high Andes did have substantial snow cover: Valle Nevado reported about \SI{1.2}{m} of fresh snow on 6 and 7 October \citep{emol2026valle}, above \SI{3000}{m}.
+
+
+\paragraph{Comparison with the CR2 Analysis.} Table~\ref{tab:cr2} compares the catchment and forcing data in this study with those in the CR2 analysis \citep{cr2_2026}, published after the hypotheses were formulated.
+\begin{table}[htbp]\centering\small
+\caption{Comparison of catchment and forcing data with the analysis by Centro de Ciencia del Clima y la Resiliencia (CR2) \citep{cr2_2026}. The difference in area and minimum elevation is due to the outlet location: CR2 places the catchment outlet farther downstream, in the linear park; this study places it where each channel enters the urban development.}\label{tab:cr2}
+\begin{tabular}{p{0.24\textwidth}p{0.3\textwidth}p{0.36\textwidth}}\toprule
+Variable & CR2 & This study (data and estimates)\\\midrule
+Maximum catchment elevation & \SI{2355}{m} & \SI{2355}{m} (FABDEM and Copernicus GLO-30)\\
+Minimum elevation & \SI{929}{m} & \SIrange{973}{1081}{m} (outlets H1, S1, S2)\\
+Area & \SI{10.6}{km^2} & \SI{10.1}{km^2}\\
+\SI{0}{\celsius} isotherm & $\sim\SI{2800}{m}$ (Cerro Tres Puntas) & \SIrange{2700}{2770}{m} between 14:00 and 17:00 (Open-Meteo)\\
+Rainfall on 8 October & \SI{42.8}{mm} at Río Molina & same data\\
+Fire & Sentinel-2 dNBR according to CR2 & dNBR (23-Dec-2025 and 6-Feb-2026): \SI{82}{\percent} with a burn signal and \SI{10}{\percent} moderate-high/high severity; used in the balance and in Gartner (Section~\ref{sec:res-incendio})\\
+\bottomrule\end{tabular}
+\end{table}
+
+\paragraph{Later Assessments.} According to La Tercera, Senapred updated its assessment to 56 destroyed homes, 40 with major damage, 1,960 with minor damage, 384 people directly affected and more than 1,200 rescued \citep{latercera2026senapred}.

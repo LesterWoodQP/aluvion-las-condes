@@ -1,0 +1,22 @@
+\begin{figure}[htbp]\centering
+\begin{tikzpicture}[font=\footnotesize, x=36mm, y=-16mm,
+  caja/.style={draw, rounded corners=2pt, align=center, minimum height=11mm, text width=30mm, fill=#1}, caja/.default=white,
+  flecha/.style={-{Stealth[length=2mm]}, thick}]
+\node[caja=blue!8] (reg) at (0,0) {Evidence log\\(date, source,\\SHA-256 hash)};
+\node[caja=blue!8] (obs) at (1,0) {Public evidence\\(press, municipality,\\Senapred, Sernageomin)};
+\node[caja=blue!8] (dat) at (2,0) {Open data\\(terrain, buildings,\\streets, channels, rain)};
+\node[caja=orange!12] (hip) at (1,1) {Initial H1--H3;\\exploratory H4--H5;\\prior criteria};
+\node[caja=orange!12] (ter) at (2,1) {Computational surface\\(terrain, blocks,\\streets, channel)};
+\node[caja=orange!12] (vol) at (3,1) {Prior volume estimate\\(rainfall × catchment;\\burned catchments)};
+\node[caja=red!10] (ver) at (1,2) {Numerical verification\\(stopping, balance,\\convergence)};
+\node[caja=red!10] (sim) at (2,2) {2D simulation:\\shallow water +\\mud rheology};
+\node[caja=red!10] (rev) at (3,2) {Automated AI review\\(physics A1--A2;\\format and writing)};
+\node[caja=green!12] (sat) at (1,3) {Independent\\satellite comparison\\(untested)};
+\node[caja=green!12] (cal) at (2,3) {Evaluation against\\observations\\(streets and sites)};
+\node[caja=green!12] (res) at (3,3) {Results: flow path,\\indicators, critical\\node, confidence};
+\draw[flecha, dashed] (reg) -- (obs); \draw[flecha] (obs) -- (hip); \draw[flecha] (dat) -- (ter); \draw[flecha] (dat.south east) -- (vol.north west);
+\draw[flecha] (hip.south east) -- (sim.north west); \draw[flecha] (ter) -- (sim); \draw[flecha] (vol.south west) -- (sim.north east);
+\draw[flecha] (ver) -- (sim); \draw[flecha] (rev) -- (sim); \draw[flecha] (sim) -- (cal); \draw[flecha, dashed] (sat) -- (cal); \draw[flecha] (cal) -- (res);
+\end{tikzpicture}
+\caption{Study workflow. Blue: inputs; orange: preparation; red: computation and checks; green: evaluation and results. The dashed arrow from the satellite comparison indicates that it was not performed: independent validation of subsequent fits remains untested (Section~\ref{sec:conclusiones}). The held-out facilities test was performed once and had an unfavorable outcome (19/49; Section~\ref{sec:res-ronda}).}\label{fig:flujo}
+\end{figure}

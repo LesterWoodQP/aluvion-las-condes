@@ -1,0 +1,10 @@
+Calibration follows the approach of retaining simulations that meet the acceptance criteria \citep{beven1992}. The criteria were specified before examining the results:
+\begin{enumerate}
+\item fraction $R$ of points on streets with reported flow presence at which $h_\mathrm{max}>h^*$, with $R\ge0.6$;
+\item fraction $R_\mathrm{sit}$ of the four sites with reported flow presence that the flow reaches within \SI{40}{m}, with $R_\mathrm{sit}\ge3/4$;
+\item arrival within \SI{200}{m} of the intersection of General Blanche and Padre Hurtado;
+\item fraction $F_\mathrm{per}$ of the simulated affected area falling within the municipal perimeter expanded by \SI{100}{m}, with $F_\mathrm{per}\ge0.5$. Since 11 October, when the official affected area was published \citep{bbnn2026visor}, $F_\mathrm{per}$ has been calculated using that polygon and only for simulated mud in urban areas (within \SI{40}{m} of a building), to avoid counting hills wetted by rainfall.
+\end{enumerate}
+The threshold is $h^*=\SI{5}{cm}$, with sensitivity tests for \SI{2}{cm} and \SI{10}{cm}. Each acceptable simulation receives an informal weight $L=R\,R_\mathrm{sit}\,F_\mathrm{per}$. Streets closed by the municipality are used only as context, because a closure may be precautionary. The Jaccard index relative to the perimeter is reported descriptively, since the perimeter is operational rather than a mapped footprint.
+
+The sweep covers hypotheses H1, H2 and H3; mixture volumes of \SI{80000}{\metre\cubed}, \SI{150000}{\metre\cubed} and \SI{300000}{\metre\cubed}; peak discharges of \SI{100}{\metre\cubed\per\second} and \SI{250}{\metre\cubed\per\second}; and three rheological samples (Glenwood~1, Glenwood~2b and Aspen~2). Screening used CFL~1. Checks with a fine time step (z01, z02, z26, z29 and z32) and the test with a fine mesh on campus (m36) were completed, as described in Sections~\ref{sec:res-verif} and~\ref{sec:res-posterior}.

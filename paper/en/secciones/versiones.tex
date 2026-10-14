@@ -1,0 +1,34 @@
+\section*{Version Control}\phantomsection\label{sec:versiones}
+\begin{itemize}
+\item \textbf{9 October 2026 (first model generation):} previous terrain with 1,103 buildings; screening of hypotheses H1--H4, carved linear-park channel and initial culvert tests (runs d, e, f, g, k and s). Its results for assumed culvert capacities were superseded by the version with the full city.
+\item \textbf{10 October:} full city with 42,018 buildings and expanded domain (v01--v03, v05--v09, z01); volume with saturated soil, isotherm and Sentinel-2; comparison with the press.
+\item \textbf{10 and 11 October:} model sink representing the culvert and capturing the entire cross section (v10, v11, v17, v18), Quebrada Honda and southern branch according to the official hydrographic network (v14, v15, v19--v21), fine-time-step check of the main hypothesis (z02).
+\item \textbf{11 October, morning:} official affected area from IDE Chile as reference, exploratory compatibility index, maximum catchment elevation corrected in the text (\SI{2355}{m}), citations to the original CR2 analysis, distinction between observed and calculated results and hypothetical scenarios, and appendix of fact sheets.
+\item \textbf{11 October, afternoon:} tests v25--v29, campus micro-simulations, protocol amendment~1 (tie-breaking rule) and test using held-out observations (unfavorable).
+\item \textbf{12 October, early morning:} tests following the held-out test: porous houses (v26, v30, z26), verified more fluid flow on the lower hillside (z29), concentration quadrature (q1--q5), campus and La Plaza Sur micro-simulations with observations supplied by the author (mw10, mwq20, mrt10, mrp10, mrc10, mrd10) and integrated hypothesis (v32, verified with a fine time step in z32; v31 discarded), rainfall sensitivity (v33 with measured rainfall; micro-simulations at \SI{15}{mm/h} and \SI{25}{mm/h}; mrdn, mrds2).
+\item \textbf{12 and 13 October (version 13a):}
+\begin{itemize}
+\item new sections: account of the events and explanation of each hypothesis;
+\item Río Molina rainfall at \SI{30}{min} intervals (p34);
+\item estimated burn severity from dNBR and response of volume and city scenarios (f35, f38);
+\item \emph{bike park} (mrbc, mrbt), hypothetical tree obstacle (arc, art) and size-based porosity (d39);
+\item correction of the 6 and 7 October rainfall at Tobalaba;
+\item detection and correction of a numerical mass artifact (Section~\ref{sec:res-posterior}).
+\end{itemize}
+\item \textbf{13 October, afternoon (this version):} corrected repeat runs with measured rainfall and for the scenarios without fire (p34b, f35b, f38b), confirming the results: p34b obtains ECI 81, campus \SI{0.49}{m}, La Plaza Sur \SI{33}{\percent} and \SI{222}{ha}; f35b/f38b, \SIrange{179}{193}{ha}, Clínica UC Christus \SIrange{0.19}{0.23}{m} and ECI 80--82. The city simulation with a fine mesh on campus (m36) calculates \SI{0.17}{m} in the courtyard and wets \SI{58}{\percent} of La Plaza Sur. Closure of the study on 13 October 2026.
+\end{itemize}
+Table~\ref{tab:catalogo} records the completion dates of 65 runs: 19 screening runs, 41 full-city runs and 5 quadrature runs. The 19 campus micro-simulations are summarized in Sections~\ref{sec:res-ronda} and~\ref{sec:res-posterior}, but have no rows in that catalog.
+
+
+\subsection*{Frozen Versions, Experiment Log and Held-Out Observations}
+\begin{itemize}
+\item \textbf{Frozen versions.} Each published version of the paper and sub-study is preserved as published, with its SHA-256 hash and a version-control tag (\url{https://aluvion.hirely.cl/paper/versiones/}). The main link points to the latest version without deleting earlier ones. Terrain files are not modified after use: each variant has its own file.
+\item \textbf{Experiment log.} The log includes all runs, including stopped and canceled runs, runs ending in errors, and discarded runs, with their parameters, terrain, code version and reason. Discarded cases include: the transmissive boundary that created mass, the photogrammetric terrain with spurious depressions, v20 because of a threshold artifact, the \SI{12}{m} capture radius and v22--v24. At closure on 13 October, 84 simulations had been completed: 19 screening runs, 41 full-city runs, 5 concentration quadrature runs and 19 campus micro-simulations. The total of completed runs does not equal the number of accepted configurations; discard statuses are retained in the log.
+\item \textbf{Separation of observations.} There are three groups:
+  \begin{itemize}
+  \item \emph{fitting observations}: streets, facilities, reach and perimeter (press and official affected area), thickness at Clínica UC Christus and campus accounts. These were used to formulate and select hypotheses, so the ECI measures compatibility, not validation;
+  \item \emph{descriptive comparison}: affected properties and street centerlines from IDE Chile, and housing assessments. These have already been consulted, but did not enter the index or selection;
+  \item \emph{held-out observations}: the 49 affected facilities from IDE Chile that do not coincide with fitting facilities were used only once in the unfavorable test (19/49). Comparison with post-event Sentinel-1 images and official high-water marks or depths was not tested; it was not used to validate subsequent fits (Section~\ref{sec:conclusiones}).
+  \end{itemize}
+\item \textbf{Preregistered test.} The metric for the facilities test was specified before comparison with the model: sensitivity with $h>\SI{5}{cm}$ within \SI{15}{m}, and a favorable outcome requiring a value of at least 0.70 and higher than those of two reference simulations (v01 and e03). The candidate z02 was chosen using only fitting observations and frozen before the test, which was performed once and had an unfavorable outcome (19/49, compared with the specified \SI{70}{\percent}; Section~\ref{sec:res-ronda}). The test is only partially independent, because the points lie within the official affected area used in the index, and does not replace independent scientific validation.
+\end{itemize}

@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering\small
+\caption{Simulations with the full city (42,018 buildings). Culvert capacities are assumed parameters of hypothetical scenarios; they do not describe the real structure. Streets: fraction of points on streets with mud reported by the sources that the model wets ($h>\SI{5}{cm}$); Sites: fraction of the four facilities with reported impacts that are reached by the simulated flow; dPH: minimum simulated mud distance to the intersection of General Blanche and Padre Hurtado; Perim.: fraction of simulated mud in urban areas falling within the official affected area (IDE Chile); QH: fraction of Quebrada Honda with simulated mud; UCC: maximum calculated thickness next to Clínica UC Christus (Cadena 3 reported about \SI{1}{m} in the emergency department); ECI: exploratory compatibility index, average of the four criteria (streets, sites, reach and perimeter) on a scale from 0 to 100; it is not predictive accuracy. Mud: G2b, Glenwood~2b ($C_v=0.40$); G1, Glenwood~1 ($C_v=0.45$); A2, Aspen~2.}\label{tab:v4}
+{\setlength{\tabcolsep}{3.5pt}\begin{adjustbox}{max width=\textwidth}\begin{tabular}{llrlrrrrrrr}\toprule
+Run & Scenario & $V$ (thousand m$^3$) & Mud & Streets & Sites & dPH (m) & Perim. & QH & UCC (m) & ECI\\
+\midrule
+z02 & channel + southern branches; rainfall 35 mm/h, time step 4× finer & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.13 & 72\\
+v02 & channel + southern branches; rainfall 35 mm/h on hillside & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.13 & 72\\
+v19 & channel + southern branches; rainfall 35 mm/h + official southern branch to Álvaro del Portillo (terrain v6) & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.11 & 71\\
+v14 & channel + southern branches; rainfall 35 mm/h + Álvaro del Portillo ravine & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.15 & 71\\
+v01 & main channel & 300 & G2b & 0.77 & 0.50 & 96 & 0.46 & 0.68 & 1.16 & 68\\
+z01 & main channel; numerical check (time step 4× finer) & 300 & G2b & 0.77 & 0.50 & 96 & 0.46 & 0.68 & 1.16 & 68\\
+v15 & main channel; Quebrada Honda carved downstream (terrain v5) & 300 & G2b & 0.77 & 0.50 & 96 & 0.45 & 0.68 & 1.18 & 68\\
+v03 & main channel; culvert with assumed capacity of 30 m$^3$/s & 300 & G2b & 0.77 & 0.50 & 96 & 0.50 & 0.64 & 1.16 & 69\\
+v17 & main channel; culvert with assumed capacity of 30 m$^3$/s, capture 25 m, Quebrada Honda carved & 300 & G2b & 0.76 & 0.50 & 96 & 0.50 & 0.62 & 1.18 & 69\\
+v05 & main channel; culvert with assumed capacity of 100 m$^3$/s & 300 & G2b & 0.74 & 0.50 & 96 & 0.53 & 0.44 & 1.16 & 69\\
+v10 & main channel; culvert with assumed capacity of 100 m$^3$/s, capture 25 m & 300 & G2b & 0.69 & 0.50 & 96 & 0.52 & 0.00 & 1.16 & 68\\
+v18 & main channel; culvert with assumed capacity of 100 m$^3$/s, capture 25 m, Quebrada Honda carved & 300 & G2b & 0.69 & 0.50 & 96 & 0.52 & 0.00 & 1.18 & 68\\
+v07 & main channel & 150 & G2b & 0.72 & 0.50 & 348 & 0.62 & 0.68 & 1.09 & 67\\
+v08 & main channel & 300 & G1 & 0.74 & 0.50 & 396 & 0.63 & 0.69 & 1.16 & 67\\
+v09 & main channel & 300 & A2 & 0.77 & 0.50 & 151 & 0.52 & 0.68 & 1.14 & 70\\
+v21 & channel + southern branches; official southern branch (terrain v6), without rainfall & 300 & G2b & 0.77 & 0.50 & 131 & 0.45 & 0.68 & 1.11 & 68\\
+\bottomrule\end{tabular}\end{adjustbox}}
+\end{table}

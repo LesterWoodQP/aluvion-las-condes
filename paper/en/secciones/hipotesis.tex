@@ -1,0 +1,36 @@
+\paragraph{Model Input Hypotheses.} Three hypothetical configurations of inflow locations into the urban area were compared, based on sources of differing reliability; they do not identify the origin or the condition of structures during the event:
+\begin{description}
+\item[H1] Surface inflow of the entire flow onto the alluvial fan was tested, at Mons.\ Álvaro del Portillo, Av.\ La Plaza and General Blanche, with no inflow into the conduit in the model. The location is based on the accounts collected by Chilevisión and Interferencia \citep{chilevision2026,interferencia2026}.
+\item[H2] Surface inflow was tested at the crossing of the piped channel with Francisco Bulnes Correa, at the start of Quebrada Honda. The location is based on the accounts collected by Interferencia and BioBioChile \citep{interferencia2026,biobio2026origen}.
+\item[H3] Inflow was assumed to be distributed among several points where the foothill channels reach the urban development: the main channel (H1), a southern channel crossing the Universidad de los Andes campus (S1) and smaller ravines ending at Av.\ La Plaza Sur (S2). The hydrograph is distributed in proportion to the area of each catchment.
+\end{description}
+During the study, H4 (combined outflow at the alluvial fan and at the Francisco Bulnes Correa culvert inlet, plus southern inflows) and H5 (H4 plus direct rainfall runoff on the hillside east of La Plaza Sur) were added as \emph{exploratory} hypotheses formulated after examining the initial results. Two terrain representations (with the linear-park channel carved into the terrain, and a higher-resolution photogrammetric terrain model) and different assumed culvert capacities were also tested. They are reported separately from the initial hypotheses.
+\paragraph{Process Hypothesis (HP).} A two-dimensional shallow-water model with homogeneous-mixture rheology, supplied with a volume compatible with the observed rainfall, reproduces the reported extent: the streets with mud presence and the reach to Av.\ Padre Hurtado.
+
+\paragraph{General Objective.} To estimate the simulated debris-flow path and hydrodynamic indicators in streets and at buildings under the declared scenarios, and characterize their uncertainty from the ensemble of acceptable simulations.
+
+\paragraph{Specific Objectives.}
+\begin{enumerate}
+\item Construct an urban terrain model with buildings and streets from open data.
+\item Implement and verify the mixture rheology in a two-dimensional open-source model.
+\item Independently constrain the mixture volume using rainfall and empirical models.
+\item Calibrate discharge, volume and rheology using public evidence and compare the compatibility of hypotheses H1, H2 and H3 with observations.
+\item Quantify uncertainty and publish the results in a reproducible form.
+\end{enumerate}
+
+\paragraph{Links between Hypotheses, Objectives, Methods and Results.} Table~\ref{tab:correspondencia} links each hypothesis and objective to the procedure addressing it and the result reported at closure.
+
+\begin{table}[htbp]\centering\small
+\caption{Links between input hypotheses (H1: main-channel inflow onto the alluvial fan; H2: surface inflow at the Francisco Bulnes Correa culvert inlet; H3: inflow distributed among channels), the process hypothesis (HP: reproduction of the reported extent under the assumed model and forcing), objectives, methods and results at closure.}\label{tab:correspondencia}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.27\textwidth}>{\raggedright\arraybackslash}p{.33\textwidth}>{\raggedright\arraybackslash}p{.33\textwidth}@{}}\toprule
+Hypothesis or objective & Corresponding method & Reported result\\\midrule
+H1, H2 and H3, evaluated separately & Input sources and calibration criteria (Sections~\ref{sec:modelo} and~\ref{sec:calib}) & Screening and metrics by hypothesis (Sections~\ref{sec:res-calib} and~\ref{sec:recorrido})\\
+HP & Model and criteria for reproducing the extent (Sections~\ref{sec:modelo} and~\ref{sec:calib}) & Compatibility and held-out test (Sections~\ref{sec:res-ronda} and~\ref{sec:res-posterior})\\
+Specific objective 1 & Construction of the urban terrain model (Section~\ref{sec:terreno}) & Full city and previous terrain (Sections~\ref{sec:res-v4} and~\ref{sec:res-terreno})\\
+Specific objective 2 & Implementation and verification (Sections~\ref{sec:modelo} and~\ref{sec:verif}) & Stopping, restart, convergence and balance results (Section~\ref{sec:res-verif})\\
+Specific objective 3 & Independent volume estimation (Section~\ref{sec:volumen}) & Volume distributions and estimated severity (Sections~\ref{sec:res-volumen} and~\ref{sec:res-incendio})\\
+Specific objective 4 & Inverse calibration (Section~\ref{sec:calib}) & H1--H3 comparison and subsequent fitting (Sections~\ref{sec:recorrido} and~\ref{sec:res-posterior})\\
+Specific objective 5 & Uncertainty synthesis and publication (Section~\ref{sec:sintesis}) & Quadrature and uncertainty (Sections~\ref{sec:res-posterior} and~\ref{sec:discusion}) and \hyperref[sec:versiones]{reproducible versions}\\
+General objective & Extraction of indicators by street and building (Section~\ref{sec:sintesis}) & Flow path, indicators and limitations (Sections~\ref{sec:recorrido},~\ref{sec:res-indicadores} and~\ref{sec:discusion})\\\bottomrule
+\end{tabular}
+\end{table}

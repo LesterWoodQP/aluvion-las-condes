@@ -1,0 +1,41 @@
+This section describes the method in general terms, without reference to specific products or programs, so that it can be applied to other catchments with the data available in each case. It explains what each input represents, the recommended minimum quality, how it enters the calculation and how its uncertainty affects the result.
+
+\subsection*{How the Model Works}
+At every instant and in every cell of a mesh covering the city, the model solves for how much mud is present (thickness), in which direction it moves and at what velocity. It does so using three principles:
+\begin{enumerate}
+\item \textbf{Conservation of mass:} mud entering a cell without leaving accumulates as thickness. Mud is neither created nor lost; the balance is verified in every simulation.
+\item \textbf{Conservation of momentum:} mud accelerates downslope under gravity, according to the slope of the free surface and not just that of the ground, and is slowed by the material's own resistance and friction with the surface. This allows it to flow over a curb if it arrives with velocity, go around a building or pond behind an obstacle.
+\item \textbf{Material behavior:} unlike water, a dense mixture of water and sediment has a \emph{yield threshold}: if the gravitational driving stress on a layer does not exceed it, the layer stops. This is why mud leaves deposits of a certain thickness instead of draining to the lowest elevation. Above that threshold, the mixture behaves as a highly viscous and turbulent fluid.
+\end{enumerate}
+The simulation advances in short time steps, of fractions of a second, limited by flow velocity and cell size. Each step first calculates transport and gravity, then material resistance, which can stop a cell or allow it to reactivate if more mud arrives from upstream. During the simulation, maximum thickness, maximum velocity, dynamic loading on obstacles and front arrival time are recorded for each cell.
+
+\subsection*{Input Data}
+\begin{table}[htbp]\centering\small
+\caption{Input data for applying the model to other catchments: meaning, recommended quality and effect of uncertainty on calculated results.}\label{tab:transferencia}
+\begin{tabular}{p{0.17\textwidth}p{0.25\textwidth}p{0.22\textwidth}p{0.245\textwidth}}\toprule
+Data & What they represent and how they are used & Recommended quality & Effect of uncertainty\\\midrule
+Bare-earth topography & Ground elevations without buildings or trees; defines slopes and flow directions. & Preferably \SIrange{1}{5}{m} resolution; \SI{30}{m} only reproduces the general direction. & The most influential input: a channel or street unresolved by the terrain changes the flow path.\\
+Building footprints and heights & Obstacles that flow goes around; raised above the terrain. & Complete footprints; height from surveys or number of stories. & Divert flow locally; little influence on the general path if the footprints adequately represent building geometry.\\
+Streets and curbs & Preferential corridors; lowered a few centimeters relative to sidewalks. & Centerline and width of each street; curb elevation if available. & Determine which streets act as channels.\\
+Open channels and piped reaches & Where the ravine flows on the surface and where underground; transition points are potential overflow locations. & Alignment, cross section and capacity of each reach. & If an open channel is missing, the model substitutes the general slope; if a conduit is missing, its overflow cannot be evaluated.\\
+Contributing catchment & Area and relief draining to each entry point into the city; derived from the terrain. & Terrain of the upper catchment; \SI{30}{m} is usually sufficient. & Scales expected volume in proportion to area.\\
+Rainfall & Amount and intensity of the episode and preceding days (soil moisture). & Nearby station with hourly or subhourly records; ideally in the upper catchment. & Together with the catchment, constrains volume; short-duration intensity controls peak discharge.\\
+Catchment condition & Burned area, vegetation cover, soil. & Burn-severity mapping. & Conditions the assumed runoff and sediment-load coefficients.\\
+Volume and hydrograph & How much mixture enters, at what maximum discharge and over what time. & Estimated from rainfall and catchment, empirical relationships or deposits measured after the event. & Control reach and depths; constrained through calibration.\\
+Material properties & Mixture density, yield threshold and viscosity, as a function of solids concentration. & Tests on deposit samples; otherwise, ranges from the literature. & Control when and where flow stops.\\
+Event observations & Affected streets and buildings, reach, depths, times. & Georeferenced points with source and time; high-water marks. & Not model inputs: allow hypotheses to be rejected and calibration to be performed.\\
+\bottomrule\end{tabular}\end{table}
+
+\subsection*{Procedure for Another Catchment}
+\begin{enumerate}
+\item \textbf{Delineate the exposed urban area} and the points where channels enter the city or change from open to piped. These points are possible flow inputs.
+\item \textbf{Construct the computational surface:} bare-earth topography, raised buildings, lowered streets and, if possible, open channels with their actual cross sections.
+\item \textbf{Estimate a volume range} using at least two independent approaches (rainfall times catchment area times runoff coefficient, and empirical relationships for similar catchments), without combining them into a single figure.
+\item \textbf{Formulate input hypotheses} (the points where flow emerges at the surface and in what proportions) and specify, \emph{before} simulation, the criteria for judging each against the observations.
+\item \textbf{Simulate every combination} of hypothesis, volume, discharge and material; verify mass balance and numerical stability in each simulation.
+\item \textbf{Compare with the observations}, retain compatible combinations and report the ensemble as a range of scenarios rather than a single answer.
+\item \textbf{Repeat compatible simulations at higher temporal and spatial resolution} to estimate the numerical error in reaches and times.
+\end{enumerate}
+
+\subsection*{What Most Improves the Result}
+In this case study, uncertainties ranked by influence were: terrain (resolution and representation of channels and streets), material properties, volume and hydrograph shape, and building heights. A high-resolution survey of the urban area and channel, and deposit samples, are the two improvements with the greatest benefit. For prevention purposes, without an event to calibrate against, the method is applied in the same way, but with volume and material scenarios chosen according to the catchment and with impact envelopes reported instead of a single flow path.

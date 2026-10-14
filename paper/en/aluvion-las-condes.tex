@@ -1,0 +1,101 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[english]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,siunitx,xcolor,caption,subcaption,array,microtype}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{longtable}
+\usepackage{float}
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage[natbibapa]{apacite}
+\renewcommand{\doiprefix}{https://doi.org/\ignorespaces}% APA 7: DOI as a link
+\AtBeginDocument{\renewcommand{\BRetrievedFrom}{}}% APA 7: URL without ``Retrieved from''
+
+\sisetup{
+  output-decimal-marker={.},
+  group-separator={,},
+  group-digits=integer,
+  group-minimum-digits=4,
+  range-phrase=--,
+  range-units=single
+}
+\hypersetup{colorlinks,linkcolor=teal,citecolor=teal,urlcolor=teal,pdftitle={Numerical reconstruction of the San Carlos de Apoquindo debris flow (Las Condes, 8 October 2026)},pdfauthor={Lester Wood},pdflang={en},pdfsubject={Mudflow simulation; study closed on 13 October 2026}}
+\captionsetup{font=small,labelfont=bf}
+\graphicspath{{figs/}}
+\newcommand{\Cvt}{C_{v,\mathrm{tot}}}% total volumetric solids concentration (density and mixture balance)
+\newcommand{\Cvf}{C_{v,\mathrm{f}}}% volumetric concentration of the fine matrix (rheological relationships)
+
+\title{Numerical reconstruction of the San Carlos de Apoquindo debris flow\\(Las Condes, 8 October 2026):\\flow path, volume and uncertainty from public evidence}
+\author{Lester Wood\thanks{Independent study. Content licensed under CC BY-NC-SA 4.0. Terms and conditions: \url{https://aluvion.hirely.cl/terminos.html}.}}
+\date{Study closed on 13 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{secciones/resumen}
+\par\medskip\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Scope statement.} Independent technical study of an academic nature, with no official status and based exclusively on public information. It is not an expert assessment and does not evaluate structures, services or decisions of people or institutions. Three types of results are distinguished: \emph{observed} (as reported by authorities, the press and official mapping, always attributed), \emph{calculated} (model responses to declared input parameters, such as volumes and discharges) and \emph{hypothetical scenarios} (variants tested, such as assumed culvert capacities). No calculated or hypothetical value is a measurement, no statement asserts the cause of the event or attributes responsibility, and all results require independent validation. The study closed on 13 October 2026 (Section~\ref{sec:conclusiones}).}}
+\end{abstract}
+% English translation of the Spanish original (13 October 2026); in case of discrepancy, the Spanish version prevails. Figures keep their Spanish labels.
+
+\section{Introduction and Problem Statement}\label{sec:intro}
+\input{secciones/introduccion}
+
+\IfFileExists{secciones/relato.tex}{\input{secciones/relato}}{}
+
+\section{Theoretical Framework}\label{sec:marco}
+\input{secciones/marco}
+
+\section{Hypotheses and Objectives}\label{sec:hipotesis}
+\input{secciones/hipotesis}
+
+\section{Methodology}\label{sec:metodo}
+\input{secciones/diagrama}
+\input{tablas/datos}
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{ubicacion}\caption{San Carlos de Apoquindo study area, Las Condes. (a) Contributing catchment boundaries calculated from the terrain (H1: main channel; S1: southern channel; S2: smaller ravines toward La Plaza Sur), open channels and piped reaches according to OpenStreetMap, model domain and downstream reference points. (b) Close-up of the alluvial fan: flow entry points, drainage nodes (entrance to the General Blanche conduits and Francisco Bulnes Correa culvert inlet) and sites with impacts reported by the sources collected in Section~\ref{sec:evidencia}. UTM coordinates, zone 19 south, WGS 84.}\label{fig:ubicacion}\end{figure}
+\subsection{Evidence and Evidence Log}\label{sec:evidencia}
+\input{secciones/evidencia}
+\subsection{Terrain, Buildings and Streets}\label{sec:terreno}
+\input{secciones/terreno}
+\subsection{Propagation Model}\label{sec:modelo}
+\input{secciones/modelo}
+\subsection{Numerical Verification}\label{sec:verif}
+\input{secciones/verificacion}
+\subsection{Independent Prior Volume Estimate}\label{sec:volumen}
+\input{secciones/volumen}
+\subsection{Inverse Calibration and Uncertainty}\label{sec:calib}
+\input{secciones/calibracion}
+\subsection{Ensemble Synthesis and Indicators by Street and Building}\label{sec:sintesis}
+\input{secciones/sintesis}
+
+\section{Model Inputs and Operation: A Guide to Application in Other Catchments}\label{sec:transferencia}
+\input{secciones/transferencia}
+
+\section{Results}\label{sec:resultados}
+\input{secciones/resultados}
+
+\IfFileExists{secciones/recorrido.tex}{\input{secciones/recorrido}}{}
+
+\section{Discussion}\label{sec:discusion}
+\input{secciones/discusion}
+
+\section{Directions for Further Investigation}\label{sec:profundizacion}
+\input{secciones/profundizacion}
+
+\section{Conclusions and Closure of the Study}\label{sec:conclusiones}
+\input{secciones/conclusiones}
+
+\section*{Data and Code Availability}
+The programs (\nolinkurl{prep.py}, \nolinkurl{sim.py}, \nolinkurl{calibrar.py}, \nolinkurl{verif_parada.py}, \nolinkurl{cuenca.py}, \nolinkurl{volumen_previo.py}), the evidence log of source consultations with their SHA-256 hashes, and the results are available at \url{https://aluvion.hirely.cl/datos.html}. The technical review reports are published in full on the same site.
+
+\section*{Statement on the Use of AI Tools}\label{sec:declaracion-ia}
+\input{secciones/versiones}
+\input{secciones/revision}
+
+\bibliographystyle{apacite}\bibliography{referencias}
+\clearpage\appendix
+\input{secciones/anexo_simulaciones}
+\end{document}

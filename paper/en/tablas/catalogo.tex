@@ -1,0 +1,71 @@
+{\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{lll>{\raggedright\arraybackslash}p{3.3cm}rlrrrrrrr}
+\caption{Catalogue of the 65 screening, full-city and quadrature simulations (the 19 campus microsimulations are described in Section~\ref{sec:res-posterior}), ordered by exploratory compatibility index (ECI). Culvert capacities and scenarios without fire are calculation assumptions; they do not describe real structures or establish counterfactuals for the event. Columns as in Table~\ref{tab:v4}; runs with the normal time step whose ``sites'' component depends on the campus control point are not used for selection with their raw ECI: without that point they obtain 71--76, unless verified with a fine time step (z26: 76; z29: 78) (protocol amendment 1); v31 was discarded (main channel injection outside the ravine bottom); runs following the held-out test concern fitting; Date: day and month when the simulation ended (2026). Terrain: city (42,018 buildings), previous (1,103 buildings), prev.+ch. (previous terrain with the linear-park channel carved) or SPOT 2014.}\label{tab:catalogo}\\\toprule
+Terr. & Date & Run & Scenario & $V$ (thousand m$^3$) & Mud & Streets & Sites & dPH (m) & Perim. & QH & UCC (m) & ECI\\\midrule\endfirsthead
+\toprule Terr. & Date & Run & Scenario & $V$ (thousand m$^3$) & Mud & Streets & Sites & dPH (m) & Perim. & QH & UCC (m) & ECI\\\midrule\endhead
+city & 11-10 & v26 & channel + southern branches; porous houses in the official area + net rainfall & 300 & G2b & 0.77 & 1.00 & 1 & 0.54 & 0.56 & 0.30 & 83\\
+city & 12-10 & v30 & channel + southern branches; porous houses, Kp 1000 and n 0.1 (v26 sensitivity) & 300 & G2b & 0.76 & 1.00 & 1 & 0.53 & 0.54 & 0.31 & 82\\
+city & 12-10 & v32 & channel + southern branches; integrated hypothesis: porous houses, turbid water on the lower hillside, road, La Plaza Sur and university entrances & 300 & G2b & 0.77 & 1.00 & 1 & 0.51 & 0.56 & 0.30 & 82\\
+city & 12-10 & z32 & channel + southern branches; integrated hypothesis, fine time step & 300 & G2b & 0.77 & 1.00 & 5 & 0.51 & 0.56 & 0.30 & 82\\
+city & 13-10 & f35 & channel + southern branches; as p34, without fire: 187 thousand m$^3$ and Qp 172 m$^3$/s; with a +3.1 \% artifact, repeated as f35b/f38b & 187 & G2b & 0.73 & 1.00 & 5 & 0.53 & 0.56 & 0.23 & 82\\
+city & 13-10 & m36 & channel + southern branches; as p34, with a fine mesh (8 m$^2$) on the campus and La Plaza Sur & 300 & G2b & 0.78 & 1.00 & 6 & 0.48 & 0.52 & 0.32 & 82\\
+city & 13-10 & f35b & channel + southern branches; corrected repeat of f35, without fire & 187 & G2b & 0.73 & 1.00 & 5 & 0.55 & 0.56 & 0.23 & 82\\
+city & 13-10 & d39 & channel + southern branches; as p34, only houses of 250 m$^2$ or less are porous & 300 & G2b & 0.77 & 1.00 & 5 & 0.47 & 0.55 & 0.31 & 81\\
+city & 13-10 & p34 & channel + southern branches; integrated hypothesis with Río Molina rainfall measured every 30 min (31.8 mm); with a +2.1 \% mass artifact, repeated without it as p34b & 300 & G2b & 0.77 & 1.00 & 1 & 0.48 & 0.56 & 0.30 & 81\\
+city & 13-10 & p34b & channel + southern branches; corrected repeat of p34 (maximum time step 0.5 s, residual 0.00 \%) & 300 & G2b & 0.77 & 1.00 & 1 & 0.48 & 0.56 & 0.30 & 81\\
+city & 13-10 & f38 & channel + southern branches; as f35, more fluid mud (Cv 0.25); with a +3.1 \% artifact, repeated as f35b/f38b & 187 & G2b & 0.70 & 1.00 & 5 & 0.49 & 0.54 & 0.19 & 80\\
+city & 13-10 & f38b & channel + southern branches; corrected repeat of f38, without fire and with more fluid mud & 187 & G2b & 0.70 & 1.00 & 5 & 0.50 & 0.54 & 0.19 & 80\\
+city & 11-10 & v27 & channel + southern branches; greater roughness in gardens and trees + rainfall & 300 & G2b & 0.78 & 1.00 & 8 & 0.39 & 0.68 & 1.13 & 79\\
+city & 12-10 & v33 & channel + southern branches; integrated hypothesis with measured rainfall: 8 mm/h for 4 h & 300 & G2b & 0.76 & 1.00 & 1 & 0.41 & 0.56 & 0.30 & 79\\
+city & 13-10 & arc & channel + southern branches; as p34, main channel carved along the line of trees and flow injected upstream (hypothetical obstacle control) & 300 & G2b & 0.75 & 1.00 & 5 & 0.40 & 0.56 & 0.24 & 79\\
+city & 11-10 & v20 & channel + southern branches; rainfall 35 mm/h + official southern branch (terrain v6), normal time step & 300 & G2b & 0.77 & 1.00 & 15 & 0.33 & 0.68 & 1.12 & 78\\
+city & 11-10 & v25 & channel + southern branches; slightly denser mud (Cv 0.43) + rainfall & 300 & G2b & 0.77 & 1.00 & 15 & 0.35 & 0.68 & 1.11 & 78\\
+city & 11-10 & v29 & channel + southern branches; liquid flow on lower hillside (Cv 0.27) + main branch Cv 0.43 + net rainfall & 300 & G2b & 0.77 & 1.00 & 15 & 0.35 & 0.68 & 1.11 & 78\\
+city & 11-10 & v28 & channel + southern branches; rainfall 35 mm/h only outside contributing catchments (no double counting) & 300 & G2b & 0.77 & 1.00 & 15 & 0.34 & 0.68 & 1.13 & 78\\
+city & 11-10 & q3 & channel + southern branches; Cv quadrature: node Cv 0.365 & 300 & G2b & 0.77 & 1.00 & 15 & 0.34 & 0.68 & 1.13 & 78\\
+city & 11-10 & q4 & channel + southern branches; Cv quadrature: node Cv 0.429 & 300 & G2b & 0.77 & 1.00 & 15 & 0.36 & 0.68 & 1.12 & 78\\
+city & 12-10 & z29 & channel + southern branches; lower hillside Cv 0.27, fine time step & 300 & G2b & 0.77 & 1.00 & 15 & 0.35 & 0.68 & 1.11 & 78\\
+city & 12-10 & v31 & channel + southern branches; integrated hypothesis: porous houses, road, La Plaza Sur, university entrances, trees, H1 upstream, lower hillside Cv 0.10 & 300 & G2b & 0.72 & 1.00 & 191 & 0.40 & 0.51 & 0.19 & 78\\
+city & 13-10 & art & channel + southern branches; as arc, with a hypothetical log obstacle with an assumed height of 3 m at the end of the line of trees & 300 & G2b & 0.73 & 1.00 & 5 & 0.39 & 0.54 & 0.22 & 78\\
+city & 11-10 & q2 & channel + southern branches; Cv quadrature: node Cv 0.297 & 300 & G2b & 0.77 & 1.00 & 15 & 0.32 & 0.68 & 1.14 & 77\\
+city & 11-10 & q1 & channel + southern branches; Cv quadrature: node Cv 0.239 & 300 & G2b & 0.76 & 1.00 & 15 & 0.32 & 0.68 & 1.14 & 77\\
+city & 12-10 & z26 & channel + southern branches; porous houses, fine time step & 300 & G2b & 0.76 & 0.75 & 5 & 0.54 & 0.56 & 0.30 & 76\\
+city & 11-10 & q5 & channel + southern branches; Cv quadrature: node Cv 0.478 & 300 & G2b & 0.78 & 0.75 & 34 & 0.38 & 0.68 & 1.11 & 73\\
+city & 10-10 & v02 & channel + southern branches; rainfall 35 mm/h on hillside & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.13 & 72\\
+city & 10-10 & z02 & channel + southern branches; rainfall 35 mm/h, time step 4× finer & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.13 & 72\\
+previous & 09-10 & f03 & arainfalll fan + culvert inlet + southern branches; rainfall 35 mm/h on hillside & 150 & G2b & 0.73 & 0.75 & 225 & 0.39 & 0.66 & 0.26 & 71\\
+city & 10-10 & v14 & channel + southern branches; rainfall 35 mm/h + Álvaro del Portillo ravine & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.15 & 71\\
+city & 11-10 & v19 & channel + southern branches; rainfall 35 mm/h + official southern branch to Álvaro del Portillo (terrain v6) & 300 & G2b & 0.77 & 0.75 & 15 & 0.34 & 0.68 & 1.11 & 71\\
+city & 10-10 & v09 & main channel & 300 & A2 & 0.77 & 0.50 & 151 & 0.52 & 0.68 & 1.14 & 70\\
+city & 10-10 & v03 & main channel; culvert with assumed capacity of 30 m$^3$/s & 300 & G2b & 0.77 & 0.50 & 96 & 0.50 & 0.64 & 1.16 & 69\\
+city & 10-10 & v05 & main channel; culvert with assumed capacity of 100 m$^3$/s & 300 & G2b & 0.74 & 0.50 & 96 & 0.53 & 0.44 & 1.16 & 69\\
+city & 10-10 & v06 & main channel; culvert with assumed capacity of 60 m$^3$/s & 300 & G2b & 0.74 & 0.50 & 96 & 0.53 & 0.44 & 1.16 & 69\\
+city & 10-10 & v17 & main channel; culvert with assumed capacity of 30 m$^3$/s, capture 25 m, Quebrada Honda carved & 300 & G2b & 0.76 & 0.50 & 96 & 0.50 & 0.62 & 1.18 & 69\\
+prev.+ch. & 09-10 & f01 & main channel & 150 & G2b & 0.71 & 0.50 & 338 & 0.63 & 0.55 & 0.31 & 68\\
+prev.+ch. & 09-10 & e04 & main channel & 300 & G2b & 0.75 & 0.50 & 2 & 0.46 & 0.56 & 0.32 & 68\\
+city & 10-10 & v01 & main channel & 300 & G2b & 0.77 & 0.50 & 96 & 0.46 & 0.68 & 1.16 & 68\\
+city & 10-10 & z01 & main channel; numerical check (time step 4× finer) & 300 & G2b & 0.77 & 0.50 & 96 & 0.46 & 0.68 & 1.16 & 68\\
+city & 10-10 & v10 & main channel; culvert with assumed capacity of 100 m$^3$/s, capture 25 m & 300 & G2b & 0.69 & 0.50 & 96 & 0.52 & 0.00 & 1.16 & 68\\
+city & 10-10 & v11 & main channel; culvert with assumed capacity of 200 m$^3$/s, capture 40 m & 300 & G2b & 0.69 & 0.50 & 96 & 0.52 & 0.00 & 1.16 & 68\\
+city & 10-10 & v15 & main channel; Quebrada Honda carved downstream (terrain v5) & 300 & G2b & 0.77 & 0.50 & 96 & 0.45 & 0.68 & 1.18 & 68\\
+city & 10-10 & v18 & main channel; culvert with assumed capacity of 100 m$^3$/s, capture 25 m, Quebrada Honda carved & 300 & G2b & 0.69 & 0.50 & 96 & 0.52 & 0.00 & 1.18 & 68\\
+city & 11-10 & v21 & channel + southern branches; official southern branch (terrain v6), without rainfall & 300 & G2b & 0.77 & 0.50 & 131 & 0.45 & 0.68 & 1.11 & 68\\
+prev.+ch. & 09-10 & k03 & main channel; culvert with assumed capacity of 10 m$^3$/s & 150 & G2b & 0.70 & 0.50 & 338 & 0.64 & 0.43 & 0.31 & 67\\
+city & 10-10 & v07 & main channel & 150 & G2b & 0.72 & 0.50 & 348 & 0.62 & 0.68 & 1.09 & 67\\
+city & 10-10 & v08 & main channel & 300 & G1 & 0.74 & 0.50 & 396 & 0.63 & 0.69 & 1.16 & 67\\
+prev.+ch. & 09-10 & k01 & main channel; culvert with assumed capacity of 30 m$^3$/s & 150 & G2b & 0.65 & 0.50 & 338 & 0.63 & 0.01 & 0.31 & 66\\
+prev.+ch. & 09-10 & k02 & main channel; culvert with assumed capacity of 100 m$^3$/s & 150 & G2b & 0.65 & 0.50 & 338 & 0.63 & 0.01 & 0.31 & 66\\
+previous & 09-10 & d02 & channel + southern branches & 300 & G2b & 0.68 & 0.50 & 4 & 0.41 & 0.00 & 0.42 & 65\\
+previous & 09-10 & d04 & main channel & 150 & G2b & 0.63 & 0.50 & 366 & 0.55 & 0.00 & 0.42 & 63\\
+previous & 09-10 & d01 & channel + southern branches & 150 & G2b & 0.60 & 0.50 & 516 & 0.55 & 0.00 & 0.39 & 58\\
+previous & 09-10 & g01 & channel + southern branches & 150 & G2b & 0.58 & 0.50 & 592 & 0.51 & 0.00 & 0.38 & 55\\
+previous & 09-10 & g03 & arainfalll fan + culvert inlet + southern branches & 150 & G2b & 0.60 & 0.50 & 816 & 0.53 & 0.54 & 0.35 & 50\\
+previous & 09-10 & f02 & arainfalll fan + culvert inlet + southern branches; rainfall 20 mm/h on hillside & 150 & G2b & 0.56 & 0.75 & 1,005 & 0.46 & 0.66 & 0.26 & 49\\
+previous & 09-10 & g02 & arainfalll fan + culvert inlet + southern branches & 150 & G2b & 0.61 & 0.50 & 947 & 0.51 & 0.57 & 0.33 & 47\\
+previous & 09-10 & e06 & main channel & 150 & G1 & 0.47 & 0.50 & 1,686 & 0.80 & 0.45 & 0.59 & 44\\
+previous & 09-10 & d03 & channel + southern branches; peak discharge 100 m$^3$/s & 80 & G2b & 0.50 & 0.50 & 1,160 & 0.68 & 0.00 & 0.22 & 43\\
+previous & 09-10 & e01 & arainfalll fan + culvert inlet + southern branches & 150 & G2b & 0.56 & 0.50 & 1,007 & 0.46 & 0.66 & 0.26 & 43\\
+previous & 09-10 & e02 & arainfalll fan + culvert inlet + southern branches & 150 & G2b & 0.52 & 0.50 & 982 & 0.43 & 0.67 & 0.23 & 42\\
+SPOT 2014 & 09-10 & s01 & main channel & 150 & G2b & 0.50 & 0.50 & 1,188 & 0.60 & 0.77 & 0.37 & 40\\
+previous & 09-10 & e03 & culvert inlet only & 150 & G2b & 0.08 & 0.00 & 856 & 0.20 & 0.69 & 0.00 & 16\\
+\bottomrule\end{longtable}}
