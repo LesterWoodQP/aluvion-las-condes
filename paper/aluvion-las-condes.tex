@@ -1,0 +1,102 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,graphicx,siunitx,xcolor,caption,subcaption,array,microtype}
+\usepackage{tikz}
+\usepackage{adjustbox}
+\usepackage{longtable}
+\usepackage{float}
+\usetikzlibrary{positioning,arrows.meta}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage[natbibapa]{apacite}
+\renewcommand{\doiprefix}{https://doi.org/\ignorespaces}% APA 7: DOI como enlace
+\AtBeginDocument{\renewcommand{\BRetrievedFrom}{}}% APA 7: URL sin «Descargado de»
+
+\sisetup{
+  output-decimal-marker={,},
+  group-separator={\,},
+  group-digits=integer,
+  group-minimum-digits=4,
+  range-phrase={--},
+  range-units=single,
+  list-final-separator={ y },
+  list-pair-separator={ y }
+}
+\hypersetup{colorlinks,linkcolor=teal,citecolor=teal,urlcolor=teal,pdftitle={Reconstrucción numérica del aluvión de San Carlos de Apoquindo (Las Condes, 8 de octubre de 2026)},pdfauthor={Lester Wood},pdflang={es-CL},pdfsubject={Simulación de flujo de barro; estudio cerrado el 13 de octubre de 2026}}
+\captionsetup{font=small,labelfont=bf}
+\graphicspath{{figs/}}
+\newcommand{\Cvt}{C_{v,\mathrm{tot}}}% concentración volumétrica total de sólidos (densidad y balance de mezcla)
+\newcommand{\Cvf}{C_{v,\mathrm{f}}}% concentración volumétrica de la matriz fina (relaciones reológicas)
+
+\title{Reconstrucción numérica del aluvión de San Carlos de Apoquindo\\(Las Condes, 8 de octubre de 2026):\\recorrido, volumen e incertidumbre a partir de evidencia pública}
+\author{Lester Wood\thanks{Estudio independiente. Contenido bajo licencia CC BY-NC-SA 4.0. Condiciones de uso: \url{https://aluvion.hirely.cl/terminos.html}.}}
+\date{Estudio cerrado el 13 de octubre de 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\input{secciones/resumen}
+\par\medskip\noindent\fbox{\parbox{0.96\linewidth}{\small\textbf{Declaración de alcance.} Estudio técnico independiente, de carácter académico, sin carácter oficial y basado exclusivamente en información pública. No es un peritaje ni evalúa obras, servicios o decisiones de personas o instituciones. Se distinguen tres tipos de resultados: \emph{observados} (lo informado por autoridades, prensa y cartografía oficial, siempre atribuido), \emph{calculados} (respuestas del modelo a parámetros de entrada declarados, como volúmenes y caudales) y \emph{escenarios hipotéticos} (variantes ensayadas, como capacidades supuestas del colector). Ningún valor calculado o hipotético es una medición, ninguna frase afirma la causa del evento ni atribuye responsabilidades, y todos los resultados requieren validación independiente. El estudio se cerró el 13 de octubre de 2026 (sección~\ref{sec:conclusiones}).}}
+\end{abstract}
+
+\section{Introducción y planteamiento del problema}\label{sec:intro}
+\input{secciones/introduccion}
+
+\IfFileExists{secciones/relato.tex}{\input{secciones/relato}}{}
+
+\section{Marco teórico}\label{sec:marco}
+\input{secciones/marco}
+
+\section{Hipótesis y objetivos}\label{sec:hipotesis}
+\input{secciones/hipotesis}
+
+\section{Metodología}\label{sec:metodo}
+\input{secciones/diagrama}
+\input{tablas/datos}
+\begin{figure}[htbp]\centering\includegraphics[width=\textwidth]{ubicacion}\caption{Área de estudio. (a) Cuencas aportantes delimitadas sobre el terreno (H1: cauce principal; S1: cauce sur; S2: quebradas menores hacia La Plaza Sur), cauces abiertos y tramos entubados según OpenStreetMap, dominio del modelo y puntos de referencia aguas abajo. (b) Acercamiento al abanico: puntos de entrada del flujo, nodos del drenaje (ingreso a los ductos de General Blanche y embocadura de Francisco Bulnes Correa) y sitios con afectación informada por las fuentes recogidas en la sección~\ref{sec:evidencia}. Coordenadas UTM huso 19 sur, WGS 84.}\label{fig:ubicacion}\end{figure}
+\subsection{Evidencia y registro probatorio}\label{sec:evidencia}
+\input{secciones/evidencia}
+\subsection{Terreno, edificios y calles}\label{sec:terreno}
+\input{secciones/terreno}
+\subsection{Modelo de propagación}\label{sec:modelo}
+\input{secciones/modelo}
+\subsection{Verificación numérica}\label{sec:verif}
+\input{secciones/verificacion}
+\subsection{Volumen previo independiente}\label{sec:volumen}
+\input{secciones/volumen}
+\subsection{Calibración inversa e incertidumbre}\label{sec:calib}
+\input{secciones/calibracion}
+\subsection{Síntesis del conjunto e indicadores por calle y edificio}\label{sec:sintesis}
+\input{secciones/sintesis}
+
+\section{Datos de entrada y funcionamiento del modelo: guía para aplicarlo a otras cuencas}\label{sec:transferencia}
+\input{secciones/transferencia}
+
+\section{Resultados}\label{sec:resultados}
+\input{secciones/resultados}
+
+\input{secciones/recorrido}
+
+\section{Discusión}\label{sec:discusion}
+\input{secciones/discusion}
+
+\section{Líneas de profundización}\label{sec:profundizacion}
+\input{secciones/profundizacion}
+
+\section{Conclusiones y cierre del estudio}\label{sec:conclusiones}
+\input{secciones/conclusiones}
+
+\section*{Disponibilidad de datos y código}
+Los programas (\texttt{prep.py}, \texttt{sim.py}, \texttt{calibrar.py}, \texttt{verif\_parada.py}, \texttt{cuenca.py}, \texttt{volumen\_previo.py}), el registro probatorio de consultas con sus huellas SHA-256 y los resultados están disponibles en \url{https://aluvion.hirely.cl/datos.html}. Los informes de las revisiones técnicas se publican íntegros en el mismo sitio.
+
+\section*{Declaración de uso de herramientas de IA}\label{sec:declaracion-ia}
+\input{secciones/versiones}
+\input{secciones/revision}
+
+\bibliographystyle{apacite}\bibliography{referencias}
+\clearpage\appendix
+\input{secciones/anexo_simulaciones}
+\end{document}
