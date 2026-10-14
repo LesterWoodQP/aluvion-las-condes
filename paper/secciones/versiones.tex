@@ -1,0 +1,33 @@
+\section*{Control de versiones}\phantomsection\label{sec:versiones}
+\begin{itemize}
+\item \textbf{9 de octubre de 2026 (primera generación):} terreno anterior con 1.103 edificios; cribado de las hipótesis H1 a H4, cauce del parque lineal tallado y primeros ensayos del colector (corridas d, e, f, g, k y s). Sus resultados de capacidad supuesta del colector quedaron superados por la versión con la ciudad completa.
+\item \textbf{10 de octubre:} ciudad completa con 42.018 edificios y dominio ampliado (v01--v03, v05--v09, z01); volumen con suelo saturado, isoterma y Sentinel-2; contraste con la prensa.
+\item \textbf{10 y 11 de octubre:} colector con captura de toda la sección (v10, v11, v17, v18), Quebrada Honda y brazo sur según la red hidrográfica oficial (v14, v15, v19--v21), control de paso fino de la hipótesis principal (z02).
+\item \textbf{11 de octubre, mañana:} zona afectada oficial de IDE Chile como referencia, índice exploratorio de compatibilidad, cota máxima de la cuenca corregida en el texto (\SI{2355}{m}), citas al análisis original del CR2, separación entre resultados observados, calculados e hipotéticos, y anexo de fichas.
+\item \textbf{11 de octubre, tarde:} ensayos v25 a v29, microsimulaciones del campus, enmienda~1 del protocolo (regla de desempate) y prueba con observaciones reservadas (desfavorable).
+\item \textbf{12 de octubre, madrugada:} ensayos posteriores a la prueba: casas porosas (v26, v30, z26), faldeo más líquido verificado (z29), cuadratura de la concentración (q1--q5), microsimulaciones del campus y de La Plaza Sur con observaciones aportadas por el autor (mw10, mwq20, mrt10, mrp10, mrc10, mrd10) e hipótesis integrada (v32, verificada con paso fino en z32; v31 descartada), sensibilidad a la lluvia (v33 con la lluvia medida; microsimulaciones de \SI{15}{mm/h} y \SI{25}{mm/h}; mrdn, mrds2).
+\item \textbf{12 y 13 de octubre (versión 13a):}
+\begin{itemize}
+\item nuevas secciones: relato de los hechos y explicación de cada hipótesis;
+\item lluvia de Río Molina cada \SI{30}{min} (p34);
+\item severidad estimada del incendio por dNBR y respuesta de los escenarios de volumen y ciudad (f35, f38);
+\item \emph{bike park} (mrbc, mrbt), obstáculo hipotético de árboles (arc, art) y porosidad por tamaño (d39);
+\item corrección de la lluvia del 6 y 7 de octubre en Tobalaba;
+\item detección y corrección de un artefacto numérico de masa (sección~\ref{sec:res-posterior}).
+\end{itemize}
+\item \textbf{13 de octubre, tarde (esta versión):} repeticiones corregidas de la lluvia medida y de los escenarios sin incendio (p34b, f35b, f38b), que confirman los resultados: p34b obtiene IEC 81, campus \SI{0,49}{m}, La Plaza Sur \SI{33}{\percent} y \SI{222}{ha}; f35b/f38b, \SIrange{179}{193}{ha}, Clínica UC Christus \SIrange{0,19}{0,23}{m} e IEC 80--82. La simulación de ciudad con malla fina en el campus (m36) calcula \SI{0,17}{m} en el patio y moja el \SI{58}{\percent} de La Plaza Sur. Cierre del estudio el 13 de octubre de 2026.
+\end{itemize}
+La tabla~\ref{tab:catalogo} registra las fechas de término de 65 corridas: 19 de cribado, 41 de ciudad completa y 5 de cuadratura. Las 19 microsimulaciones del campus se resumen en las secciones~\ref{sec:res-ronda} y~\ref{sec:res-posterior}, pero no tienen filas en ese catálogo.
+
+\subsection*{Versiones congeladas, registro de experimentos y observaciones reservadas}
+\begin{itemize}
+\item \textbf{Versiones congeladas.} Cada versión publicada del artículo y del subestudio se conserva tal como se publicó, con su huella SHA-256 y una etiqueta en el control de versiones (\url{https://aluvion.hirely.cl/paper/versiones/}). El enlace principal apunta a la última versión, sin borrar las anteriores. Los terrenos no se modifican después de usarse: cada variante tiene un archivo propio.
+\item \textbf{Registro de experimentos.} El registro incluye todas las corridas, también las detenidas, canceladas, fallidas y descartadas, con sus parámetros, terreno, versión del código y motivo. Entre las descartadas: el borde transmisivo que creaba masa, el terreno fotogramétrico con depresiones espurias, v20 por un artefacto de umbral, el radio de captura de \SI{12}{m} y v22--v24. Al cierre del 13 de octubre se completaron 84 simulaciones: 19 de cribado, 41 de ciudad completa, 5 de cuadratura de la concentración y 19 microsimulaciones del campus. El total de completadas no equivale al de configuraciones aceptadas; los estados de descarte se conservan en el registro.
+\item \textbf{Separación de observaciones.} Hay tres grupos:
+  \begin{itemize}
+  \item \emph{de ajuste}: calles, recintos, alcance y perímetro (prensa y zona afectada oficial), espesor en la Clínica UC Christus y relatos del campus. Se usaron para formular y seleccionar hipótesis, por lo que el IEC mide compatibilidad, no validación;
+  \item \emph{de contraste descriptivo}: predios y ejes viales afectados de IDE Chile, y balances de viviendas. Ya se consultaron, pero no entraron en el índice ni en la selección;
+  \item \emph{reservadas}: los 49 equipamientos afectados de IDE Chile que no coinciden con recintos de ajuste se usaron una sola vez en la prueba desfavorable (19/49). El contraste con imágenes Sentinel-1 posteriores al evento y con marcas de nivel o espesores oficiales no fue probado; no se usó para validar los ajustes posteriores (sección~\ref{sec:conclusiones}).
+  \end{itemize}
+\item \textbf{Prueba prerregistrada.} La métrica de la prueba con el equipamiento se fijó antes de cruzarlo con el modelo: sensibilidad con $h>\SI{5}{cm}$ a \SI{15}{m} o menos, y criterio favorable con al menos 0,70 y superior a dos referencias (v01 y e03). El candidato z02 se eligió solo con las observaciones de ajuste y se congeló antes de la prueba, que se ejecutó una vez y fue desfavorable (19/49, frente al \SI{70}{\percent} fijado; sección~\ref{sec:res-ronda}). La prueba es solo parcialmente independiente, porque los puntos están dentro de la zona afectada oficial usada en el índice, y no reemplaza la validación científica independiente.
+\end{itemize}

@@ -1,0 +1,9 @@
+\paragraph{Parada.} Sobre un plano de pendiente $S_0=0{,}05$, con $\tau_y=\SI{100}{Pa}$ y $\rho_m=\SI{1700}{kg.m^{-3}}$, la teoría de un fluido de Bingham integrado en la profundidad predice un espesor de reposo $h_c=\tau_y/(\rho_m gS_0)=\SI{0,1200}{m}$. Se libera un bloque de mezcla y se compara el espesor simulado del depósito con el espesor teórico de reposo; se verifica además que el momento se anule.
+
+\paragraph{Reinicio.} A partir del depósito detenido se agrega mezcla aguas arriba y se verifica que el depósito se reactive, vuelva a detenerse y conserve el volumen.
+
+\paragraph{Convergencia temporal.} El ensayo de parada se repite con números de Courant--Friedrichs--Lewy (CFL) de 1; 0,5; 0,25; 0,1 y 0,05 con el esquema DE1, y con el esquema DE0 como comparación; se compara el alcance final del frente y se estima el orden de convergencia respecto del límite extrapolado.
+
+\paragraph{Balance de volumen.} En cada simulación se compara el volumen acumulado aportado por el hidrograma con el volumen presente en la malla.
+
+Los resultados de estas pruebas se presentan en la sección~\ref{sec:res-verif}.

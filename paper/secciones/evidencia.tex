@@ -1,0 +1,28 @@
+Toda consulta a fuentes externas se archivó en un registro probatorio: fecha y hora UTC, origen, dato extraído, captura de la página y huella SHA-256. Este registro deja constancia de la información disponible al modelar y permite contrastar la predicción con observaciones posteriores. Las observaciones se clasificaron según su naturaleza física, como se recomendó en la revisión técnica (véase la declaración final sobre el uso de herramientas de IA):
+\begin{itemize}
+\item \textbf{Presencia informada:} calles por donde la prensa informa que «bajó» el flujo: Camino El Alba, General Blanche y Quebrada Honda \citep{latercera2026}; además Av.\ La Plaza, donde T13 difundió registros de arrastre de vehículos \citep{t13_2026vehiculos}.
+\item \textbf{Cierres municipales:} Mons.\ Álvaro del Portillo y Av.\ San Carlos de Apoquindo \citep{eldinamo2026}. Pueden obedecer a prevención o limpieza.
+\item \textbf{Perímetro operativo municipal:} Camino El Alba por el norte, La Plaza por el oriente, Quebrada Honda por el sur y Padre Hurtado por el poniente \citep{latercera2026}. Puede incluir zonas secas.
+\item \textbf{Alcance:} hasta el sector del Pueblito Los Dominicos y la Av.\ Padre Hurtado \citep{latercera2026}.
+\item \textbf{Sitios con presencia informada por las fuentes:} la urgencia de la Clínica UC Christus, con cerca de \SI{1}{m} de barro \citep{cadena3_2026}; la Clínica Universidad de los Andes, en sus accesos y exterior según la propia clínica \citep{radiolasenal2026}; la sede Duoc UC \citep{biobio2026duoc}; y el campus de la Universidad de los Andes, cuya comunidad quedó retenida \citep{cooperativa2026}. El Servicio Nacional de Prevención y Respuesta ante Desastres (Senapred) incluye la Av.\ La Plaza Sur entre las zonas afectadas \citep{eldinamo2026}.
+\item \textbf{Evidencia de baja confiabilidad, usada solo para formular hipótesis:} una imagen difundida en redes sociales que marca varios focos de alimentación del flujo, coherentes con los cauces cartografiados.
+\end{itemize}
+La lluvia proviene de la estación automática 330019 (Eulogio Sánchez, Tobalaba) de la Dirección Meteorológica de Chile \citeyearpar{dmc2026}: \SI{34,8}{mm} el 8 de octubre, \SI{13,8}{mm} entre las 15:00 y las 21:00 hora local, y, entre el 6 y el 7 de octubre, reportes de \SI{6}{h} que suman \SI{131,2}{mm}, con un máximo de \SI{49,2}{mm} en \SI{6}{h} (una versión anterior de este texto atribuyó por error esos \SI{49,2}{mm} a los dos días). Búsquedas en prensa devolvieron cifras de \SI{16}{mm} a \SI{20}{mm} en alrededor de una hora, sin estación identificada.
+
+\paragraph{Antecedentes hidrometeorológicos conocidos después del cribado.} La alcaldesa informó \SI{144}{mm} acumulados en la zona, \SI{20}{mm} de ellos el día del evento, con suelo saturado \citep{interferencia2026}. El análisis del Centro de Ciencia del Clima y la Resiliencia \citep{cr2_2026} registra en la estación Río Molina \SI{42,8}{mm} el 8 de octubre, \SI{31,6}{mm} entre las 15:00 y las 19:00 y un máximo de \SI{10,9}{mm} en \SI{30}{min}, con la isoterma de \SI{0}{\celsius} cerca de \SI{2800}{m} según el observatorio de Cerro Tres Puntas. El mismo análisis delimita la cuenca entre \SI{929}{m} y \SI{2355}{m} (unos \SI{10,6}{km^2}) y estima la severidad del incendio con el índice normalizado de área quemada diferencial (dNBR) de Sentinel-2. El pronóstico histórico horario de Open-Meteo \citep{openmeteo2023} sitúa la isoterma entre \SI{2700}{m} y \SI{2770}{m} entre las 14:00 y las 17:00 del 8 de octubre, y acumula unos \SI{150}{mm} sobre la cuenca entre el 2 y el 8 de octubre. Las imágenes Sentinel-2 \citep{drusch2012} del 21 de septiembre no muestran nieve en la cuenca (índice normalizado de nieve menor a 0,4 en toda la parte despejada; las zonas blancas eran nubes delgadas), y el análisis de este estudio de las del 9 de octubre estima \SI{0,09}{km^2} de nieve nueva, toda sobre \SI{2000}{m}. La alta cordillera sí tenía un manto abundante: Valle Nevado informó cerca de \SI{1,2}{m} de nieve nueva el 6 y el 7 de octubre \citep{emol2026valle}, por sobre los \SI{3000}{m}.
+
+\paragraph{Contraste con el análisis del CR2.} La tabla~\ref{tab:cr2} compara los datos de cuenca y de forzamiento de este estudio con los del análisis del CR2 \citep{cr2_2026}, publicado después de formular las hipótesis.
+\begin{table}[htbp]\centering\small
+\caption{Comparación de los datos de cuenca y forzamiento con el análisis del Centro de Ciencia del Clima y la Resiliencia (CR2) \citep{cr2_2026}. La diferencia de área y de cota mínima se debe al punto de cierre: el CR2 cierra la cuenca más abajo, en el parque lineal; este estudio, donde cada cauce entra a la urbanización.}\label{tab:cr2}
+\begin{tabular}{p{0.24\textwidth}p{0.3\textwidth}p{0.36\textwidth}}\toprule
+Variable & CR2 & Este estudio (datos y estimaciones)\\\midrule
+Cota máxima de la cuenca & \SI{2355}{m} & \SI{2355}{m} (FABDEM y Copernicus GLO-30)\\
+Cota mínima & \SI{929}{m} & \SI{973}{m} a \SI{1081}{m} (salidas H1, S1, S2)\\
+Área & \SI{10,6}{km^2} & \SI{10,1}{km^2}\\
+Isoterma de \SI{0}{\celsius} & $\sim\SI{2800}{m}$ (Cerro Tres Puntas) & \SIrange{2700}{2770}{m} entre las 14:00 y las 17:00 (Open-Meteo)\\
+Lluvia del 8 de octubre & \SI{42,8}{mm} en Río Molina & mismo dato\\
+Incendio & dNBR de Sentinel-2 según el CR2 & dNBR (23-dic-2025 y 6-feb-2026): \SI{82}{\percent} con señal de quema y \SI{10}{\percent} de severidad moderada-alta/alta; usado en el balance y en Gartner (sección~\ref{sec:res-incendio})\\
+\bottomrule\end{tabular}
+\end{table}
+
+\paragraph{Balances posteriores.} Según La Tercera, Senapred actualizó su balance a 56 viviendas destruidas, 40 con daño mayor, 1.960 con daño menor, 384 personas damnificadas y más de 1.200 rescatadas \citep{latercera2026senapred}.

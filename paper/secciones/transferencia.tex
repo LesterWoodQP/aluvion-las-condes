@@ -1,0 +1,41 @@
+Esta sección describe el método en términos generales, sin referencia a productos ni programas concretos, para que pueda aplicarse a otras cuencas con los datos que cada caso tenga disponibles. Se indica qué representa cada dato, la calidad mínima recomendable, cómo entra en el cálculo y cómo afecta al resultado cuando es incierto.
+
+\subsection*{Cómo funciona el modelo}
+El modelo resuelve, en cada instante y en cada celda de una malla que cubre la ciudad, cuánto barro hay (espesor) y hacia dónde y a qué velocidad se mueve. Lo hace con tres principios:
+\begin{enumerate}
+\item \textbf{Conservación de la masa:} el barro que entra a una celda y no sale se acumula como espesor. No se crea ni se pierde barro; el balance se verifica en cada simulación.
+\item \textbf{Conservación del momento:} el barro acelera pendiente abajo por la gravedad, según la inclinación de la superficie libre y no solo la del suelo, y lo frenan la resistencia del propio material y el roce con la superficie. Por eso puede subir sobre una solera si llega con velocidad, rodear un edificio o embalsarse detrás de un obstáculo.
+\item \textbf{Comportamiento del material:} a diferencia del agua, una mezcla densa de agua y sedimento tiene un \emph{umbral de fluencia}: si el empuje de la gravedad sobre una capa no lo supera, la capa se detiene. Por eso el barro deja depósitos de cierto espesor en lugar de escurrir hasta la cota más baja. Sobre ese umbral, la mezcla se comporta como un fluido muy viscoso y turbulento.
+\end{enumerate}
+La simulación avanza en pasos de tiempo cortos, de fracciones de segundo, limitados por la velocidad del flujo y el tamaño de las celdas. En cada paso se calculan primero el transporte y la gravedad, y después el frenado del material, que puede detener una celda o reactivarla si llega más barro desde aguas arriba. Durante la simulación se registran, para cada celda, el espesor máximo, la velocidad máxima, el empuje dinámico sobre obstáculos y el instante de llegada del frente.
+
+\subsection*{Datos de entrada}
+\begin{table}[htbp]\centering\small
+\caption{Datos de entrada para aplicar el modelo a otras cuencas: significado, calidad recomendable y efecto de la incertidumbre sobre los resultados calculados.}\label{tab:transferencia}
+\begin{tabular}{p{0.17\textwidth}p{0.25\textwidth}p{0.22\textwidth}p{0.245\textwidth}}\toprule
+Dato & Qué representa y cómo se usa & Calidad recomendable & Efecto si es incierto\\\midrule
+Relieve del terreno desnudo & Cotas del suelo sin edificios ni árboles; define pendientes y hacia dónde escurre el flujo. & Preferentemente \SIrange{1}{5}{m} de resolución; \SI{30}{m} solo reproduce la dirección general. & Es el dato más influyente: un cauce o una calle que el relieve no resuelve cambia el recorrido.\\
+Huellas y alturas de edificios & Obstáculos que el flujo rodea; se elevan sobre el terreno. & Huellas completas; altura por levantamiento o número de pisos. & Desvían el flujo localmente; poca influencia en el recorrido general si las huellas representan adecuadamente la geometría de los edificios.\\
+Calles y soleras & Corredores preferentes; se rebajan unos centímetros respecto de las veredas. & Eje y ancho de cada calle; cota de solera si existe. & Determinan qué calles actúan como canales.\\
+Cauces abiertos y tramos entubados & Dónde la quebrada va por superficie y dónde bajo tierra; los puntos de transición son candidatos a desborde. & Trazado, sección y capacidad de cada tramo. & Si falta un cauce abierto, el modelo lo sustituye por la pendiente general; si falta un ducto, no se puede evaluar su desborde.\\
+Cuenca aportante & Área y relieve que drenan a cada punto de entrada a la ciudad; se obtienen del relieve. & Relieve de la cuenca alta; \SI{30}{m} suele bastar. & Escala el volumen esperado en proporción al área.\\
+Lluvia & Cantidad e intensidad del episodio y de los días previos (humedad del suelo). & Estación cercana con registro horario o subhorario; preferentemente en la cuenca alta. & Con la cuenca, acota el volumen; la intensidad de corta duración controla el caudal pico.\\
+Estado de la cuenca & Superficie quemada, cobertura vegetal, suelo. & Cartografía de severidad del incendio. & Condiciona los coeficientes supuestos de escorrentía y carga de sedimento.\\
+Volumen e hidrograma & Cuánta mezcla entra, con qué caudal máximo y en cuánto tiempo. & Estimados a partir de lluvia y cuenca, de relaciones empíricas o de depósitos medidos tras el evento. & Controlan el alcance y las profundidades; se acotan mediante calibración.\\
+Propiedades del material & Densidad, umbral de fluencia y viscosidad de la mezcla, según la concentración de sólidos. & Ensayos de muestras del depósito; si no los hay, rangos de la literatura. & Controlan cuándo y dónde se detiene el flujo.\\
+Observaciones del evento & Calles y edificios afectados, alcance, profundidades, horas. & Puntos georreferenciados con fuente y hora; marcas de nivel. & No alimentan el modelo: permiten descartar hipótesis y calibrar.\\
+\bottomrule\end{tabular}\end{table}
+
+\subsection*{Procedimiento para otra cuenca}
+\begin{enumerate}
+\item \textbf{Delimitar el área urbana expuesta} y los puntos donde los cauces entran a la ciudad o cambian de abiertos a entubados. Esos puntos son las entradas posibles del flujo.
+\item \textbf{Construir la superficie de cálculo:} relieve desnudo, edificios elevados, calles rebajadas y, si es posible, cauces abiertos con su sección real.
+\item \textbf{Estimar un rango de volumen} con al menos dos vías independientes (lluvia por cuenca por coeficiente de escorrentía, y relaciones empíricas para cuencas similares), sin combinarlas en una sola cifra.
+\item \textbf{Formular hipótesis de entrada} (por qué puntos sale el flujo a la superficie y en qué proporción) y fijar \emph{antes} de simular los criterios con que se juzgará cada una frente a las observaciones.
+\item \textbf{Simular cada combinación} de hipótesis, volumen, caudal y material; verificar en cada simulación el balance de masa y la estabilidad numérica.
+\item \textbf{Comparar con las observaciones}, conservar las combinaciones compatibles e informar el conjunto como un rango de escenarios y no como una única respuesta.
+\item \textbf{Repetir las simulaciones compatibles con mayor resolución temporal y espacial}, para estimar el error numérico de alcances y tiempos.
+\end{enumerate}
+
+\subsection*{Qué mejora más el resultado}
+En este caso de estudio, el orden de influencia de las incertidumbres fue: el relieve (resolución y representación de cauces y calles), las propiedades del material, el volumen y la forma del hidrograma, y las alturas de los edificios. Un levantamiento de alta resolución del sector urbano y del cauce, y muestras del depósito, son las dos mejoras de mayor rendimiento. Para fines preventivos, sin un evento que calibrar, el método se aplica igual, pero con escenarios de volumen y material elegidos según la cuenca y presentando las envolventes de afectación en lugar de un recorrido único.

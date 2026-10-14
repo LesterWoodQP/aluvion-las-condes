@@ -1,0 +1,36 @@
+\paragraph{Hipótesis de entrada al modelo.} Se contrastaron tres configuraciones hipotéticas de localización de los aportes del flujo a la zona urbana, formuladas a partir de fuentes de distinta confiabilidad; no identifican el origen ni el estado de las obras durante el evento:
+\begin{description}
+\item[H1] Se ensayó una entrada superficial de todo el flujo en el abanico, en las calles Mons.\ Álvaro del Portillo, Av.\ La Plaza y General Blanche, sin ingreso al ducto en el modelo. La ubicación se basa en las versiones recogidas por Chilevisión e Interferencia \citep{chilevision2026,interferencia2026}.
+\item[H2] Se ensayó una entrada superficial en el cruce del cauce entubado con la calle Francisco Bulnes Correa, al inicio de Quebrada Honda. La ubicación se basa en las versiones recogidas por Interferencia y BioBioChile \citep{interferencia2026,biobio2026origen}.
+\item[H3] Se supuso un aporte distribuido en varios puntos donde los cauces de la precordillera llegan a la urbanización: el cauce principal (H1), un cauce sur que cruza el campus de la Universidad de los Andes (S1) y quebradas menores que terminan en la Av.\ La Plaza Sur (S2). El hidrograma se reparte en proporción al área de cada cuenca.
+\end{description}
+Durante el estudio se agregaron, como hipótesis \emph{exploratorias} formuladas después de examinar los primeros resultados, H4 (salida combinada en el abanico y en la embocadura del colector de Francisco Bulnes Correa, más los aportes del sur) y H5 (H4 más escurrimiento directo de lluvia sobre la ladera oriente de La Plaza Sur). También se ensayaron dos representaciones del terreno (el cauce del parque lineal tallado y un terreno fotogramétrico de mayor resolución) y distintas capacidades supuestas del colector. Se informan separadas de las hipótesis iniciales.
+\paragraph{Hipótesis de proceso (HP).} Un modelo bidimensional de aguas someras con reología de mezcla homogénea, alimentado con un volumen compatible con la lluvia observada, reproduce la extensión informada: las calles con presencia de barro y el alcance hasta la Av.\ Padre Hurtado.
+
+\paragraph{Objetivo general.} Estimar el recorrido del aluvión y los indicadores hidrodinámicos en calles y edificios, y caracterizar su incertidumbre a partir del conjunto de simulaciones aceptables.
+
+\paragraph{Objetivos específicos.}
+\begin{enumerate}
+\item Construir un terreno urbano con edificios y calles a partir de datos abiertos.
+\item Implementar y verificar la reología de la mezcla en un modelo bidimensional de código abierto.
+\item Acotar el volumen de mezcla de forma independiente, con lluvia y modelos empíricos.
+\item Calibrar el caudal, el volumen y la reología mediante la evidencia pública y comparar la compatibilidad de las hipótesis H1, H2 y H3 con las observaciones.
+\item Cuantificar la incertidumbre y publicar los resultados de forma reproducible.
+\end{enumerate}
+
+\paragraph{Correspondencia entre hipótesis, objetivos, métodos y resultados.} La tabla~\ref{tab:correspondencia} vincula cada hipótesis y cada objetivo con el procedimiento que lo aborda y con el resultado informado al cierre.
+
+\begin{table}[htbp]\centering\small
+\caption{Correspondencia entre las hipótesis de entrada (H1, H2 y H3), la hipótesis de proceso (HP), los objetivos, los métodos y los resultados al cierre.}\label{tab:correspondencia}
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{.27\textwidth}>{\raggedright\arraybackslash}p{.33\textwidth}>{\raggedright\arraybackslash}p{.33\textwidth}@{}}\toprule
+Hipótesis u objetivo & Método correspondiente & Resultado informado\\\midrule
+H1, H2 y H3, evaluadas por separado & Fuentes de entrada y criterios de calibración (secciones~\ref{sec:modelo} y~\ref{sec:calib}) & Cribado y métricas por hipótesis (secciones~\ref{sec:res-calib} y~\ref{sec:recorrido})\\
+HP & Modelo y criterios de reproducción de la extensión (secciones~\ref{sec:modelo} y~\ref{sec:calib}) & Compatibilidad y prueba reservada (secciones~\ref{sec:res-ronda} y~\ref{sec:res-posterior})\\
+Objetivo específico 1 & Construcción del terreno urbano (sección~\ref{sec:terreno}) & Ciudad completa y terreno anterior (secciones~\ref{sec:res-v4} y~\ref{sec:res-terreno})\\
+Objetivo específico 2 & Implementación y verificación (secciones~\ref{sec:modelo} y~\ref{sec:verif}) & Resultados de parada, reinicio, convergencia y balance (sección~\ref{sec:res-verif})\\
+Objetivo específico 3 & Estimación independiente del volumen (sección~\ref{sec:volumen}) & Distribuciones de volumen y severidad estimada (secciones~\ref{sec:res-volumen} y~\ref{sec:res-incendio})\\
+Objetivo específico 4 & Calibración inversa (sección~\ref{sec:calib}) & Comparación H1--H3 y ajustes posteriores (secciones~\ref{sec:recorrido} y~\ref{sec:res-posterior})\\
+Objetivo específico 5 & Síntesis de incertidumbre y publicación (sección~\ref{sec:sintesis}) & Cuadratura e incertidumbre (secciones~\ref{sec:res-posterior} y~\ref{sec:discusion}) y \hyperref[sec:versiones]{versiones reproducibles}\\
+Objetivo general & Extracción de indicadores por calle y edificio (sección~\ref{sec:sintesis}) & Recorrido, indicadores y limitaciones (secciones~\ref{sec:recorrido},~\ref{sec:res-indicadores} y~\ref{sec:discusion})\\\bottomrule
+\end{tabular}
+\end{table}
