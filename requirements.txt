@@ -1,0 +1,11 @@
+anuga==4.0.1
+numpy
+scipy
+shapely
+pyproj
+rasterio
+matplotlib
+pillow
+netcdf4
+pandas
+duckdb
