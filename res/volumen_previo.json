@@ -1,0 +1,63 @@
+{
+ "area_aportante_km2": 10.113,
+ "fraccion_por_area": {
+  "H1": 0.795,
+  "S1": 0.188,
+  "S2": 0.017
+ },
+ "balance_lluvia_escorrentia": {
+  "V_agua_m3": {
+   "p5": 40700,
+   "p25": 65000,
+   "p50": 90300,
+   "p75": 123700,
+   "p95": 182000
+  },
+  "V_mezcla_m3": {
+   "p5": 67200,
+   "p25": 108100,
+   "p50": 151200,
+   "p75": 208200,
+   "p95": 310000
+  }
+ },
+ "gartner2014_con_residuo": {
+  "V_deposito_m3": {
+   "p5": 36500,
+   "p25": 105300,
+   "p50": 219500,
+   "p75": 459400,
+   "p95": 1324800
+  },
+  "V_mezcla_m3": {
+   "p5": 60900,
+   "p25": 177700,
+   "p50": 373500,
+   "p75": 787500,
+   "p95": 2295200
+  }
+ },
+ "nota": "Distribuciones inducidas por supuestos uniformes documentados; no son intervalos medidos. No se combinan en una sola previa.",
+ "Qp_mizuyama1992_flujo_barro_m3s_para_mediana_balance": 232.0,
+ "balance_suelo_saturado": {
+  "V_agua_m3": {
+   "p5": 110600,
+   "p25": 144900,
+   "p50": 176600,
+   "p75": 213900,
+   "p95": 271900
+  },
+  "V_mezcla_m3": {
+   "p5": 180500,
+   "p25": 240100,
+   "p50": 295500,
+   "p75": 361300,
+   "p95": 468200
+  }
+ },
+ "deshielo_cota_superior_m3": 15500,
+ "rango_para_calibrar_m3": [
+  80000,
+  787000
+ ]
+}
