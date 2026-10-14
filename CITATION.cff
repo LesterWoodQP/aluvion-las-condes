@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Si usás este material, citalo así. / If you use this material, please cite it as below."
+title: "Numerical reconstruction of the San Carlos de Apoquindo mudflow (Las Condes, Santiago, Chile, 8 October 2026): model, data and report"
+type: software
+authors:
+  - family-names: Wood
+    given-names: L.
+    affiliation: "Independent researcher, Santiago, Chile"
+repository-code: "https://github.com/LesterWoodQP/aluvion-las-condes"
+url: "https://aluvion.hirely.cl"
+license:
+  - GPL-3.0-only
+  - CC-BY-NC-SA-4.0
+keywords:
+  - mudflow
+  - debris flow
+  - ANUGA
+  - shallow-water model
+  - post-fire hazard
+  - Santiago de Chile
+date-released: 2026-10-14
