@@ -1,0 +1,1011 @@
+{
+ "unidades_censales": 1210,
+ "registros": 1221,
+ "viviendas_universo": 62695,
+ "personas_universo": 178470,
+ "unidades_sin_huellas": 18,
+ "viv_sin_huellas": 1610,
+ "res": [
+  {
+   "corrida": "z02",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 0.25,
+    "origen": "H3",
+    "terreno": "terreno_v4_tallado.npz",
+    "lluvia": 35.0,
+    "colector": null
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 3410,
+     "viv_dasim": 5182,
+     "per_dasim": 15959,
+     "viv_areal": 2518,
+     "per_areal": 7997
+    },
+    "h0.02_r8": {
+     "edificios": 4192,
+     "viv_dasim": 6069,
+     "per_dasim": 18672,
+     "viv_areal": 2518,
+     "per_areal": 7997
+    },
+    "h0.02_r16": {
+     "edificios": 5064,
+     "viv_dasim": 6743,
+     "per_dasim": 20901,
+     "viv_areal": 2518,
+     "per_areal": 7997
+    },
+    "h0.05_r4": {
+     "edificios": 3068,
+     "viv_dasim": 4778,
+     "per_dasim": 14737,
+     "viv_areal": 2221,
+     "per_areal": 7052
+    },
+    "h0.05_r8": {
+     "edificios": 3950,
+     "viv_dasim": 5827,
+     "per_dasim": 17883,
+     "viv_areal": 2221,
+     "per_areal": 7052
+    },
+    "h0.05_r16": {
+     "edificios": 4852,
+     "viv_dasim": 6551,
+     "per_dasim": 20256,
+     "viv_areal": 2221,
+     "per_areal": 7052
+    },
+    "h0.1_r4": {
+     "edificios": 2701,
+     "viv_dasim": 3991,
+     "per_dasim": 12519,
+     "viv_areal": 1900,
+     "per_areal": 6029
+    },
+    "h0.1_r8": {
+     "edificios": 3630,
+     "viv_dasim": 5363,
+     "per_dasim": 16478,
+     "viv_areal": 1900,
+     "per_areal": 6029
+    },
+    "h0.1_r16": {
+     "edificios": 4591,
+     "viv_dasim": 6328,
+     "per_dasim": 19534,
+     "viv_areal": 1900,
+     "per_areal": 6029
+    },
+    "h0.3_r4": {
+     "edificios": 1693,
+     "viv_dasim": 2749,
+     "per_dasim": 8488,
+     "viv_areal": 1045,
+     "per_areal": 3300
+    },
+    "h0.3_r8": {
+     "edificios": 2597,
+     "viv_dasim": 3874,
+     "per_dasim": 12061,
+     "viv_areal": 1045,
+     "per_areal": 3300
+    },
+    "h0.3_r16": {
+     "edificios": 3498,
+     "viv_dasim": 5011,
+     "per_dasim": 15450,
+     "viv_areal": 1045,
+     "per_areal": 3300
+    }
+   },
+   "edif_h": {
+    ">0.05": 3950,
+    ">0.3": 2597,
+    ">0.5": 1743,
+    ">1.0": 599,
+    ">2.5": 15
+   },
+   "viv_areal_h": {
+    ">0.02": 2518,
+    ">0.05": 2221,
+    ">0.1": 1900,
+    ">0.3": 1045,
+    ">0.5": 513,
+    ">1.0": 87
+   },
+   "danio": {
+    "fuchs_suma_V": 187.1,
+    "pk_suma_V": 275.8,
+    "fuera_dominio_fuchs_h>=2.5": 15,
+    "fuchs_edif_V>=0.2": 271,
+    "pk_edif_V>=0.2": 425,
+    "pk_edif_V>=0.5": 132,
+    "fuchs_viv_V>=0.2": 366,
+    "pk_viv_V>=0.2": 593,
+    "pk_viv_V>=0.5": 183,
+    "viv_h>=2.5": 15,
+    "pk_viv_V>=0.2_r4": 322,
+    "pk_viv_V>=0.2_r16": 784
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    320,
+    1033,
+    854,
+    1144,
+    345,
+    182,
+    72,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 19.5,
+    "primarias_terciarias": 16.5
+   }
+  },
+  {
+   "corrida": "v01",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H1",
+    "terreno": "terreno_v4_tallado.npz",
+    "lluvia": 0.0,
+    "colector": null
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 2266,
+     "viv_dasim": 3391,
+     "per_dasim": 10658,
+     "viv_areal": 1757,
+     "per_areal": 5692
+    },
+    "h0.02_r8": {
+     "edificios": 2718,
+     "viv_dasim": 3976,
+     "per_dasim": 12424,
+     "viv_areal": 1757,
+     "per_areal": 5692
+    },
+    "h0.02_r16": {
+     "edificios": 3255,
+     "viv_dasim": 4453,
+     "per_dasim": 13954,
+     "viv_areal": 1757,
+     "per_areal": 5692
+    },
+    "h0.05_r4": {
+     "edificios": 2077,
+     "viv_dasim": 3188,
+     "per_dasim": 10034,
+     "viv_areal": 1589,
+     "per_areal": 5166
+    },
+    "h0.05_r8": {
+     "edificios": 2597,
+     "viv_dasim": 3813,
+     "per_dasim": 11897,
+     "viv_areal": 1589,
+     "per_areal": 5166
+    },
+    "h0.05_r16": {
+     "edificios": 3147,
+     "viv_dasim": 4343,
+     "per_dasim": 13579,
+     "viv_areal": 1589,
+     "per_areal": 5166
+    },
+    "h0.1_r4": {
+     "edificios": 1879,
+     "viv_dasim": 2781,
+     "per_dasim": 8884,
+     "viv_areal": 1395,
+     "per_areal": 4550
+    },
+    "h0.1_r8": {
+     "edificios": 2430,
+     "viv_dasim": 3549,
+     "per_dasim": 11162,
+     "viv_areal": 1395,
+     "per_areal": 4550
+    },
+    "h0.1_r16": {
+     "edificios": 3012,
+     "viv_dasim": 4235,
+     "per_dasim": 13233,
+     "viv_areal": 1395,
+     "per_areal": 4550
+    },
+    "h0.3_r4": {
+     "edificios": 1282,
+     "viv_dasim": 1959,
+     "per_dasim": 6209,
+     "viv_areal": 799,
+     "per_areal": 2640
+    },
+    "h0.3_r8": {
+     "edificios": 1882,
+     "viv_dasim": 2616,
+     "per_dasim": 8458,
+     "viv_areal": 799,
+     "per_areal": 2640
+    },
+    "h0.3_r16": {
+     "edificios": 2480,
+     "viv_dasim": 3494,
+     "per_dasim": 11026,
+     "viv_areal": 799,
+     "per_areal": 2640
+    }
+   },
+   "edif_h": {
+    ">0.05": 2597,
+    ">0.3": 1882,
+    ">0.5": 1395,
+    ">1.0": 556,
+    ">2.5": 16
+   },
+   "viv_areal_h": {
+    ">0.02": 1757,
+    ">0.05": 1589,
+    ">0.1": 1395,
+    ">0.3": 799,
+    ">0.5": 407,
+    ">1.0": 81
+   },
+   "danio": {
+    "fuchs_suma_V": 163.9,
+    "pk_suma_V": 248.4,
+    "fuera_dominio_fuchs_h>=2.5": 16,
+    "fuchs_edif_V>=0.2": 264,
+    "pk_edif_V>=0.2": 390,
+    "pk_edif_V>=0.5": 131,
+    "fuchs_viv_V>=0.2": 305,
+    "pk_viv_V>=0.2": 498,
+    "pk_viv_V>=0.5": 142,
+    "viv_h>=2.5": 16,
+    "pk_viv_V>=0.2_r4": 264,
+    "pk_viv_V>=0.2_r16": 657
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    167,
+    548,
+    487,
+    839,
+    303,
+    179,
+    74,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 17.4,
+    "primarias_terciarias": 15.4
+   }
+  },
+  {
+   "corrida": "v07",
+   "params": {
+    "qp": 250.0,
+    "vol": 150000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H1",
+    "terreno": "terreno_v4_tallado.npz",
+    "lluvia": 0.0,
+    "colector": null
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 1122,
+     "viv_dasim": 1270,
+     "per_dasim": 4794,
+     "viv_areal": 743,
+     "per_areal": 2942
+    },
+    "h0.02_r8": {
+     "edificios": 1354,
+     "viv_dasim": 1470,
+     "per_dasim": 5542,
+     "viv_areal": 743,
+     "per_areal": 2942
+    },
+    "h0.02_r16": {
+     "edificios": 1611,
+     "viv_dasim": 1726,
+     "per_dasim": 6466,
+     "viv_areal": 743,
+     "per_areal": 2942
+    },
+    "h0.05_r4": {
+     "edificios": 1049,
+     "viv_dasim": 1184,
+     "per_dasim": 4504,
+     "viv_areal": 669,
+     "per_areal": 2679
+    },
+    "h0.05_r8": {
+     "edificios": 1284,
+     "viv_dasim": 1429,
+     "per_dasim": 5376,
+     "viv_areal": 669,
+     "per_areal": 2679
+    },
+    "h0.05_r16": {
+     "edificios": 1558,
+     "viv_dasim": 1671,
+     "per_dasim": 6276,
+     "viv_areal": 669,
+     "per_areal": 2679
+    },
+    "h0.1_r4": {
+     "edificios": 938,
+     "viv_dasim": 1090,
+     "per_dasim": 4153,
+     "viv_areal": 580,
+     "per_areal": 2352
+    },
+    "h0.1_r8": {
+     "edificios": 1210,
+     "viv_dasim": 1385,
+     "per_dasim": 5162,
+     "viv_areal": 580,
+     "per_areal": 2352
+    },
+    "h0.1_r16": {
+     "edificios": 1483,
+     "viv_dasim": 1599,
+     "per_dasim": 6028,
+     "viv_areal": 580,
+     "per_areal": 2352
+    },
+    "h0.3_r4": {
+     "edificios": 648,
+     "viv_dasim": 809,
+     "per_dasim": 2984,
+     "viv_areal": 312,
+     "per_areal": 1305
+    },
+    "h0.3_r8": {
+     "edificios": 924,
+     "viv_dasim": 1017,
+     "per_dasim": 3901,
+     "viv_areal": 312,
+     "per_areal": 1305
+    },
+    "h0.3_r16": {
+     "edificios": 1217,
+     "viv_dasim": 1327,
+     "per_dasim": 5013,
+     "viv_areal": 312,
+     "per_areal": 1305
+    }
+   },
+   "edif_h": {
+    ">0.05": 1284,
+    ">0.3": 924,
+    ">0.5": 675,
+    ">1.0": 286,
+    ">2.5": 4
+   },
+   "viv_areal_h": {
+    ">0.02": 743,
+    ">0.05": 669,
+    ">0.1": 580,
+    ">0.3": 312,
+    ">0.5": 137,
+    ">1.0": 25
+   },
+   "danio": {
+    "fuchs_suma_V": 83.3,
+    "pk_suma_V": 123.3,
+    "fuera_dominio_fuchs_h>=2.5": 4,
+    "fuchs_edif_V>=0.2": 131,
+    "pk_edif_V>=0.2": 203,
+    "pk_edif_V>=0.5": 60,
+    "fuchs_viv_V>=0.2": 117,
+    "pk_viv_V>=0.2": 199,
+    "pk_viv_V>=0.5": 51,
+    "viv_h>=2.5": 6,
+    "pk_viv_V>=0.2_r4": 108,
+    "pk_viv_V>=0.2_r16": 265
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    74,
+    286,
+    249,
+    389,
+    165,
+    90,
+    31,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 12.4,
+    "primarias_terciarias": 11.1
+   }
+  },
+  {
+   "corrida": "v17",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H1",
+    "terreno": "terreno_v4_v5qh.npz",
+    "lluvia": 0.0,
+    "colector": 30.0
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 1965,
+     "viv_dasim": 2696,
+     "per_dasim": 8581,
+     "viv_areal": 1426,
+     "per_areal": 4694
+    },
+    "h0.02_r8": {
+     "edificios": 2392,
+     "viv_dasim": 3240,
+     "per_dasim": 10232,
+     "viv_areal": 1426,
+     "per_areal": 4694
+    },
+    "h0.02_r16": {
+     "edificios": 2889,
+     "viv_dasim": 3707,
+     "per_dasim": 11734,
+     "viv_areal": 1426,
+     "per_areal": 4694
+    },
+    "h0.05_r4": {
+     "edificios": 1797,
+     "viv_dasim": 2488,
+     "per_dasim": 7960,
+     "viv_areal": 1279,
+     "per_areal": 4228
+    },
+    "h0.05_r8": {
+     "edificios": 2276,
+     "viv_dasim": 3103,
+     "per_dasim": 9803,
+     "viv_areal": 1279,
+     "per_areal": 4228
+    },
+    "h0.05_r16": {
+     "edificios": 2789,
+     "viv_dasim": 3624,
+     "per_dasim": 11442,
+     "viv_areal": 1279,
+     "per_areal": 4228
+    },
+    "h0.1_r4": {
+     "edificios": 1598,
+     "viv_dasim": 2107,
+     "per_dasim": 6888,
+     "viv_areal": 1091,
+     "per_areal": 3632
+    },
+    "h0.1_r8": {
+     "edificios": 2109,
+     "viv_dasim": 2824,
+     "per_dasim": 9039,
+     "viv_areal": 1091,
+     "per_areal": 3632
+    },
+    "h0.1_r16": {
+     "edificios": 2657,
+     "viv_dasim": 3484,
+     "per_dasim": 11008,
+     "viv_areal": 1091,
+     "per_areal": 3632
+    },
+    "h0.3_r4": {
+     "edificios": 1065,
+     "viv_dasim": 1385,
+     "per_dasim": 4503,
+     "viv_areal": 604,
+     "per_areal": 2034
+    },
+    "h0.3_r8": {
+     "edificios": 1587,
+     "viv_dasim": 1918,
+     "per_dasim": 6343,
+     "viv_areal": 604,
+     "per_areal": 2034
+    },
+    "h0.3_r16": {
+     "edificios": 2146,
+     "viv_dasim": 2682,
+     "per_dasim": 8602,
+     "viv_areal": 604,
+     "per_areal": 2034
+    }
+   },
+   "edif_h": {
+    ">0.05": 2276,
+    ">0.3": 1587,
+    ">0.5": 1119,
+    ">1.0": 408,
+    ">2.5": 12
+   },
+   "viv_areal_h": {
+    ">0.02": 1426,
+    ">0.05": 1279,
+    ">0.1": 1091,
+    ">0.3": 604,
+    ">0.5": 278,
+    ">1.0": 44
+   },
+   "danio": {
+    "fuchs_suma_V": 121.3,
+    "pk_suma_V": 181.2,
+    "fuera_dominio_fuchs_h>=2.5": 12,
+    "fuchs_edif_V>=0.2": 169,
+    "pk_edif_V>=0.2": 264,
+    "pk_edif_V>=0.5": 87,
+    "fuchs_viv_V>=0.2": 151,
+    "pk_viv_V>=0.2": 246,
+    "pk_viv_V>=0.5": 84,
+    "viv_h>=2.5": 13,
+    "pk_viv_V>=0.2_r4": 152,
+    "pk_viv_V>=0.2_r16": 335
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    167,
+    522,
+    468,
+    711,
+    239,
+    114,
+    55,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 16.1,
+    "primarias_terciarias": 14.1
+   }
+  },
+  {
+   "corrida": "v10",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H1",
+    "terreno": "terreno_v4_tallado.npz",
+    "lluvia": 0.0,
+    "colector": 100.0
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 1665,
+     "viv_dasim": 1850,
+     "per_dasim": 6009,
+     "viv_areal": 1075,
+     "per_areal": 3587
+    },
+    "h0.02_r8": {
+     "edificios": 2019,
+     "viv_dasim": 2319,
+     "per_dasim": 7383,
+     "viv_areal": 1075,
+     "per_areal": 3587
+    },
+    "h0.02_r16": {
+     "edificios": 2428,
+     "viv_dasim": 2621,
+     "per_dasim": 8334,
+     "viv_areal": 1075,
+     "per_areal": 3587
+    },
+    "h0.05_r4": {
+     "edificios": 1519,
+     "viv_dasim": 1687,
+     "per_dasim": 5520,
+     "viv_areal": 980,
+     "per_areal": 3277
+    },
+    "h0.05_r8": {
+     "edificios": 1918,
+     "viv_dasim": 2196,
+     "per_dasim": 7000,
+     "viv_areal": 980,
+     "per_areal": 3277
+    },
+    "h0.05_r16": {
+     "edificios": 2337,
+     "viv_dasim": 2538,
+     "per_dasim": 8065,
+     "viv_areal": 980,
+     "per_areal": 3277
+    },
+    "h0.1_r4": {
+     "edificios": 1357,
+     "viv_dasim": 1365,
+     "per_dasim": 4605,
+     "viv_areal": 864,
+     "per_areal": 2896
+    },
+    "h0.1_r8": {
+     "edificios": 1782,
+     "viv_dasim": 1941,
+     "per_dasim": 6298,
+     "viv_areal": 864,
+     "per_areal": 2896
+    },
+    "h0.1_r16": {
+     "edificios": 2223,
+     "viv_dasim": 2450,
+     "per_dasim": 7786,
+     "viv_areal": 864,
+     "per_areal": 2896
+    },
+    "h0.3_r4": {
+     "edificios": 904,
+     "viv_dasim": 912,
+     "per_dasim": 3017,
+     "viv_areal": 497,
+     "per_areal": 1676
+    },
+    "h0.3_r8": {
+     "edificios": 1341,
+     "viv_dasim": 1250,
+     "per_dasim": 4267,
+     "viv_areal": 497,
+     "per_areal": 1676
+    },
+    "h0.3_r16": {
+     "edificios": 1797,
+     "viv_dasim": 1839,
+     "per_dasim": 5964,
+     "viv_areal": 497,
+     "per_areal": 1676
+    }
+   },
+   "edif_h": {
+    ">0.05": 1918,
+    ">0.3": 1341,
+    ">0.5": 965,
+    ">1.0": 353,
+    ">2.5": 12
+   },
+   "viv_areal_h": {
+    ">0.02": 1075,
+    ">0.05": 980,
+    ">0.1": 864,
+    ">0.3": 497,
+    ">0.5": 233,
+    ">1.0": 37
+   },
+   "danio": {
+    "fuchs_suma_V": 107.6,
+    "pk_suma_V": 162.8,
+    "fuera_dominio_fuchs_h>=2.5": 12,
+    "fuchs_edif_V>=0.2": 162,
+    "pk_edif_V>=0.2": 242,
+    "pk_edif_V>=0.5": 86,
+    "fuchs_viv_V>=0.2": 129,
+    "pk_viv_V>=0.2": 192,
+    "pk_viv_V>=0.5": 75,
+    "viv_h>=2.5": 13,
+    "pk_viv_V>=0.2_r4": 118,
+    "pk_viv_V>=0.2_r16": 238
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    136,
+    441,
+    376,
+    612,
+    190,
+    109,
+    54,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 14.5,
+    "primarias_terciarias": 12.7
+   }
+  },
+  {
+   "corrida": "v27",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H3",
+    "terreno": "terreno_v4_v6.npz",
+    "lluvia": 35.0,
+    "colector": null
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 2793,
+     "viv_dasim": 4300,
+     "per_dasim": 13524,
+     "viv_areal": 2165,
+     "per_areal": 6990
+    },
+    "h0.02_r8": {
+     "edificios": 3393,
+     "viv_dasim": 4855,
+     "per_dasim": 15321,
+     "viv_areal": 2165,
+     "per_areal": 6990
+    },
+    "h0.02_r16": {
+     "edificios": 4048,
+     "viv_dasim": 5676,
+     "per_dasim": 17717,
+     "viv_areal": 2165,
+     "per_areal": 6990
+    },
+    "h0.05_r4": {
+     "edificios": 2567,
+     "viv_dasim": 3929,
+     "per_dasim": 12386,
+     "viv_areal": 1930,
+     "per_areal": 6233
+    },
+    "h0.05_r8": {
+     "edificios": 3212,
+     "viv_dasim": 4676,
+     "per_dasim": 14701,
+     "viv_areal": 1930,
+     "per_areal": 6233
+    },
+    "h0.05_r16": {
+     "edificios": 3892,
+     "viv_dasim": 5337,
+     "per_dasim": 16789,
+     "viv_areal": 1930,
+     "per_areal": 6233
+    },
+    "h0.1_r4": {
+     "edificios": 2267,
+     "viv_dasim": 3447,
+     "per_dasim": 10929,
+     "viv_areal": 1665,
+     "per_areal": 5382
+    },
+    "h0.1_r8": {
+     "edificios": 2963,
+     "viv_dasim": 4436,
+     "per_dasim": 13923,
+     "viv_areal": 1665,
+     "per_areal": 5382
+    },
+    "h0.1_r16": {
+     "edificios": 3689,
+     "viv_dasim": 5169,
+     "per_dasim": 16224,
+     "viv_areal": 1665,
+     "per_areal": 5382
+    },
+    "h0.3_r4": {
+     "edificios": 1502,
+     "viv_dasim": 2446,
+     "per_dasim": 7686,
+     "viv_areal": 993,
+     "per_areal": 3235
+    },
+    "h0.3_r8": {
+     "edificios": 2226,
+     "viv_dasim": 3461,
+     "per_dasim": 10824,
+     "viv_areal": 993,
+     "per_areal": 3235
+    },
+    "h0.3_r16": {
+     "edificios": 2927,
+     "viv_dasim": 4195,
+     "per_dasim": 13178,
+     "viv_areal": 993,
+     "per_areal": 3235
+    }
+   },
+   "edif_h": {
+    ">0.05": 3212,
+    ">0.3": 2226,
+    ">0.5": 1606,
+    ">1.0": 577,
+    ">2.5": 12
+   },
+   "viv_areal_h": {
+    ">0.02": 2165,
+    ">0.05": 1930,
+    ">0.1": 1665,
+    ">0.3": 993,
+    ">0.5": 512,
+    ">1.0": 89
+   },
+   "danio": {
+    "fuchs_suma_V": 174.9,
+    "pk_suma_V": 256.9,
+    "fuera_dominio_fuchs_h>=2.5": 12,
+    "fuchs_edif_V>=0.2": 244,
+    "pk_edif_V>=0.2": 398,
+    "pk_edif_V>=0.5": 122,
+    "fuchs_viv_V>=0.2": 346,
+    "pk_viv_V>=0.2": 594,
+    "pk_viv_V>=0.5": 186,
+    "viv_h>=2.5": 13,
+    "pk_viv_V>=0.2_r4": 327,
+    "pk_viv_V>=0.2_r16": 759
+   },
+   "unidades_parcialmente_en_dominio": 9,
+   "hist_h_edificios": [
+    249,
+    737,
+    620,
+    1029,
+    348,
+    162,
+    67,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 19.4,
+    "primarias_terciarias": 16.5
+   }
+  },
+  {
+   "corrida": "e04",
+   "params": {
+    "qp": 250.0,
+    "vol": 300000.0,
+    "suelo": "glenwood2b",
+    "cfl": 1.0,
+    "origen": "H1",
+    "terreno": "terreno_tallado.npz",
+    "lluvia": 0.0,
+    "colector": null
+   },
+   "sens": {
+    "h0.02_r4": {
+     "edificios": 3324,
+     "viv_dasim": 3288,
+     "per_dasim": 10857,
+     "viv_areal": 2661,
+     "per_areal": 8783
+    },
+    "h0.02_r8": {
+     "edificios": 3473,
+     "viv_dasim": 3493,
+     "per_dasim": 11497,
+     "viv_areal": 2661,
+     "per_areal": 8783
+    },
+    "h0.02_r16": {
+     "edificios": 3751,
+     "viv_dasim": 3784,
+     "per_dasim": 12471,
+     "viv_areal": 2661,
+     "per_areal": 8783
+    },
+    "h0.05_r4": {
+     "edificios": 3016,
+     "viv_dasim": 2923,
+     "per_dasim": 9581,
+     "viv_areal": 2317,
+     "per_areal": 7642
+    },
+    "h0.05_r8": {
+     "edificios": 3176,
+     "viv_dasim": 3108,
+     "per_dasim": 10266,
+     "viv_areal": 2317,
+     "per_areal": 7642
+    },
+    "h0.05_r16": {
+     "edificios": 3441,
+     "viv_dasim": 3421,
+     "per_dasim": 11303,
+     "viv_areal": 2317,
+     "per_areal": 7642
+    },
+    "h0.1_r4": {
+     "edificios": 2632,
+     "viv_dasim": 2510,
+     "per_dasim": 8171,
+     "viv_areal": 2002,
+     "per_areal": 6538
+    },
+    "h0.1_r8": {
+     "edificios": 2838,
+     "viv_dasim": 2785,
+     "per_dasim": 9091,
+     "viv_areal": 2002,
+     "per_areal": 6538
+    },
+    "h0.1_r16": {
+     "edificios": 3133,
+     "viv_dasim": 3054,
+     "per_dasim": 10075,
+     "viv_areal": 2002,
+     "per_areal": 6538
+    },
+    "h0.3_r4": {
+     "edificios": 1204,
+     "viv_dasim": 1113,
+     "per_dasim": 3615,
+     "viv_areal": 811,
+     "per_areal": 2734
+    },
+    "h0.3_r8": {
+     "edificios": 1391,
+     "viv_dasim": 1386,
+     "per_dasim": 4368,
+     "viv_areal": 811,
+     "per_areal": 2734
+    },
+    "h0.3_r16": {
+     "edificios": 1684,
+     "viv_dasim": 1769,
+     "per_dasim": 5548,
+     "viv_areal": 811,
+     "per_areal": 2734
+    }
+   },
+   "edif_h": {
+    ">0.05": 3176,
+    ">0.3": 1391,
+    ">0.5": 498,
+    ">1.0": 96,
+    ">2.5": 1
+   },
+   "viv_areal_h": {
+    ">0.02": 2661,
+    ">0.05": 2317,
+    ">0.1": 2002,
+    ">0.3": 811,
+    ">0.5": 164,
+    ">1.0": 11
+   },
+   "danio": {
+    "fuchs_suma_V": 43.4,
+    "pk_suma_V": 55.4,
+    "fuera_dominio_fuchs_h>=2.5": 1,
+    "fuchs_edif_V>=0.2": 34,
+    "pk_edif_V>=0.2": 52,
+    "pk_edif_V>=0.5": 17,
+    "fuchs_viv_V>=0.2": 26,
+    "pk_viv_V>=0.2": 38,
+    "pk_viv_V>=0.5": 13,
+    "viv_h>=2.5": 0,
+    "pk_viv_V>=0.2_r4": 14,
+    "pk_viv_V>=0.2_r16": 55
+   },
+   "unidades_parcialmente_en_dominio": 2,
+   "hist_h_edificios": [
+    338,
+    1447,
+    893,
+    402,
+    66,
+    17,
+    13,
+    0
+   ],
+   "km_calles_con_barro": {
+    "todas": 15.3,
+    "primarias_terciarias": 12.9
+   }
+  }
+ ]
+}
