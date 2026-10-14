@@ -1,0 +1,42 @@
+{
+ "h_c_teorico_m": 0.1199,
+ "parametros": {
+  "rho": 1700.0,
+  "S": 0.05,
+  "tau_y": 100.0,
+  "eta": 1.0,
+  "K": 100.0,
+  "n": 0.025
+ },
+ "parada": {
+  "frente_m_t0_300_880": [
+   39.67,
+   326.33,
+   381.0
+  ],
+  "deriva_frente_600_a_880_m": 26.0,
+  "momento_total_880": 0.0
+ },
+ "reinicio": {
+  "frente_antes_m": 381.0,
+  "frente_final_m": 451.0,
+  "se_movio": true,
+  "volumen_final_m3": 866.99,
+  "volumen_esperado_m3": 920.0
+ },
+ "espesor_medio_deposito_final_m": 0.12,
+ "convergencia_CFL": {
+  "1.0": {
+   "frente_final_m": 455.0,
+   "espesor_medio_m": 0.12
+  },
+  "0.5": {
+   "frente_final_m": 387.0,
+   "espesor_medio_m": 0.12
+  },
+  "0.25": {
+   "frente_final_m": 352.33,
+   "espesor_medio_m": 0.12
+  }
+ }
+}

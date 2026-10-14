@@ -1,0 +1,38 @@
+{
+ "DE1 CFL 0.1": {
+  "frente_m": 331.0,
+  "h_medio": 0.12,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ },
+ "DE1 CFL 0.05": {
+  "frente_m": 323.67,
+  "h_medio": 0.1201,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ },
+ "DE0 CFL 1.0": {
+  "frente_m": 501.67,
+  "h_medio": 0.0976,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ },
+ "DE0 CFL 0.5": {
+  "frente_m": 501.67,
+  "h_medio": 0.0976,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ },
+ "DE0 CFL 0.25": {
+  "frente_m": 501.67,
+  "h_medio": 0.0975,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ },
+ "DE0 CFL 0.1": {
+  "frente_m": 501.67,
+  "h_medio": 0.0976,
+  "vol_ini": 746.67,
+  "vol_fin": 746.67
+ }
+}
