@@ -1,0 +1,11 @@
+\begin{table}[htbp]\centering\small
+\caption{Datos de entrada de la primera generación; la versión vigente añade las huellas de edificios de Overture Maps, la red hidrográfica oficial (Geoportal de Chile), el análisis del CR2, Open-Meteo, Sentinel-2 y la zona afectada oficial de IDE Chile.}\label{tab:datos}
+\begin{tabular}{p{.16\textwidth}p{.28\textwidth}p{.21\textwidth}p{.21\textwidth}}\toprule
+Dato & Fuente & Resolución & Uso\\\midrule
+Terreno desnudo & FABDEM V1-2 \citep{fabdem2023} & 1 segundo de arco ($\approx$\SI{30}{m}), remuestreado a \SI{4}{m} & Cotas del suelo y cuencas\\
+Superficie & Copernicus GLO-30 \citep{copernicus_glo30} & \SI{30}{m} & Altura de edificios grandes\\
+Terreno alternativo & Fotogrametría SPOT 2014 \citep{hussain2021} & 0,07 puntos/m$^2$ ($\approx$\SI{8}{}--\SI{10}{m}) & Prueba de sensibilidad\\
+Edificios, calles, cauces & OpenStreetMap \citep{osm2026} & vectorial & 1.103 bloques, calles, trazado del cauce\\
+Lluvia & DMC, estación 330019 \citep{dmc2026} & horaria y sinóptica & Volumen previo\\
+Observaciones & Prensa, municipio, Senapred, Sernageomin & puntual & Evaluación (no entra al modelo)\\
+\bottomrule\end{tabular}\end{table}

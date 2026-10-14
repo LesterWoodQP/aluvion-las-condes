@@ -1,0 +1,71 @@
+{\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{longtable}{lll>{\raggedright\arraybackslash}p{3.3cm}rlrrrrrrr}
+\caption{Catálogo de las 65 simulaciones de cribado, ciudad completa y cuadratura (las 19 microsimulaciones del campus se describen en la sección~\ref{sec:res-posterior}), ordenadas por índice exploratorio de compatibilidad (IEC). Las capacidades del colector y los escenarios sin incendio son supuestos de cálculo; no describen obras reales ni establecen contrafactuales del evento. Columnas como en la tabla~\ref{tab:v4}; las corridas con paso normal cuyo componente «sitios» depende del punto de control del campus no se usan para seleccionar con su IEC bruto: sin ese punto obtienen 71--76, salvo verificación con paso fino (z26: 76; z29: 78) (enmienda 1 del protocolo); v31 se descartó (inyección del cauce principal fuera del fondo de la quebrada); las corridas posteriores a la prueba reservada son de ajuste; Fecha: día y mes en que terminó la simulación (2026). Terreno: ciudad (42.018 edificios), anterior (1.103 edificios), ant.+cauce (anterior con el cauce del parque lineal tallado) o SPOT 2014.}\label{tab:catalogo}\\\toprule
+Terr. & Fecha & Corrida & Escenario & $V$ (mil m$^3$) & Barro & Calles & Sitios & dPH (m) & Perím. & QH & UCC (m) & IEC\\\midrule\endfirsthead
+\toprule Terr. & Fecha & Corrida & Escenario & $V$ (mil m$^3$) & Barro & Calles & Sitios & dPH (m) & Perím. & QH & UCC (m) & IEC\\\midrule\endhead
+ciudad & 11-10 & v26 & cauce + brazos sur; casas porosas en la zona oficial + lluvia neta & 300 & G2b & 0{,}77 & 1{,}00 & 1 & 0{,}54 & 0{,}56 & 0{,}30 & 83\\
+ciudad & 12-10 & v30 & cauce + brazos sur; casas porosas, Kp 1000 y n 0,1 (sensibilidad de v26) & 300 & G2b & 0{,}76 & 1{,}00 & 1 & 0{,}53 & 0{,}54 & 0{,}31 & 82\\
+ciudad & 12-10 & v32 & cauce + brazos sur; hipótesis integrada: casas porosas, faldeo agua turbia, camino, La Plaza Sur y entradas a la universidad & 300 & G2b & 0{,}77 & 1{,}00 & 1 & 0{,}51 & 0{,}56 & 0{,}30 & 82\\
+ciudad & 12-10 & z32 & cauce + brazos sur; hipótesis integrada, paso fino & 300 & G2b & 0{,}77 & 1{,}00 & 5 & 0{,}51 & 0{,}56 & 0{,}30 & 82\\
+ciudad & 13-10 & f35 & cauce + brazos sur; como p34, sin incendio: 187 mil m³ y Qp 172 m$^3$/s; con artefacto de +3,1 \%, repetida como f35b/f38b & 187 & G2b & 0{,}73 & 1{,}00 & 5 & 0{,}53 & 0{,}56 & 0{,}23 & 82\\
+ciudad & 13-10 & m36 & cauce + brazos sur; como p34, con malla fina (8 m²) en el campus y La Plaza Sur & 300 & G2b & 0{,}78 & 1{,}00 & 6 & 0{,}48 & 0{,}52 & 0{,}32 & 82\\
+ciudad & 13-10 & f35b & cauce + brazos sur; repetición corregida de f35, sin incendio & 187 & G2b & 0{,}73 & 1{,}00 & 5 & 0{,}55 & 0{,}56 & 0{,}23 & 82\\
+ciudad & 13-10 & d39 & cauce + brazos sur; como p34, porosas solo las casas de 250 m² o menos & 300 & G2b & 0{,}77 & 1{,}00 & 5 & 0{,}47 & 0{,}55 & 0{,}31 & 81\\
+ciudad & 13-10 & p34 & cauce + brazos sur; hipótesis integrada con la lluvia medida en Río Molina cada 30 min (31,8 mm); con artefacto de +2,1 \% de masa, repetida sin él como p34b & 300 & G2b & 0{,}77 & 1{,}00 & 1 & 0{,}48 & 0{,}56 & 0{,}30 & 81\\
+ciudad & 13-10 & p34b & cauce + brazos sur; repetición corregida de p34 (paso máximo 0,5 s, residuo 0,00 \%) & 300 & G2b & 0{,}77 & 1{,}00 & 1 & 0{,}48 & 0{,}56 & 0{,}30 & 81\\
+ciudad & 13-10 & f38 & cauce + brazos sur; como f35, barro más fluido (Cv 0,25); con artefacto de +3,1 \%, repetida como f35b/f38b & 187 & G2b & 0{,}70 & 1{,}00 & 5 & 0{,}49 & 0{,}54 & 0{,}19 & 80\\
+ciudad & 13-10 & f38b & cauce + brazos sur; repetición corregida de f38, sin incendio y barro más fluido & 187 & G2b & 0{,}70 & 1{,}00 & 5 & 0{,}50 & 0{,}54 & 0{,}19 & 80\\
+ciudad & 11-10 & v27 & cauce + brazos sur; más rugosidad en jardines y árboles + lluvia & 300 & G2b & 0{,}78 & 1{,}00 & 8 & 0{,}39 & 0{,}68 & 1{,}13 & 79\\
+ciudad & 12-10 & v33 & cauce + brazos sur; hipótesis integrada con lluvia medida: 8 mm/h durante 4 h & 300 & G2b & 0{,}76 & 1{,}00 & 1 & 0{,}41 & 0{,}56 & 0{,}30 & 79\\
+ciudad & 13-10 & arc & cauce + brazos sur; como p34, cauce principal tallado por la línea de árboles e inyectado aguas arriba (control del obstáculo hipotético) & 300 & G2b & 0{,}75 & 1{,}00 & 5 & 0{,}40 & 0{,}56 & 0{,}24 & 79\\
+ciudad & 11-10 & v20 & cauce + brazos sur; lluvia 35 mm/h + brazo sur oficial (terreno v6), paso normal & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}33 & 0{,}68 & 1{,}12 & 78\\
+ciudad & 11-10 & v25 & cauce + brazos sur; barro algo más denso (Cv 0,43) + lluvia & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}35 & 0{,}68 & 1{,}11 & 78\\
+ciudad & 11-10 & v29 & cauce + brazos sur; faldeo líquido (Cv 0,27) + rama principal Cv 0,43 + lluvia neta & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}35 & 0{,}68 & 1{,}11 & 78\\
+ciudad & 11-10 & v28 & cauce + brazos sur; lluvia 35 mm/h solo fuera de las cuencas aportantes (sin doble conteo) & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 78\\
+ciudad & 11-10 & q3 & cauce + brazos sur; cuadratura de Cv: nodo Cv 0,365 & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 78\\
+ciudad & 11-10 & q4 & cauce + brazos sur; cuadratura de Cv: nodo Cv 0,429 & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}36 & 0{,}68 & 1{,}12 & 78\\
+ciudad & 12-10 & z29 & cauce + brazos sur; faldeo Cv 0,27, paso fino & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}35 & 0{,}68 & 1{,}11 & 78\\
+ciudad & 12-10 & v31 & cauce + brazos sur; hipótesis integrada: casas porosas, camino, La Plaza Sur, entradas a la universidad, árboles, H1 aguas arriba, faldeo Cv 0,10 & 300 & G2b & 0{,}72 & 1{,}00 & 191 & 0{,}40 & 0{,}51 & 0{,}19 & 78\\
+ciudad & 13-10 & art & cauce + brazos sur; como arc, con obstáculo hipotético de troncos de altura supuesta de 3 m al final de la línea de árboles & 300 & G2b & 0{,}73 & 1{,}00 & 5 & 0{,}39 & 0{,}54 & 0{,}22 & 78\\
+ciudad & 11-10 & q2 & cauce + brazos sur; cuadratura de Cv: nodo Cv 0,297 & 300 & G2b & 0{,}77 & 1{,}00 & 15 & 0{,}32 & 0{,}68 & 1{,}14 & 77\\
+ciudad & 11-10 & q1 & cauce + brazos sur; cuadratura de Cv: nodo Cv 0,239 & 300 & G2b & 0{,}76 & 1{,}00 & 15 & 0{,}32 & 0{,}68 & 1{,}14 & 77\\
+ciudad & 12-10 & z26 & cauce + brazos sur; casas porosas, paso fino & 300 & G2b & 0{,}76 & 0{,}75 & 5 & 0{,}54 & 0{,}56 & 0{,}30 & 76\\
+ciudad & 11-10 & q5 & cauce + brazos sur; cuadratura de Cv: nodo Cv 0,478 & 300 & G2b & 0{,}78 & 0{,}75 & 34 & 0{,}38 & 0{,}68 & 1{,}11 & 73\\
+ciudad & 10-10 & v02 & cauce + brazos sur; lluvia 35 mm/h en ladera & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 72\\
+ciudad & 10-10 & z02 & cauce + brazos sur; lluvia 35 mm/h, paso 4× más fino & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 72\\
+anterior & 09-10 & f03 & abanico + embocadura + brazos sur; lluvia 35 mm/h en ladera & 150 & G2b & 0{,}73 & 0{,}75 & 225 & 0{,}39 & 0{,}66 & 0{,}26 & 71\\
+ciudad & 10-10 & v14 & cauce + brazos sur; lluvia 35 mm/h + quebrada Álvaro del Portillo & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}15 & 71\\
+ciudad & 11-10 & v19 & cauce + brazos sur; lluvia 35 mm/h + brazo sur oficial hasta Álvaro del Portillo (terreno v6) & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}11 & 71\\
+ciudad & 10-10 & v09 & cauce principal & 300 & A2 & 0{,}77 & 0{,}50 & 151 & 0{,}52 & 0{,}68 & 1{,}14 & 70\\
+ciudad & 10-10 & v03 & cauce principal; colector con capacidad supuesta de 30 m$^3$/s & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}50 & 0{,}64 & 1{,}16 & 69\\
+ciudad & 10-10 & v05 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s & 300 & G2b & 0{,}74 & 0{,}50 & 96 & 0{,}53 & 0{,}44 & 1{,}16 & 69\\
+ciudad & 10-10 & v06 & cauce principal; colector con capacidad supuesta de 60 m$^3$/s & 300 & G2b & 0{,}74 & 0{,}50 & 96 & 0{,}53 & 0{,}44 & 1{,}16 & 69\\
+ciudad & 10-10 & v17 & cauce principal; colector con capacidad supuesta de 30 m$^3$/s, captura 25 m, Quebrada Honda tallada & 300 & G2b & 0{,}76 & 0{,}50 & 96 & 0{,}50 & 0{,}62 & 1{,}18 & 69\\
+ant.+cauce & 09-10 & f01 & cauce principal & 150 & G2b & 0{,}71 & 0{,}50 & 338 & 0{,}63 & 0{,}55 & 0{,}31 & 68\\
+ant.+cauce & 09-10 & e04 & cauce principal & 300 & G2b & 0{,}75 & 0{,}50 & 2 & 0{,}46 & 0{,}56 & 0{,}32 & 68\\
+ciudad & 10-10 & v01 & cauce principal & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}46 & 0{,}68 & 1{,}16 & 68\\
+ciudad & 10-10 & z01 & cauce principal; control numérico (paso 4× más fino) & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}46 & 0{,}68 & 1{,}16 & 68\\
+ciudad & 10-10 & v10 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s, captura 25 m & 300 & G2b & 0{,}69 & 0{,}50 & 96 & 0{,}52 & 0{,}00 & 1{,}16 & 68\\
+ciudad & 10-10 & v11 & cauce principal; colector con capacidad supuesta de 200 m$^3$/s, captura 40 m & 300 & G2b & 0{,}69 & 0{,}50 & 96 & 0{,}52 & 0{,}00 & 1{,}16 & 68\\
+ciudad & 10-10 & v15 & cauce principal; Quebrada Honda tallada aguas abajo (terreno v5) & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}45 & 0{,}68 & 1{,}18 & 68\\
+ciudad & 10-10 & v18 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s, captura 25 m, Quebrada Honda tallada & 300 & G2b & 0{,}69 & 0{,}50 & 96 & 0{,}52 & 0{,}00 & 1{,}18 & 68\\
+ciudad & 11-10 & v21 & cauce + brazos sur; brazo sur oficial (terreno v6), sin lluvia & 300 & G2b & 0{,}77 & 0{,}50 & 131 & 0{,}45 & 0{,}68 & 1{,}11 & 68\\
+ant.+cauce & 09-10 & k03 & cauce principal; colector con capacidad supuesta de 10 m$^3$/s & 150 & G2b & 0{,}70 & 0{,}50 & 338 & 0{,}64 & 0{,}43 & 0{,}31 & 67\\
+ciudad & 10-10 & v07 & cauce principal & 150 & G2b & 0{,}72 & 0{,}50 & 348 & 0{,}62 & 0{,}68 & 1{,}09 & 67\\
+ciudad & 10-10 & v08 & cauce principal & 300 & G1 & 0{,}74 & 0{,}50 & 396 & 0{,}63 & 0{,}69 & 1{,}16 & 67\\
+ant.+cauce & 09-10 & k01 & cauce principal; colector con capacidad supuesta de 30 m$^3$/s & 150 & G2b & 0{,}65 & 0{,}50 & 338 & 0{,}63 & 0{,}01 & 0{,}31 & 66\\
+ant.+cauce & 09-10 & k02 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s & 150 & G2b & 0{,}65 & 0{,}50 & 338 & 0{,}63 & 0{,}01 & 0{,}31 & 66\\
+anterior & 09-10 & d02 & cauce + brazos sur & 300 & G2b & 0{,}68 & 0{,}50 & 4 & 0{,}41 & 0{,}00 & 0{,}42 & 65\\
+anterior & 09-10 & d04 & cauce principal & 150 & G2b & 0{,}63 & 0{,}50 & 366 & 0{,}55 & 0{,}00 & 0{,}42 & 63\\
+anterior & 09-10 & d01 & cauce + brazos sur & 150 & G2b & 0{,}60 & 0{,}50 & 516 & 0{,}55 & 0{,}00 & 0{,}39 & 58\\
+anterior & 09-10 & g01 & cauce + brazos sur & 150 & G2b & 0{,}58 & 0{,}50 & 592 & 0{,}51 & 0{,}00 & 0{,}38 & 55\\
+anterior & 09-10 & g03 & abanico + embocadura + brazos sur & 150 & G2b & 0{,}60 & 0{,}50 & 816 & 0{,}53 & 0{,}54 & 0{,}35 & 50\\
+anterior & 09-10 & f02 & abanico + embocadura + brazos sur; lluvia 20 mm/h en ladera & 150 & G2b & 0{,}56 & 0{,}75 & 1005 & 0{,}46 & 0{,}66 & 0{,}26 & 49\\
+anterior & 09-10 & g02 & abanico + embocadura + brazos sur & 150 & G2b & 0{,}61 & 0{,}50 & 947 & 0{,}51 & 0{,}57 & 0{,}33 & 47\\
+anterior & 09-10 & e06 & cauce principal & 150 & G1 & 0{,}47 & 0{,}50 & 1686 & 0{,}80 & 0{,}45 & 0{,}59 & 44\\
+anterior & 09-10 & d03 & cauce + brazos sur; caudal pico 100 m$^3$/s & 80 & G2b & 0{,}50 & 0{,}50 & 1160 & 0{,}68 & 0{,}00 & 0{,}22 & 43\\
+anterior & 09-10 & e01 & abanico + embocadura + brazos sur & 150 & G2b & 0{,}56 & 0{,}50 & 1007 & 0{,}46 & 0{,}66 & 0{,}26 & 43\\
+anterior & 09-10 & e02 & abanico + embocadura + brazos sur & 150 & G2b & 0{,}52 & 0{,}50 & 982 & 0{,}43 & 0{,}67 & 0{,}23 & 42\\
+SPOT 2014 & 09-10 & s01 & cauce principal & 150 & G2b & 0{,}50 & 0{,}50 & 1188 & 0{,}60 & 0{,}77 & 0{,}37 & 40\\
+anterior & 09-10 & e03 & solo embocadura & 150 & G2b & 0{,}08 & 0{,}00 & 856 & 0{,}20 & 0{,}69 & 0{,}00 & 16\\
+\bottomrule\end{longtable}}

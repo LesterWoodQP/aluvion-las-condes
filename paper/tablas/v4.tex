@@ -1,0 +1,23 @@
+\begin{table}[htbp]\centering\small
+\caption{Simulaciones con la ciudad completa (42.018 edificios). Las capacidades del colector son parámetros supuestos de escenarios hipotéticos; no describen la obra real. Calles: fracción de puntos de las calles con barro informado por las fuentes que el modelo moja ($h>\SI{5}{cm}$); Sitios: fracción de los cuatro recintos con afectación informada alcanzados por el flujo simulado; dPH: distancia mínima del barro simulado al cruce de General Blanche con Padre Hurtado; Perím.: fracción del barro simulado en zona urbana que cae dentro de la zona afectada oficial (IDE Chile); QH: fracción de Quebrada Honda con barro simulado; UCC: espesor máximo calculado junto a la Clínica UC Christus (Cadena 3 informó cerca de \SI{1}{m} en urgencias); IEC: índice exploratorio de compatibilidad, promedio de los cuatro criterios (calles, sitios, alcance y perímetro) en escala de 0 a 100; no es precisión predictiva. Barro: G2b, Glenwood~2b ($C_v=0{,}40$); G1, Glenwood~1 ($C_v=0{,}45$); A2, Aspen~2.}\label{tab:v4}
+{\setlength{\tabcolsep}{3.5pt}\begin{adjustbox}{max width=\textwidth}\begin{tabular}{llrlrrrrrrr}\toprule
+Corrida & Escenario & $V$ (mil m$^3$) & Barro & Calles & Sitios & dPH (m) & Perím. & QH & UCC (m) & IEC\\
+\midrule
+z02 & cauce + brazos sur; lluvia 35 mm/h, paso 4× más fino & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 72\\
+v02 & cauce + brazos sur; lluvia 35 mm/h en ladera & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}13 & 72\\
+v19 & cauce + brazos sur; lluvia 35 mm/h + brazo sur oficial hasta Álvaro del Portillo (terreno v6) & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}11 & 71\\
+v14 & cauce + brazos sur; lluvia 35 mm/h + quebrada Álvaro del Portillo & 300 & G2b & 0{,}77 & 0{,}75 & 15 & 0{,}34 & 0{,}68 & 1{,}15 & 71\\
+v01 & cauce principal & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}46 & 0{,}68 & 1{,}16 & 68\\
+z01 & cauce principal; control numérico (paso 4× más fino) & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}46 & 0{,}68 & 1{,}16 & 68\\
+v15 & cauce principal; Quebrada Honda tallada aguas abajo (terreno v5) & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}45 & 0{,}68 & 1{,}18 & 68\\
+v03 & cauce principal; colector con capacidad supuesta de 30 m$^3$/s & 300 & G2b & 0{,}77 & 0{,}50 & 96 & 0{,}50 & 0{,}64 & 1{,}16 & 69\\
+v17 & cauce principal; colector con capacidad supuesta de 30 m$^3$/s, captura 25 m, Quebrada Honda tallada & 300 & G2b & 0{,}76 & 0{,}50 & 96 & 0{,}50 & 0{,}62 & 1{,}18 & 69\\
+v05 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s & 300 & G2b & 0{,}74 & 0{,}50 & 96 & 0{,}53 & 0{,}44 & 1{,}16 & 69\\
+v10 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s, captura 25 m & 300 & G2b & 0{,}69 & 0{,}50 & 96 & 0{,}52 & 0{,}00 & 1{,}16 & 68\\
+v18 & cauce principal; colector con capacidad supuesta de 100 m$^3$/s, captura 25 m, Quebrada Honda tallada & 300 & G2b & 0{,}69 & 0{,}50 & 96 & 0{,}52 & 0{,}00 & 1{,}18 & 68\\
+v07 & cauce principal & 150 & G2b & 0{,}72 & 0{,}50 & 348 & 0{,}62 & 0{,}68 & 1{,}09 & 67\\
+v08 & cauce principal & 300 & G1 & 0{,}74 & 0{,}50 & 396 & 0{,}63 & 0{,}69 & 1{,}16 & 67\\
+v09 & cauce principal & 300 & A2 & 0{,}77 & 0{,}50 & 151 & 0{,}52 & 0{,}68 & 1{,}14 & 70\\
+v21 & cauce + brazos sur; brazo sur oficial (terreno v6), sin lluvia & 300 & G2b & 0{,}77 & 0{,}50 & 131 & 0{,}45 & 0{,}68 & 1{,}11 & 68\\
+\bottomrule\end{tabular}\end{adjustbox}}
+\end{table}
