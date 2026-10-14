@@ -1,0 +1,89 @@
+{
+ "C_efectivo_con_incendio": [
+  0.564,
+  0.662,
+  0.758
+ ],
+ "C_sin_incendio": [
+  0.41,
+  0.5,
+  0.59
+ ],
+ "agua_con_incendio_m3": [
+  99000,
+  156000,
+  236000
+ ],
+ "agua_sin_incendio_m3": [
+  74000,
+  118000,
+  181000
+ ],
+ "razon_agua_sin_con": [
+  0.698,
+  0.756,
+  0.808
+ ],
+ "mezcla_con_incendio_m3": [
+  162000,
+  262000,
+  408000
+ ],
+ "mezcla_sin_incendio_m3": [
+  101000,
+  163000,
+  253000
+ ],
+ "razon_mezcla_sin_con": [
+  0.508,
+  0.624,
+  0.758
+ ],
+ "solidos_con_incendio_m3": [
+  56000,
+  103000,
+  185000
+ ],
+ "solidos_sin_incendio_m3": [
+  24000,
+  44000,
+  77000
+ ],
+ "razon_solidos_sin_con": [
+  0.245,
+  0.427,
+  0.74
+ ],
+ "gartner2014_Bmh_medido": {
+  "Bmh_km2": {
+   "H1": 0.887,
+   "S1": 0.132,
+   "S2": 0.0
+  },
+  "V_deposito_m3": [
+   15000,
+   87000,
+   492000
+  ],
+  "V_mezcla_m3": [
+   25000,
+   148000,
+   858000
+  ]
+ },
+ "staley2017_M1_cuenca_H1": {
+  "T": 0.11,
+  "F_dNBR": 0.289,
+  "P_con_incendio": [
+   0.18,
+   0.28,
+   0.433
+  ],
+  "P_sin_incendio": [
+   0.051,
+   0.071,
+   0.107
+  ]
+ },
+ "nota": "Percentiles 5, 50 y 95. Supuestos: C_u 0,40–0,60; Δ baja 0,05–0,15, mod.-baja 0,15–0,30, mod.-alta/alta 0,25–0,45; C_v con incendio 0,30–0,50 y sin incendio 0,20–0,35."
+}
