@@ -52,7 +52,9 @@ Cada simulación de la ciudad completa tarda entre 5 y 14 horas en un núcleo. L
 
 ## Licencias
 
-- Contenido de este repositorio: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- Código (programas y scripts): [GNU GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.html), texto en `LICENSE-GPL-3.0`.
+- Textos, figuras, tablas y datos derivados: [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), texto en `LICENSE-CC-BY-NC-SA-4.0`.
+- El resumen de qué licencia aplica a cada tipo de archivo está en `LICENSE`.
 - Datos de terceros, con sus propias condiciones: FABDEM (CC BY-NC-SA 4.0), Copernicus GLO-30 y Sentinel-2 (datos Copernicus), OpenStreetMap y Overture Maps (ODbL), SPOT 2014 vía OpenTopography (CC BY 4.0), Censo 2017 (INE), Open-Meteo (CC BY 4.0).
 
 ## Citar
