@@ -1,0 +1,128 @@
+{
+ "e04": {
+  "area_ha_h>2cm": 212.8,
+  "area_ha_h>5cm": 193.2,
+  "UC Christus (~1 m urgencias)": 0.32,
+  "Duoc UC (personas atrapadas)": 1.63,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "f03": {
+  "area_ha_h>2cm": 261.9,
+  "area_ha_h>5cm": 192.8,
+  "UC Christus (~1 m urgencias)": 0.26,
+  "Duoc UC (personas atrapadas)": 0.47,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.09,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v01": {
+  "area_ha_h>2cm": 129.1,
+  "area_ha_h>5cm": 120.3,
+  "UC Christus (~1 m urgencias)": 1.16,
+  "Duoc UC (personas atrapadas)": 1.88,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v02": {
+  "area_ha_h>2cm": 221.8,
+  "area_ha_h>5cm": 172.0,
+  "UC Christus (~1 m urgencias)": 1.13,
+  "Duoc UC (personas atrapadas)": 1.86,
+  "Campus U. Andes (barro, atrapados)": 0.01,
+  "Clínica U. Andes (ingreso menor de agua)": 0.14,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v03": {
+  "area_ha_h>2cm": 118.3,
+  "area_ha_h>5cm": 109.5,
+  "UC Christus (~1 m urgencias)": 1.16,
+  "Duoc UC (personas atrapadas)": 1.88,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v05": {
+  "area_ha_h>2cm": 105.1,
+  "area_ha_h>5cm": 97.4,
+  "UC Christus (~1 m urgencias)": 1.16,
+  "Duoc UC (personas atrapadas)": 1.88,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v07": {
+  "area_ha_h>2cm": 85.2,
+  "area_ha_h>5cm": 79.1,
+  "UC Christus (~1 m urgencias)": 1.09,
+  "Duoc UC (personas atrapadas)": 1.87,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "v08": {
+  "area_ha_h>2cm": 94.6,
+  "area_ha_h>5cm": 89.2,
+  "UC Christus (~1 m urgencias)": 1.16,
+  "Duoc UC (personas atrapadas)": 2.49,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "z01": {
+  "area_ha_h>2cm": 128.9,
+  "area_ha_h>5cm": 120.2,
+  "UC Christus (~1 m urgencias)": 1.16,
+  "Duoc UC (personas atrapadas)": 1.88,
+  "Campus U. Andes (barro, atrapados)": 0.0,
+  "Clínica U. Andes (ingreso menor de agua)": 0.0,
+  "Hospital FACh (agua en urgencias)": 0.0
+ },
+ "_zona_chilevision": {
+  "zona_chilevision_ha": 253.0,
+  "e04": {
+   "mojado_ha": 193.2,
+   "dentro_ha": 73.4,
+   "cobertura_zona": 0.29,
+   "precision": 0.38
+  },
+  "f03": {
+   "mojado_ha": 192.8,
+   "dentro_ha": 57.2,
+   "cobertura_zona": 0.23,
+   "precision": 0.3
+  },
+  "v01": {
+   "mojado_ha": 120.3,
+   "dentro_ha": 40.2,
+   "cobertura_zona": 0.16,
+   "precision": 0.33
+  },
+  "v02": {
+   "mojado_ha": 172.0,
+   "dentro_ha": 39.9,
+   "cobertura_zona": 0.16,
+   "precision": 0.23
+  },
+  "v05": {
+   "mojado_ha": 97.4,
+   "dentro_ha": 38.4,
+   "cobertura_zona": 0.15,
+   "precision": 0.39
+  },
+  "v07": {
+   "mojado_ha": 79.1,
+   "dentro_ha": 36.9,
+   "cobertura_zona": 0.15,
+   "precision": 0.47
+  },
+  "v08": {
+   "mojado_ha": 89.2,
+   "dentro_ha": 42.0,
+   "cobertura_zona": 0.17,
+   "precision": 0.47
+  }
+ }
+}
